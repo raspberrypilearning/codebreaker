@@ -1,8 +1,10 @@
-## Encrypt your message
+## Conduct frequency analysis
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Connect `atbash` and `get_text to encrypt the contents of the text file and print them out
+Intro concepts of frequency analysis as a counter to encryption
+Create the frequency function which accepts a string parameter and returns a dict of frequencies of letters in that string. 
+Chart the frequency of the message against the frequency of the language it’s in using pygal. 
 </div>
 <div>
 Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
