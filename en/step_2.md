@@ -11,7 +11,7 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 
 --- task ---
 
-Open the [Codebreaker starter project](https://trinket.io/python/0eb6b467c0). Trinket will open in another browser tab. Hayden
+Open the [Codebreaker starter project](https://trinket.io/python/0eb6b467c0). Trinket will open in another browser tab. 
 
 If you have a `Trinket account`, you can click on the **Remix button** to save a copy to your My Trinkets library.
 
@@ -19,7 +19,9 @@ If you have a `Trinket account`, you can click on the **Remix button** to save a
 
 --- task ---
 
-Use the `list()` function to create a **list** of letters from the `alphabet`. **Initialise** the `code` dictionary so that you can populate it later.  
+Find the `# Set up data structures` comment. Use the `list()` function to create a **list** of letters from the `alphabet`. Next, **initialise** the `code` dictionary so that you can populate it in a later step.  
+
+<!--- I want an ingredient here that describes how the list function works. I don't know how to make one -->
 
 --- code ---
 ---
