@@ -16,7 +16,7 @@ You will:
 ### Try it
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Run the program to either **encrypt** or <strong>decrypt</strong> the text stored in the <kbd>input.txt</kbd> file. You can also analyse the frequency of letters in the message:
+Run the program to **encode** the secret message. You can also analyse the frequency of letters in the message:
 </div>
 <div class="trinket">
 <iframe src="https://trinket.io/embed/python/a867876e98?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
