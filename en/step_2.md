@@ -19,7 +19,7 @@ If you have a `Trinket account`, you can click on the **Remix button** to save a
 
 --- task ---
 
-Find the `# Set up data structures` comment. Use the `list()` function to create a **list** of letters from the `alphabet`. Next, **initialise** the `code` dictionary so that you can populate it in a later step.  
+Find the `# Set up data structures` comment then use the `list()` function to create a **list** of letters from the `alphabet`. Next, **initialise** the `code` dictionary so that you can populate it in a later step.  
 
 <!--- I want an ingredient here that describes how the list function works. I don't know how to make one -->
 
@@ -29,7 +29,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 5 
-line_highlights: 7,8
+line_highlights: 7-8
 ---
 # Set up data structures 
 
