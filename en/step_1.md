@@ -7,7 +7,7 @@ The <span style="color: #0faeb0">Atbash</span> cypher is one of the world's olde
 
 You will:
 + Define a function that takes parameters and returns a value
-+ Use a `while` loop to repeat tasks 
++ Use a `while` and a `for` loop to repeat tasks 
 + Create a chart to display frequency data
 
 
