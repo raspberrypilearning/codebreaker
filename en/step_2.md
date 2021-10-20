@@ -21,9 +21,6 @@ If you have a `Trinket account`, you can click on the **Remix button** to save a
 
 Use the `list()` function to create a **list** of letters from the `alphabet`. **Initialise** the `code` dictionary so that you can populate it later.  
 
-**Initialise** the alphabetical  list and dictionary we will use to create our cypher.
-On line 6 of your `main.py` script, enter the following code:
-
 --- code ---
 ---
 language: python
