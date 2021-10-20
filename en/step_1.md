@@ -13,13 +13,13 @@ You will:
 
 --- no-print ---
 --- task ---
-### Try it 2
+### Try it
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 Run the program to either encrypt or decrypt the text stored in the <kbd>input.txt</kbd> file. You can also analyse the frequency of letters in the message:
 </div>
 <div class="scratch-preview" style="margin-left: 15px;">
-  <iframe src="https://trinket.io/embed/python/a867876e98" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <iframe src="https://trinket.io/embed/python/a867876e98?outputOnly=true&runOption=run" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
 --- /task ---
