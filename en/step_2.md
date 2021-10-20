@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will define a function named <kbd>create_code</kbd> which will make a <b>list</b> with the letters of the alphabet and then creates a dictionary you can use in your cypher.
+In this step you will define a function named <kbd>create_code</kbd> which will make a <b>list</b> with the letters of the alphabet and then create a dictionary you can use in your cypher.
 </div>
 <div>
 Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
@@ -18,6 +18,8 @@ If you have a `Trinket account`, you can click on the **Remix button** to save a
 --- /task ---
 
 --- task ---
+
+Use the `list()` function to create a **list** of letters from the `alphabet`. **Initialise** the `code` dictionary so that you can populate it later.  
 
 **Initialise** the alphabetical  list and dictionary we will use to create our cypher.
 On line 6 of your `main.py` script, enter the following code:
