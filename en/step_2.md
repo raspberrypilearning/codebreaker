@@ -1,4 +1,4 @@
-## Create a dictionary of letters
+## Encode the alphabet
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -11,7 +11,7 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 
 --- task ---
 
-Open the [Codebreaker starter project](https://trinket.io/python/0eb6b467c0). Trinket will open in another browser tab.
+Open the [Codebreaker starter project](https://trinket.io/python/0eb6b467c0). Trinket will open in another browser tab. Hayden
 
 If you have a `Trinket account`, you can click on the **Remix button** to save a copy to your My Trinkets library.
 
