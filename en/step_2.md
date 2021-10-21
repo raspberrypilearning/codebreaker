@@ -48,7 +48,7 @@ A new list needs to be created that holds the alphabet, but backwards. You can u
 
 --- task ---
 
-Find the `# Create the atbash code by reversing the alphabet` comment then **define** a new function called `create_code`. Next, create a list that holds the reverse of the alphabet list. 
+Find the `# Create the atbash code by reversing the alphabet` comment then **define** a new function called `create_code`. Next, create a **list** that holds the **reverse** of the `alphabet` list. 
 
 --- code ---
 ---
@@ -68,13 +68,29 @@ def create_code():
 
 --- /task ---
 
+### Encode the alphabet
 
-
-
+You now have two lists. One contains the alphabet written forwards, another with the alphabet backwards. You are now going to use these two lists to populate a dictionary. The **key** will store the alphabet written forwards and the **data pairing** will store the alphabet backwards. 
 
 --- task ---
 
-**Define** the `create_code()` function on line 9 of your script. 
+Within your `create_code` function, **populate** the `code` dictionary with data from the two **lists**. Use a `for` loop to get the length of the `alphabet` list and populate the **dictionary** with the data.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 12
+line_highlights: 16-17
+---
+def create_code():
+  
+  backwards = list(reversed(alphabet)) # Reversing a list
+  
+  for i in range(len(alphabet)): # Getting length of a list
+    code[alphabet[i]] = backwards[i] # Populate the code dictionary with a letter of the alphabet and its encoded letter
+--- /code ---
 
 --- /task ---
 
