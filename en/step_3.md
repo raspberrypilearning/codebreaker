@@ -12,9 +12,49 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
  
 --- task ---
 
-Find the comment which says `# Encrypt/decrypt a pice of text — atbash is symetrical`
+Find the comment which says `# Encrypt/decrypt a pice of text — atbash is symetrical` on line 30. Underneath the comment, define a function called `atbash` with the parameter `text`.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 30 
+line_highlights: 31
+---
+# Encrypt/decrypt a pice of text — atbash is symetrical
+def atbash(text):
+
+--- /code ---
+
+Press Enter. You should see the next line indented. 
 
 --- /task ---
+
+We will need this new function to take our text, convert it to lower case, then add it all to another list. Then, we want it to swap out the letters in the list for the letters in our cypher - thus creating an encoded message! First, we need to create the list of our text.
+
+--- task ---
+
+ Beneath your definition, keep the indent and type: 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 30 
+line_highlights: 32-34
+---
+# Encrypt/decrypt a pice of text — atbash is symetrical
+def atbash(text):
+  text = text.lower() # Converting text to lowercase
+  text = list(text)
+  output = []
+--- /code ---
+
+--- /task ---
+
+
 
 --- task ---
 
