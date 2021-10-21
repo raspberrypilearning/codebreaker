@@ -8,11 +8,10 @@ last_tested: "2021-03-26"
 steps:
   - title: Introduction
   - title: Encode the alphabet
-  - title: Create an atbash cypher
-  - title: Load a message to encrypt
-  - title: Encrypt your message
-  - title: Conduct frequency analysis
-  - title: Create a user menu
+  - title: Encode a message
+  - title: Encode a file
+  - title: Create frequency analyser
+  - title: Analyse the frequency
   - title: Reflection
     knowledge_quiz:
       path: quiz1
