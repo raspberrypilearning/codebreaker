@@ -144,7 +144,9 @@ line_highlights: 19
 
 ![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG)
 
-**Debug:**
+**Debug:** There are no errors but your code dictionary is not displaying on the screen.
+- make sure that `print(code)` is indented correctly within the `create_code` function
+- check that you have **called** the `create_code()` and the `main()` function correctly
 
 **Debug:**
 
