@@ -119,7 +119,37 @@ main()
 
 --- /task ---
 
+--- task ---
 
+In order to test that your `code` dictionary has populated correctly, you can `print` the dictionary in full. Under your `for` loop in the `create_code` function, add a `print` function to display the contents. 
 
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 16
+line_highlights: 19
+---
+  for i in range(len(alphabet)): # Getting length of a list
+    code[alphabet[i]] = backwards[i] # Populate the code dictionary with a letter of the alphabet and its encoded letter
+  
+  print(code)
+--- /code ---
+
+--- /task ---
+--- task ---
+
+**Test:** Run your code to see if the code dictionary displays correctly. 
+
+**Debug:**
+
+**Debug:**
+
+**Debug:**
+
+**Debug:**
+
+--- /task ---
 
 --- save ---
