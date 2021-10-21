@@ -144,15 +144,16 @@ line_highlights: 19
 
 ![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG)
 
-**Debug:** There are no error messages but your code dictionary is not displaying on the screen.
+**Debug:** There are no error messages but your code dictionary is not displaying on the screen:
 - make sure that `print(code)` is indented correctly within the `create_code` function
 - check that you have **called** the `create_code()` and the `main()` function correctly
 
-**Debug:**
+**Debug:** If you see a message about `code` not being defined:
+- make sure that you have initialised the `code` dictionary on line 8 
 
-**Debug:**
-
-**Debug:**
+**Debug:** If you see a message about an indentation error:
+- check that you have indented all of your code correctly
+- look back at the sample code on this page to help you check
 
 --- /task ---
 
