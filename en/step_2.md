@@ -5,7 +5,7 @@
 To start, you will define a function named <kbd>create_code</kbd> which will make a <b>list</b> with the letters of the alphabet and then create a dictionary you can use in your cypher.
 </div>
 <div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
+![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.png){:width="300px"}
 </div>
 </div>
 
@@ -94,7 +94,7 @@ def create_code():
 
 --- /task ---
 
-A `main()` function is needed to **call** all of the functions when your program first starts. 
+A `main()` function is needed to **call** all of the required functions when your program first starts. 
 
 --- task ---
 
