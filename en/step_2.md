@@ -42,7 +42,7 @@ code = {}
 
 --- /task ---
 
-# Create a new list that reverses the alphabet
+### Create a new list that reverses the alphabet
 
 A new list needs to be created that holds the alphabet, but backwards. You can use the `list()` function again to help with this. You can also use the `reverse()` function to reverse an existing list. 
 
