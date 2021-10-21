@@ -1,19 +1,19 @@
 ## What next?
 
-If you are following the [PathwayName](https://projects.raspberrypi.org/en/raspberrypi/pathway-name) pathway, you can move on to the [ProjectName](https://projects.raspberrypi.org/en/projects/project-name) project. In this project, you will make a (add description here).
+If you are following the [More Python](https://projects.raspberrypi.org/en/raspberrypi/python-2) pathway, you can move on to the [Mapping Data](https://projects.raspberrypi.org/en/projects/mapping-data) project. In this project, you will take data and display it on a map!
 
 --- print-only ---
 
-![ProjectName project](images/projectname-project.png)
+![ProjectName project](images/mapping-data-project.png)
 
 --- /print-only ---
 
 --- no-print ---
 
 <div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/486719199/?autostart=false" frameborder="0"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="https://trinket.io/python/f8fb108421" frameborder="0"></iframe>
 </div>
 
 --- /no-print ---
 
-If you want to have more fun exploring Scratch, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch&curriculum%5B%5D=%201).
+If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python&curriculum%5B%5D=%202).
