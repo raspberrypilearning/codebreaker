@@ -94,4 +94,32 @@ def create_code():
 
 --- /task ---
 
+A `main()` function is needed to **call** all of the functions when your program first starts. 
+
+--- task ---
+
+Find the `# Start up` comment and **define** a `main()` function to call your `code()` function. Next, call the `main()` function in the main body of your code. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 39
+line_highlights: 41-45
+---
+# Start up
+
+def main():
+  create_code()
+
+  
+main()
+--- /code ---
+
+--- /task ---
+
+
+
+
 --- save ---
