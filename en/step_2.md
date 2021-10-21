@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-To start, you will define a function named <kbd>create_code</kbd> which will make a <b>list</b> with the letters of the alphabet and then create a dictionary you can use in your cypher.
+To start, you will **define** a function named `create_code` which will make a **list** with the letters of the alphabet and then create a **dictionary** you can use for your cypher.
 </div>
 <div>
 ![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG){:width="300px"}
@@ -140,7 +140,7 @@ line_highlights: 19
 --- /task ---
 --- task ---
 
-**Test:** Run your code to see if the code dictionary displays correctly. 
+**Test:** Run your code to see if the `code` dictionary displays correctly. 
 
 ![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG)
 
