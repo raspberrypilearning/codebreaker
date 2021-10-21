@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will define a function named <kbd>create_code</kbd> which will make a <b>list</b> with the letters of the alphabet and then create a dictionary you can use in your cypher.
+To start, you will define a function named <kbd>create_code</kbd> which will make a <b>list</b> with the letters of the alphabet and then create a dictionary you can use in your cypher.
 </div>
 <div>
 Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
@@ -41,6 +41,36 @@ code = {}
 --- /code ---
 
 --- /task ---
+
+# Create a new list that reverses the alphabet
+
+A new list needs to be created that holds the alphabet, but backwards. You can use the `list()` function again to help with this. You can also use the `reverse()` function to reverse an existing list. 
+
+--- task ---
+
+Find the `# Create the atbash code by reversing the alphabet` comment then **define** a new function called `create_code`. Next, create a list that holds the reverse of the alphabet list. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 10 
+line_highlights: 12-14
+---
+# Create the atbash code by reversing the alphabet
+
+def create_code():
+  
+  backwards = list(reversed(alphabet)) # Reversing a list
+
+--- /code ---
+
+--- /task ---
+
+
+
+
 
 --- task ---
 
