@@ -140,11 +140,11 @@ line_highlights: 19
 --- /task ---
 --- task ---
 
-**Test:** Run your code to see if the `code` dictionary displays correctly. 
+**Test:** Run your code to see if the `code` dictionary displays correctly. You should see a pattern starting with `a` paired with `z` and `b` being paired with `y`.  
 
 ![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG)
 
-**Debug:** There are no errors but your code dictionary is not displaying on the screen.
+**Debug:** There are no error messages but your code dictionary is not displaying on the screen.
 - make sure that `print(code)` is indented correctly within the `create_code` function
 - check that you have **called** the `create_code()` and the `main()` function correctly
 
