@@ -144,6 +144,7 @@ def menu():
 
     # Start with a wrong answer for choice.
     choice = None
+
 --- /code ---
 
 --- /task ---
@@ -171,6 +172,7 @@ def menu():
     # Keep asking the user for the right answer
     while choice != 'c':
         choice = input('Please enter c to encode/decode text')
+
 --- /code ---
 
 --- /task ---
@@ -203,6 +205,7 @@ line_highlights: 56-60
     message = 'my secret message' # Change this string to a message of your own!
     code = atbash(message)  # Call the atbash function to encode our string variable 'message'
     print(code)
+    
 --- /code ---
 
 --- /task ---
