@@ -69,11 +69,18 @@ Find the `input.txt` tab in Trinket to access the contents of the text file. You
 
 --- task ---
 
-**Test:** Run your code to see if it displays your encoded message after entering the letter c when prompted. 
+**Test:** Run your code to see if it displays your encoded message after entering the letter **c** when prompted. 
 
 ![A screenshot displaying the encoded secret message](images/input-text-test.PNG)
 
-**Debug:** 
+**Debug:** Your encoded message doesn't look exactly like the message in the screenshot:
+- This is normal. This is the encoded message for the text `replace with your message`. Your message will be different.
+
+**Debug:** You see an error message that says `TypeError: get_text() takes exactly 1 arguments`:
+- Check that you have entered `input.txt` inside the round brackets on line 64
+
+**Debug:** You se an `Indentation error` message:
+- Check that you have correctly indented all of your new code. Revisit the tasks above to check. 
 
 --- /task ---
 
