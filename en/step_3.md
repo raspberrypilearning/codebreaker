@@ -236,7 +236,9 @@ To call the `menu` function when the program runs.
 
 --- task ---
 
-**Save and run** your script. You should see your input prompt appear in the shell - press `c` and then `Enter` to encode your message string!
+**Save and run** your script. 
+
+You should see your input prompt appear in the shell - press `c` and then `Enter` to encode your message string!
 
 --- /task ---
 
