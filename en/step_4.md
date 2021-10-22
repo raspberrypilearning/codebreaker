@@ -30,6 +30,7 @@ def get_text(filename):
     return text
 --- /code ---
 
+
 --- /task ---
 
 --- task ---
@@ -51,6 +52,7 @@ line_highlights: 64
     print(code)
 --- /code ---
 
+
 --- /task ---
 You can now **add** your own secret message to the `input.txt` file. 
 --- task ---
@@ -58,6 +60,7 @@ You can now **add** your own secret message to the `input.txt` file.
 Find the `input.txt` tab in Trinket to access the contents of the text file. You will see this just above your code window. Delete the `replace with your message` text and enter your own secret message. 
 
 ![Animation demonstrating how to find the input.txt tab at the top of the trinket window.](images/input.gif)
+
 
 --- /task ---
 
