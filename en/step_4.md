@@ -71,7 +71,7 @@ Find the `input.txt` tab in Trinket to access the contents of the text file. You
 
 **Test:** Run your code to see if it displays your encoded message after entering the letter c when prompted. 
 
-![A screenshot displaying the encoded secret message](images/input-text-test.gif)
+![A screenshot displaying the encoded secret message](images/input-text-test.PNG)
 
 **Debug:** 
 
