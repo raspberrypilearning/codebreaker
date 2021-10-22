@@ -90,7 +90,7 @@ The atbash cypher **encodes** a message using the reverse letters of the alphabe
 
 --- task ---
 
-**Run** your code so that it displays your encoded message. **Highlight** the encoded message and select copy. Go back to `input.txt` and delete your message. Next, **paste** your new message into the empty file. 
+**Run** your code so that it displays your encoded message. **Select** the encoded message and copy it. Go back to `input.txt` and delete your message. Next, **paste** your new message into the empty file. 
 
 --- collapse ---
 ---
@@ -112,9 +112,12 @@ You can copy text and paste a copy in another place.
 
 --- task ---
 
-**Run** your code again and press **c** when prompted. It will display the **decoded** version of your original message. 
+**Test:** Run your code again and press **c** when prompted. It will display the **decoded** version of your original message. 
 
 ![A screenshot of the decoded message being displayed as output.](images/decoded.PNG)
+
+**Debug:** It still displays the encoded message:
+- Make sure that you have copy and pasted the **encoded** message into `input.txt`
 
 --- /task ---
 
