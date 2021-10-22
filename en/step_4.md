@@ -34,7 +34,7 @@ def get_text(filename):
 
 --- task ---
 
-The `menu()` function needs to encode a secret message from a text file. Find **line 64** and replace `message = 'my secret message'` with the `get_text()` function call. Enter the name of the file `input.txt` as an **argument**.
+The `menu()` function needs to encode a secret message from a text file. Find line 64 and **replace** `message = 'my secret message'` with the `get_text()` function call. Enter the name of the file `input.txt` as an **argument**.
 
 --- code ---
 ---
