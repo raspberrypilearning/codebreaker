@@ -230,5 +230,15 @@ def main():
 
 --- /code ---
 
+To call the `menu` function when the program runs.
+
 --- /task ---
+
+--- task ---
+
+**Save and run** your script. You should see your input prompt appear in the shell - press `c` and then `Enter` to encode your message string!
+
+--- /task ---
+
+
 --- save ---
