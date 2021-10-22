@@ -30,6 +30,7 @@ def get_text(filename):
     return text
 --- /code ---
 
+
 --- /task ---
 
 --- task ---
@@ -51,13 +52,72 @@ line_highlights: 64
     print(code)
 --- /code ---
 
+
 --- /task ---
+
 You can now **add** your own secret message to the `input.txt` file. 
+
 --- task ---
 
 Find the `input.txt` tab in Trinket to access the contents of the text file. You will see this just above your code window. Delete the `replace with your message` text and enter your own secret message. 
 
 ![Animation demonstrating how to find the input.txt tab at the top of the trinket window.](images/input.gif)
+
+<!-- Does this need any instructions for offline use?-->
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code to see if it displays your encoded message after entering the letter **c** when prompted. 
+
+![A screenshot displaying the encoded secret message](images/input-text-test.PNG)
+
+**Debug:** Your encoded message doesn't look exactly like the message in the screenshot:
+- This is normal. This is the encoded message for the text `replace with your message`. Your message will be different.
+
+**Debug:** You see an error message that says `TypeError: get_text() takes exactly 1 arguments`:
+- Check that you have entered `input.txt` inside the round brackets on line 64
+
+**Debug:** You se an `Indentation error` message:
+- Check that you have correctly indented all of your new code. Revisit the tasks above to check. 
+
+--- /task ---
+
+### Decode the message
+
+The atbash cypher **encodes** a message using the reverse letters of the alphabet. This means that exactly the same **algorithm** can be used to **decode** the message. You can test this by taking your encoded message, copy and pasting it into your `input.txt` file and running the code again. 
+
+--- task ---
+
+**Run** your code so that it displays your encoded message. **Select** the encoded message and copy it. Go back to `input.txt` and delete your message. Next, **paste** your new message into the empty file. 
+
+--- collapse ---
+---
+title: Copying and pasting
+---
+
+You can copy text and paste a copy in another place.
+
+ 1. Select the text you want to copy by dragging your mouse over it while holding down the left button.
+ 2. Copy the text by using your browser's menu — choose `Edit > Copy`. You can also use a keyboard shortcut — `Ctrl + C` on Windows or Linux, or `Cmd + C` on a Mac.
+ 3. Move your text cursor (the flashing line that shows where you are typing) to where you want to place a copy of the text.
+ 4. Paste the text by using your browser's menu — choose `Edit > Paste`. You can also use a keyboard shortcut — `Ctrl + V` on Windows or Linux, or `Cmd + V` on a Mac.
+
+--- /collapse ---
+
+![Animation showing the encoded message being copy and pasted into the input.txt file.](images/decode-message.gif)
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code again and press **c** when prompted. It will display the **decoded** version of your original message. 
+
+![A screenshot of the decoded message being displayed as output.](images/decoded.PNG)
+
+**Debug:** It still displays the encoded message:
+- Make sure that you have copy and pasted the **encoded** message into `input.txt`
 
 --- /task ---
 
