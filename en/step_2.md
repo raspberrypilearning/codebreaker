@@ -5,7 +5,7 @@
 To start you will create a dictionary for your encoded letters. 
 </div>
 <div>
-![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG){:width="300px"}
+![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG){:width="400px"}
 </div>
 </div>
 

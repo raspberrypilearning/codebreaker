@@ -5,7 +5,7 @@
 Its time to encode a message from a text file. 
 </div>
 <div>
-![A screenshot of the output of the code displaying an encoded message. ](images/encoded-message.PNG){:width="300px"}
+![A screenshot of the output of the code displaying an encoded message. ](images/encoded-message.PNG){:width="400px"}
 </div>
 </div>
 
