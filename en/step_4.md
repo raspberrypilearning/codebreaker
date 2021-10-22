@@ -63,6 +63,17 @@ Find the `input.txt` tab in Trinket to access the contents of the text file. You
 
 ![Animation demonstrating how to find the input.txt tab at the top of the trinket window.](images/input.gif)
 
+<!-- Does this need any instructions for offline use?-->
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code to see if it displays your encoded message after entering the letter c when prompted. 
+
+![A screenshot displaying the encoded secret message](images/input-text-test.gif)
+
+**Debug:** 
 
 --- /task ---
 
