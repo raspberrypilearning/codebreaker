@@ -11,7 +11,7 @@ Its time to encode a message from a text file.
 
 --- task ---
 
-Find the `# Fetch and return text from a file` comment on line 70 then define a `get_text()` function. This function has one parameter called `filename`. Use the `filename` to open the file and read it into the `text` variable then **return** the `text` variable.
+Find the `# Fetch and return text from a file` comment on line 70 then define a `get_text()` function. This function has one parameter called `filename`. Use the `filename` to open the file and read it into the `text` variable, then **return** the `text` variable.
 
 --- code ---
 ---
@@ -50,6 +50,14 @@ line_highlights: 64
     code = atbash(message)
     print(code)
 --- /code ---
+
+--- /task ---
+You can now **add** your own secret message to the `input.txt` file. 
+--- task ---
+
+Find the `input.txt` tab in Trinket to access the contents of the text file. You will see this just above your code window. Delete the `replace with your message` text and enter your own secret message. 
+
+![Animation demonstrating how to find the input.txt tab at the top of the trinket window.](images/input.gif)
 
 --- /task ---
 
