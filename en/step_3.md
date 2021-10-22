@@ -73,6 +73,7 @@ def atbash(text):
     text = text.lower() # Converting text to lowercase
     text = list(text)
     output = []
+
 --- /code ---
 
 --- /task ---
@@ -82,6 +83,7 @@ The next part of our code will encode the text by looking through our newly crea
 --- task ---
 
 Leave a blank line under the last code you entered (make sure you keep the indent), then type:
+
 --- code ---
 ---
 language: python
@@ -146,26 +148,83 @@ def menu():
 
 --- /task ---
 
-Now that we have set choice to a wrong answer, we want to create a loop that will only break if an `input` that matches a right answer is given. We want a while loop, that runs as long as our answers are NOT one we have defined. 
+Now that we have set choice to a wrong answer, we want to create a loop that will only break if an `input` that matches a right answer is given. We want a while loop, that runs as long as our answer **DOES NOT** match one we have defined. 
 
 --- task ---
 
 **Find** the comment in your script that says `# Keep asking the user for the right answer`. Underneath this line (making sure you have an indent!) type:
+
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
 line_number_start: 46
-line_highlights: 50
+line_highlights: 53,54
 ---
 # Create a text-based menu system
 def menu():
 
     # Start with a wrong answer for choice.
     choice = None
+
+    # Keep asking the user for the right answer
+    while choice != 'c':
+        choice = input('Please enter c to encode/decode text')
 --- /code ---
+
 --- /task ---
 
+We want to run our `atbash` function when the answer is correct. We've just defined that a wrong answer is **anything except `c`** - so our next bit of code will define what happens if the answer given **is `c`**. If the user chooses `c`, the code should then take a message (this needs to be a **string**), and pass it into our `atbash` function as the text to be encoded.
+
+<p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
+**Passing** information into a function allows us to store information in variables and use these values when the function is called. The **parameters**  of a function (listed in the brackets in function's definition) mean we can **pass** a value into it as one of the parameters. This value is then used by the function in it's operation. 
+</p>
+
+--- task ---
+
+Underneath the last line (making sure you still have an indent!) type:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 52
+line_highlights: 56-60
+---
+# Create a text-based menu system
+    # Keep asking the user for the right answer
+    while choice != 'c':
+        choice = input('Please enter c to encode/decode text')
+
+    if choice == 'c':
+    print('Running your message through the cypher…')
+    message = 'my secret message' # Change this string to a message of your own!
+    code = atbash(message)  # Call the atbash function to encode our string variable 'message'
+    print(code)
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+At the end of your `main()` function on line 66 type:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 64
+line_highlights: 66
+---
+
+# Start up
+def main():
+  create_code()
+  menu()
+
+--- /code ---
 
 --- save ---
