@@ -54,7 +54,9 @@ line_highlights: 64
 
 
 --- /task ---
+
 You can now **add** your own secret message to the `input.txt` file. 
+
 --- task ---
 
 Find the `input.txt` tab in Trinket to access the contents of the text file. You will see this just above your code window. Delete the `replace with your message` text and enter your own secret message. 
