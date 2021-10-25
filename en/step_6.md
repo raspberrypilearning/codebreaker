@@ -55,5 +55,69 @@ def make_chart(text, language):
 
 --- /task ---
 
+--- task ---
+
+Create **x-axis** labels using the **keys** from the `freq` dictionary. The dictionary will be passed into the function when it is called via the `text` parameter. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 47
+line_highlights: 51
+---
+def make_chart(text, language):
+  
+  chart = Bar()
+  chart.title = 'Frequency analysis'
+  chart.x_labels = text.keys() # Label the chart with the dictionary keys (A-Z)
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Label the **values** for the frequency data of the **encoded message** and the **language**. The values have been **passed into** the **function** via the `text` and `language` parameters. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 47
+line_highlights: 52-53
+---
+def make_chart(text, language):
+  
+  chart = Bar()
+  chart.title = 'Frequency analysis'
+  chart.x_labels = text.keys() # Label the chart with the dictionary keys (A-Z)
+  chart.add('Target message', text.values()) # Label the frequency data for the encoded message
+  chart.add('Language', language.values()) # Label the frequency data for the language
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Render** the chart so that it will display when the function is called. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 52
+line_highlights: 55
+---
+  chart.add('Target message', text.values()) # Label the frequency data for the encoded message
+  chart.add('Language', language.values()) # Label the frequency data for the language
+  
+  chart.render()
+--- /code ---
+
+--- /task ---
+
 
 --- save ---
