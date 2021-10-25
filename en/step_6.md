@@ -163,6 +163,43 @@ line_highlights: 101-102
 
 --- /task ---
 
+### Analyse the frequency chart
+
+The chart that has been produced shows the frequency of letters in the English language, labelled as **Language**. You can see that the letter **E** is the most frequently used letter in the English language because it has the highest bar for all of the **language** values. 
+
+The frequency chart also lists the frequency of letters in your **encoded** message, labelled as **Target message**. To work out what **encoding** has been used for this message you can compare the bars showing the English language with the bars on the encoded message. The highest bar in the encoded message text will most likely be an **E**. The second highest letter will most likely be a **T** as this is the next most popular letter. 
+
+Codebreakers can use the frequency of letters to work out the type of encoding that has been used on the message. They can use trial and error to **predict** what a letter might be representing using the chart as a guide. 
+
+--- task ---
+
+Your secret message is quite small making it tricky to analyse using a frequency chart. Change your code so that it analyses the message in `longer.txt` instead. 
+
+Go to line 98 and change `input.txt` to `longer.txt`.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 96
+line_highlights: 98
+---
+  elif choice == 'f':
+    print('Analysing message…')
+    message = get_text('longer.txt') # Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
+    message_freq = frequency(message) # Get the frequency of the letters in the message, as %
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Analyse** the frequency chart by looking at the **Language** values and the **Target message** values. Notice how the highest bar for **Language** is **E** and the highest bar for **Target message** is **V**. This is because with the **Atbash** cypher, the letter **E** is encoded with the letter **V**. 
+
+![A bar chart showing the frequency of letters in the English language compared to the frequency of letters used in the encoded message in longer.txt.](images/longer-analysis.PNG)
+
+--- /task ---
 
 
 --- save ---
