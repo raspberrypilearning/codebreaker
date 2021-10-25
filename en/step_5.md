@@ -22,11 +22,13 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21 
-line_highlights: 22
+line_highlights: 23-25
 ---
 # Calculate the frequency of all letters in a piece of text
-def frequency():
-     text = list(text.lower()) # Lowercase the message and make it a list
+
+def frequency(text):
+  
+  text = list(text.lower()) # Lowercase the message and make it a list
 --- /code ---
 
 --- /task ---
@@ -40,17 +42,18 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21
-line_highlights: 26-28
+line_highlights: 27-30
 ---
 # Calculate the frequency of all letters in a piece of text
-def frequency():
-    text = list(text.lower()) # Lowercase the message and make it a list
 
-  # Create a dict of every letter, with a count of 0
-    freq = {}
-    for letter in alphabet:
-        freq[letter] = 0
+def frequency(text):
   
+  text = list(text.lower()) # Lowercase the message and make it a list
+  
+  # Create a dict of every letter, with a count of 0
+  freq = {}
+  for letter in alphabet:
+    freq[letter] = 0
 --- /code ---
 
 --- /task ---
@@ -65,20 +68,21 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21
-line_highlights: 31
+line_highlights: 32-33
 ---
 # Calculate the frequency of all letters in a piece of text
-def frequency():
-    text = list(text.lower()) # Lowercase the message and make it a list
 
-    # Create a dict of every letter, with a count of 0
-    freq = {}
-    for letter in alphabet:
-        freq[letter] = 0
-
-    # Count the letters in the message
-    total_letters = len(text)
+def frequency(text):
   
+  text = list(text.lower()) # Lowercase the message and make it a list
+  
+  # Create a dict of every letter, with a count of 0
+  freq = {}
+  for letter in alphabet:
+    freq[letter] = 0
+  
+  # Count the letters in the message
+  total_letters = len(text)
 --- /code ---
 
 --- /task ---
@@ -95,39 +99,42 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21
-line_highlights: 33-35
+line_highlights: 35-37
 ---
 # Calculate the frequency of all letters in a piece of text
-def frequency():
-    text = list(text.lower()) # Lowercase the message and make it a list
 
-    # Create a dict of every letter, with a count of 0
-    freq = {}
-    for letter in alphabet:
-        freq[letter] = 0
-
-    # Count the letters in the message
-    total_letters = len(text)
+def frequency(text):
   
-    for letter in text:
-        if letter in freq:
-            freq[letter] += 1
+  text = list(text.lower()) # Lowercase the message and make it a list
+  
+  # Create a dict of every letter, with a count of 0
+  freq = {}
+  for letter in alphabet:
+    freq[letter] = 0
+  
+  # Count the letters in the message
+  total_letters = len(text)
+  
+  for letter in text:
+    if letter in freq: # Maybe it's punctuation? First use of in as a conditional clause
+      freq[letter] += 1
 --- /code ---
 
 --- /task ---
 
 This section of code:
+
 --- code ---
 ---
 language: python
 filename: main.py
-line_numbers: true
-line_number_start: 33
+line_numbers: false
+line_number_start: 
 line_highlights:
 ---
-    for letter in text:
-        if letter in freq:
-            freq[letter] += 1
+for letter in text:
+    if letter in freq:
+        freq[letter] += 1
 --- /code ---
 
 looks at each of the letters in our message `text`, and if the letter appears in our frequency list it adds 1 to that letter's value. The more times a letter appears, the higher that value will be. Once we know how often each letter appears, we can then convert from this count to a percentage of the whole message (since we know the length).
@@ -142,30 +149,31 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21
-line_highlights: 38,39,41
+line_highlights: 39-41
 ---
 # Calculate the frequency of all letters in a piece of text
-def frequency():
-    text = list(text.lower()) # Lowercase the message and make it a list
 
-    # Create a dict of every letter, with a count of 0
-    freq = {}
-    for letter in alphabet:
-        freq[letter] = 0
-
-    # Count the letters in the message
-    total_letters = len(text)
+def frequency(text):
   
-    for letter in text:
-        if letter in freq:
-            freq[letter] += 1
-    
-    # Convert from counts to percentages
-    for letter in freq:
-        freq[letter] = freq[letter] / total_letters * 100
+  text = list(text.lower()) # Lowercase the message and make it a list
   
-    return freq
-
+  # Create a dict of every letter, with a count of 0
+  freq = {}
+  for letter in alphabet:
+    freq[letter] = 0
+  
+  # Count the letters in the message
+  total_letters = len(text)
+  
+  for letter in text:
+    if letter in freq: # Maybe it's punctuation? First use of in as a conditional clause
+      freq[letter] += 1
+  
+  # Convert from counts to percentages
+  for letter in freq:
+    freq[letter] = freq[letter] / total_letters * 100
+  
+  return freq
 --- /code ---
 
 --- /task ---
@@ -181,12 +189,13 @@ Scroll down to your `menu` function at the bottom of your script. On line 76 and
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 75 
-line_highlights: 76,77
+line_number_start: 77 
+line_highlights: 78-80
 ---
   # Keep asking the user for the right answer
   while choice != 'c' and choice != 'f':
-        choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
+    
+    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
 --- /code ---
 
 --- /task ---
@@ -202,8 +211,8 @@ Leave a blank line after the `if` statement and on line 85 type:
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 75
-line_highlights: 86-90
+line_number_start: 77
+line_highlights: 88-92
 ---
   # Keep asking the user for the right answer
   while choice != 'c' and choice != 'f':
@@ -218,8 +227,8 @@ line_highlights: 86-90
 
   elif choice == 'f':
     print('Analysing message…')
-    message = get_text('input.txt') 
-    message_freq = frequency(message)
+    message = get_text('input.txt') # Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
+    message_freq = frequency(message) # Get the frequency of the letters in the message, as %
     print(message_freq)
 --- /code ---
 
