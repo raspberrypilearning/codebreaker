@@ -14,17 +14,25 @@ In all languages, each letter in its alphabet has a 'personality' or set of trai
 </p>
 --- task ---
 
+The `print(message_freq)` line of code is no longer needed. Add a `#` to the beginning of it so that Python ignores it. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 88
+line_highlights: 92
+---
+  elif choice == 'f':
+    print('Analysing message…')
+    message = get_text('input.txt') # Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
+    message_freq = frequency(message) # Get the frequency of the letters in the message, as %
+    # print(message_freq)
+--- /code ---
 
 --- /task ---
 
---- task ---
 
-Step content... 
-Can use:
-**Test:**
-**Choose:**
-**Tip:**
-
---- /task ---
 
 --- save ---
