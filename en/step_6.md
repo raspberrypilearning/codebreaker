@@ -155,9 +155,14 @@ line_highlights: 101-102
 **Debug:** Your chart doesn't look exactly the same as the one displayed in the image above:
 - This is normal. Your chart will display the frequency data for the secret message that you have entered in `input.txt`
 
+**Debug:** You see the following error message `NameError: name 'lang_freq' is not defined`:
+- Check that you added the line of code `lang_freq = english # Import the English frequency dictionary` **before** the `make_chart()` function call.
 
+**Debug:** You see an `Indentation error` message:
+- Check that you have correctly indented all of your new code. Revisit the tasks above to check.
 
 --- /task ---
+
 
 
 --- save ---

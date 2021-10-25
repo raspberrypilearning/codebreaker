@@ -79,7 +79,7 @@ Find the `input.txt` tab in Trinket to access the contents of the text file. You
 **Debug:** You see an error message that says `TypeError: get_text() takes exactly 1 arguments`:
 - Check that you have entered `input.txt` inside the round brackets on line 64
 
-**Debug:** You se an `Indentation error` message:
+**Debug:** You see an `Indentation error` message:
 - Check that you have correctly indented all of your new code. Revisit the tasks above to check. 
 
 --- /task ---
