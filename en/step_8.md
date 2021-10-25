@@ -2,17 +2,37 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now that you have created an atbash encoder and frequency analyser,you could:
-+ Work with a partner — send each other your cypher text and use frequency analysis to try to decode the message
-+ Change the starting position of the alphabet to create a different cypher
-+ Add another language to your frequency analysis
-+ Add more menu options to allow for these new functions!
+In this step, discover ways to upgrade your project!
 
 </div>
 <div>
-![](images/image.png){:width="300px"}
+![A boy and a girl sit at a computing, working together on a programming project.](images/partner-work.png){:width="300px"}
 </div>
 </div>
+
+--- task ---
+
+Change the starting letter of the alphabet to create a different cypher. You can do this by changing the original `alphabet` list. 
+
+--- /task ---
+
+--- task ---
+
+Add another language to your frequency analysis. 
+
+--- /task ---
+
+--- task ---
+
+Add more menu items to allow for this new functionality. 
+
+--- /task ---
+
+--- task ---
+
+Swap your cyphertext with a partner and see if they can crack your code using their frequency analyser. 
+
+--- /task ---
 
 --- collapse ---
 
