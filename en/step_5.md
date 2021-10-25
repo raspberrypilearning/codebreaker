@@ -39,7 +39,7 @@ On line 22, beneath the comment that reads `# Create a dict of every letter, wit
 language: python
 filename: main.py
 line_numbers: true
-line_number_start:21
+line_number_start: 21
 line_highlights: 26-28
 ---
 # Calculate the frequency of all letters in a piece of text
