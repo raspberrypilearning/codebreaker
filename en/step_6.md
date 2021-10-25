@@ -5,7 +5,7 @@
 Use a bar chart to analyse the frequency of letters in an encoded message. 
 </div>
 <div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/frequency-analysis.PNG){:width="400px"}
+![A bar chart showing the frequency of letters in the English language compared to the frequency of letters used in the encoded message.](images/frequency-analysis.PNG){:width="400px"}
 </div>
 </div>
 
