@@ -18,19 +18,19 @@ Change the starting letter of the alphabet to create a different cypher. You can
 
 --- task ---
 
-Add another language to your frequency analysis. 
+Add another language to your frequency analysis. You will need to investigate the frequency of letters used and place them into a dictionary in the `frequency.py` program. 
 
 --- /task ---
 
 --- task ---
 
-Add more menu items to allow for this new functionality. 
+Add another menu item to allow users to change the language.  
 
 --- /task ---
 
 --- task ---
 
-Swap your cyphertext with a partner and see if they can crack your code using their frequency analyser. 
+If possible, swap your cyphertext with a partner and see if they can crack your code using their frequency analyser. 
 
 --- /task ---
 
