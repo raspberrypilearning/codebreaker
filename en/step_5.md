@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, we will code a <strong>frequency analyzer</strong> to work out how often each letter of the alphabet appears in our text.  
+In this step, we will code a frequency analyzer to work out how often each letter of the alphabet appears in our text.  
 </div>
 </div>
 
