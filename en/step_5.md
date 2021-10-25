@@ -1,6 +1,6 @@
 ## Create a Frequency Analyser
 
-In this step, we will code a frequency analyser to work out how often each letter of the alphabet appears in our text.  
+In this step, we will code a frequency analyser function to work out how often each letter of the alphabet appears in our text.  
 
  <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
  <span style="color: #0faeb0">Frequency Analysis</span> measures how often something appears so we can look for patterns in that data. It is possible to decode monoalphabetic cyphers (if you know the language the message is in) by looking at how often each letter appears and matching it to the [most commonly used letters](http://letterfrequency.org/letter-frequency-by-language/) in that language. 
