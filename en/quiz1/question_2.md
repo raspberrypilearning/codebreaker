@@ -5,37 +5,73 @@
 legend: Question 2 of 3
 ---
 
-You made Pico say hello in a speech bubble.
+A `for` loop is created to display the letters in a word. 
 
-```blocks3
-say [Hello!] for [2] secs
+```python
+word = "hello"
+
+for letter in word:
+    print(letter)
 ```
 
-Where would you go to find this block?
+What will be the output of this code when it is run?
 
 --- choices ---
 
 - (x) 
 
+```
+h
+e
+l
+l
+o
+```
+
   --- feedback ---
+
+  Correct! Each letter of the word `hello` will be displayed on a new line. 
+
+  --- /feedback ---
+
+- ( ) 
+```
+w
+o
+r
+d
+```
+  --- feedback ---
+
+  Not quite, the `for` loop will display what is **held** by the variable `word`. 
 
   --- /feedback ---
 
 - ( ) 
 
+```
+hello
+hello
+hello
+hello
+hello
+```
+
   --- feedback ---
+
+  Not exactly, the code will each letter in `word`. It will not print the whole word each time. 
 
   --- /feedback ---
 
 - ( ) 
 
-  --- feedback ---
-
-  --- /feedback ---
-
-- ( ) 
+```
+hello
+```
 
   --- feedback ---
+
+  Almost, the code will print each letter of the word `hello` but not in this way.
 
   --- /feedback ---
 
