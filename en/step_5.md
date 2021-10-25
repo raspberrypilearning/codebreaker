@@ -1,6 +1,6 @@
 ## Create a Frequency Analyser
 
-<div style="display: flex; flex-wrap: wrap">
+<div style="display: flex; flex-wrap: wrap;">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 In this step, we will code a frequency analyser to work out how often each letter of the alphabet appears in our text.  
 </div>
