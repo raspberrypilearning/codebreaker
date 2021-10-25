@@ -14,7 +14,7 @@ In all languages, each letter in its alphabet has a 'personality' or set of trai
 </p>
 --- task ---
 
-The `print(message_freq)` line of code is no longer needed. Add a `#` to the beginning of it so that Python ignores it. 
+The `print(message_freq)` line of code on line 92 is no longer needed. Add a `#` to the beginning of it so that Python ignores it when the code is run. 
 
 --- code ---
 ---
@@ -33,6 +33,27 @@ line_highlights: 92
 
 --- /task ---
 
+--- task ---
+
+Find the `# Make frequency chart` comment on line 45 and create a new function called `make_chart()`. This function needs two parameters called `text` and `language`. The frequency chart will be a **bar** chart and the **title** is `Frequency analysis`.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 45
+line_highlights: 47-50
+---
+# Make frequency chart
+
+def make_chart(text, language):
+  
+  chart = Bar()
+  chart.title = 'Frequency analysis'
+--- /code ---
+
+--- /task ---
 
 
 --- save ---
