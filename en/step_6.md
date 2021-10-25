@@ -33,6 +33,8 @@ line_highlights: 92
 
 --- /task ---
 
+### Make the frequency chart function
+
 --- task ---
 
 Find the `# Make frequency chart` comment on line 45 and create a new function called `make_chart()`. This function needs two parameters called `text` and `language`. The frequency chart will be a **bar** chart and the **title** is `Frequency analysis`.
@@ -116,6 +118,44 @@ line_highlights: 55
   
   chart.render()
 --- /code ---
+
+--- /task ---
+
+### Call the frequency chart function
+
+--- task ---
+
+Find your `elif` in the `menu()` function on line 96. Add a line of code that will **import** the `english` frequency dictionary from the `frequency.py` file. Add another line of code that will **call** the `make_chart` function to draw the chart. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 96
+line_highlights: 101-102
+---
+  elif choice == 'f':
+    print('Analysing message…')
+    message = get_text('input.txt') # Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
+    message_freq = frequency(message) # Get the frequency of the letters in the message, as %
+    # print(message_freq)
+    lang_freq = english # Import the English frequency dictionary
+    make_chart(message_freq, lang_freq) # Call the function to make a chart
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code to display the frequency analysis bar chart. 
+
+![A bar chart showing the frequency of letters in the English language compared to the frequency of letters used in the encoded message.](images/frequency-analysis.PNG)
+
+**Debug:** Your chart doesn't look exactly the same as the one displayed in the image above:
+- This is normal. Your chart will display the frequency data for the secret message that you have entered in `input.txt`
+
+
 
 --- /task ---
 
