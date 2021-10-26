@@ -6,7 +6,7 @@ In this step, discover ways to upgrade your project!
 
 </div>
 <div>
-![A boy and a girl sit at a computing, working together on a programming project.](images/partner-work.png){:width="300px"}
+![A boy and a girl sit at a computing, working together on a programming project.](images/partner-work.PNG){:width="300px"}
 </div>
 </div>
 
