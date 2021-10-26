@@ -229,7 +229,7 @@ def frequency(text):
 
 --- /task ---
 
-Now you have a function which can calculate the frequency of letters in your message, you need to link it to your user menu. Right now, out user can only choose the letter `c` to encode or decode a message. We're now going to add the option `f` to analyse the letter frequency of your message by calling your new function. 
+Now you have a function which can calculate the frequency of letters in your message, you need to link it to your user menu. Right now, the user can only choose the letter `c` to encode or decode a message. We're now going to add the option `f` to analyse the letter frequency of your message by calling your new function. 
 
 --- task ---
 
@@ -251,7 +251,7 @@ line_highlights: 78-80
 
 --- /task ---
 
-Underneath your first `if` statement asking the user to select `c`, you need to add en `elif` statement so the user can choose the option to analyse and print the letter frequency by pressing `f`.
+Underneath your first `if` statement asking the user to select `c`, you need to add an `elif` statement so the user can choose the option to analyse and print the letter frequency by pressing `f`.
 
 --- task ---
 
