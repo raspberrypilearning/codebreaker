@@ -144,7 +144,7 @@ looks at each of the letters in your message `text`, and if the letter appears i
 
 --- task ---
 
-On line 38, under the comment that reads `# Convert from counts to percentages` make sure to keep the indentation and type:
+On line 40, under the comment that reads `# Convert from counts to percentages` make sure to keep the indentation and type:
  
 --- code ---
 ---
@@ -152,7 +152,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21
-line_highlights: 39-41
+line_highlights: 40-41
 ---
 # Calculate the frequency of all letters in a piece of text
 
@@ -185,7 +185,7 @@ Now you have a function which can calculate the frequency of letters in your mes
 
 --- task ---
 
-Scroll down to your `menu` function at the bottom of your script. On line 76 and 77 add the following to your code:
+Scroll down to your `menu` function at the bottom of your script. On line 78 and 80 change your code to match the following:
 
 --- code ---
 ---
@@ -207,7 +207,7 @@ Underneath your first `if` statement asking the user to select `c`, you need to 
 
 --- task ---
 
-Leave a blank line after the `if` statement and on line 85 type:
+Leave a blank line after the `if` statement and on line 88 type:
 
 --- code ---
 ---
