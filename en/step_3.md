@@ -89,10 +89,15 @@ Leave a blank line under the last code you entered (make sure you keep the inden
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 57 
-line_highlights: 59-61
+line_number_start: 29 
+line_highlights: 36-38
 ---
-    output = []
+# Encode/decode a piece of text — atbash is symmetrical
+
+def atbash(text):
+    text = text.lower() # Converting text to lowercase
+    text = list(text)
+    output = ''
 
     for letter in text:
         if letter in code:
