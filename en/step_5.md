@@ -191,7 +191,7 @@ def frequency(text):
 
 --- task ---
 
-**Return** the frequency dictionary so it can be used elsewhere in your code. Leave a blnk line and type:
+**Return** the frequency dictionary so it can be used elsewhere in your code. Leave a blank line and type:
 
 --- code ---
 ---
