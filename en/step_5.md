@@ -5,7 +5,7 @@
 In this step, you will code a frequency analyser function to work out how often each letter of the alphabet appears in your text. 
 </div>
 <div>
-![Image showing output of frequency analysis function as percentages](images/freq-analysis-output.JPG)
+![Image showing output of frequency analysis function as percentages](images/freq-analysis-output.jpg)
 </div>
 </div>
 
@@ -144,7 +144,7 @@ line_highlights:
 for letter in text:
     if letter in freq:
         freq[letter] += 1
-        
+
 --- /code ---
 
 This section of code looks at each of the letters in your message `text`, and if the letter appears in your frequency list it adds 1 to that letter's value. The more times a letter appears, the higher that value will be. Once you know how often each letter appears, you can then convert from this count to a percentage of the whole message (since you know the length).
