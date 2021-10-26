@@ -2,19 +2,19 @@
 
 <div style="display: flex; flex-wrap: wrap;">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, we will code a frequency analyser function to work out how often each letter of the alphabet appears in our text. 
+In this step, you will code a frequency analyser function to work out how often each letter of the alphabet appears in your text. 
 </div>
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-Frequency Analysis measures how often something appears so we can look for patterns in that data. It is possible to decode monoalphabetic cyphers (if you know the language the message is in) by looking at how often each letter appears and matching it to the [most commonly used letters](http://letterfrequency.org/letter-frequency-by-language/) in that language.
+Frequency Analysis measures how often something appears so you can look for patterns in that data. It is possible to decode monoalphabetic cyphers (if you know the language the message is in) by looking at how often each letter appears and matching it to the [most commonly used letters](http://letterfrequency.org/letter-frequency-by-language/) in that language.
 </p>
 
-We now need to create a function that will take our text and convert it all to one case (to avoid confusion), count the number of times each letter in the message appears, then convert that number into a percentage of the whole so we can compare it to the frequency of letters in English.
+ You now need to create a function that will take your text and convert it all to one case (to avoid confusion), count the number of times each letter in the message appears, then convert that number into a percentage of the whole so you can compare it to the frequency of letters in English.
 
 --- task ---
 
-On line 22, beneath the comment that reads `# Calculate the frequency of all letters in a piece of text`, define a function called `frequency`, and have the first thing it does be to convert our message to lower case:
+On line 22, beneath the comment that reads `# Calculate the frequency of all letters in a piece of text`, define a function called `frequency`, and have the first thing it does be to convert your message to lower case:
 
 --- code ---
 ---
@@ -60,7 +60,7 @@ def frequency(text):
 
 --- task ---
 
-The next thing we need our function to do is to calculate the length of the message. On line 31, beneath the comment that reads `# Count the letters in the message`, make sure you **keep the indentation** and type:
+The next thing you need your function to do is to calculate the length of the message. On line 31, beneath the comment that reads `# Count the letters in the message`, make sure you **keep the indentation** and type:
 
 --- code ---
 ---
@@ -87,7 +87,7 @@ def frequency(text):
 
 --- /task ---
 
-Once we know how long the message is, we can begin counting the letters in it to determine how often they appear.
+Once you know how long the message is, you can begin counting the letters in it to determine how often they appear.
 
 --- task ---
 
@@ -137,12 +137,12 @@ for letter in text:
         freq[letter] += 1
 --- /code ---
 
-looks at each of the letters in our message `text`, and if the letter appears in our frequency list it adds 1 to that letter's value. The more times a letter appears, the higher that value will be. Once we know how often each letter appears, we can then convert from this count to a percentage of the whole message (since we know the length).
+looks at each of the letters in your message `text`, and if the letter appears in your frequency list it adds 1 to that letter's value. The more times a letter appears, the higher that value will be. Once you know how often each letter appears, you can then convert from this count to a percentage of the whole message (since you know the length).
 
 --- task ---
 
 On line 38, under the comment that reads `# Convert from counts to percentages` make sure to keep the indentation and type:
-
+ 
 --- code ---
 ---
 language: python
@@ -178,7 +178,7 @@ def frequency(text):
 
 --- /task ---
 
-Now we have a function which can calculate the frequency of letters in our message, we need to link it to our user menu. Right now, out user can only choose the letter `c` to encode or decode a message. We're now going to add the option `f` to analyse the letter frequency of our message by calling our new function. 
+Now you have a function which can calculate the frequency of letters in your message, you need to link it to your user menu. Right now, out user can only choose the letter `c` to encode or decode a message. We're now going to add the option `f` to analyse the letter frequency of your message by calling your new function. 
 
 --- task ---
 
@@ -200,7 +200,7 @@ line_highlights: 78-80
 
 --- /task ---
 
-Underneath your first `if` statement asking the user to select `c`, we need to add en `elif` statement so the user can choose the option to analyse and print the letter frequency by pressing `f`.
+Underneath your first `if` statement asking the user to select `c`, you need to add en `elif` statement so the user can choose the option to analyse and print the letter frequency by pressing `f`.
 
 --- task ---
 
@@ -227,7 +227,7 @@ line_highlights: 88-92
 
   elif choice == 'f':
     print('Analysing message…')
-    message = get_text('input.txt') # Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
+    message = get_text('input.txt') # Take input from the same file. you have a 'longer.txt' or similar containing cyphertext you know to perform reasonably well for frequency analysis
     message_freq = frequency(message) # Get the frequency of the letters in the message, as %
     print(message_freq)
 --- /code ---

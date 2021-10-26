@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The next step is to create a function which can take our text, flip it and reverse it with our atbash cypher list, and return it as an encoded message. 
+The next step is to create a function which can take your  text, flip it and reverse it with your  atbash cypher list, and return it as an encoded message. 
 </div>
 <div>
 ![A screenshot of the output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
@@ -29,7 +29,7 @@ line_highlights: 19
  
 --- /task ---
 
-We will now add our new **function** that will reverse the **dictionary** we have created.
+You will now add your new **function** that will reverse the **dictionary** you have created.
 
 --- task ---
 
@@ -53,7 +53,7 @@ Press Enter. You should see the next line indented.
 
 --- /task ---
 
-First our function needs to convert the `text` to lowercase. A new **variable** called `output` will then need to be created to hold the encoded message.
+First your function needs to convert the `text` to lowercase. A new **variable** called `output` will then need to be created to hold the encoded message.
 
 --- task ---
 
@@ -107,7 +107,7 @@ def atbash(text):
 
 --- /task ---
 
-Now that we have a **function** which will **encode text**, we need to run it to make sure it works. To do that, we will create a menu by coding a **loop** that will repeatedly ask our user which function they would like to use. As we only have one function at the moment, it's pretty simple. 
+Now that you have a **function** which will **encode text**, you need to run it to make sure it works. To do that, you will create a menu by coding a **loop** that will repeatedly ask your  user which function they would like to use. As you only have one function at the moment, it's pretty simple. 
 
 --- task ---
 
@@ -128,7 +128,7 @@ def menu():
 
 --- /task ---
 
-Now we are going to set the `choice` when the program first runs to `None`. Because the **loop** we are about to write requires a 'correct' answer (one we have defined) to break the loop, storing an initial wrong answer will keep the menu loop running until another 'correct' answer is entered. 
+Now you are going to set the `choice` when the program first runs to `None`. Because the **loop** you are about to write requires a 'correct' answer (one you have defined) to break the loop, storing an initial wrong answer will keep the menu loop running until another 'correct' answer is entered. 
 
 --- task ---
 
@@ -153,7 +153,7 @@ def menu():
 
 --- /task ---
 
-Now that we have set `choice` to a wrong answer, we want to create a **loop** that will only break if an `input` that matches a right answer is given. We want a **while loop**, that runs as long as our answer **DOES NOT** match one we have defined. 
+Now that you have set `choice` to a wrong answer, you want to create a **loop** that will only break if an `input` that matches a right answer is given. you want a **while loop**, that runs as long as your  answer **DOES NOT** match one you have defined. 
 
 --- task ---
 
@@ -180,15 +180,48 @@ def menu():
 
 --- /task ---
 
-We want to run our `atbash` function when the answer is correct. We've just defined that a wrong answer is **anything except `c`** - so our next bit of code will define what happens if the answer given **is `c`**. If the user chooses `c`, the code should then take a message (this needs to be a **string**), and pass it into our `atbash` function as the text to be encoded.
+You want to run your  `atbash` function when the answer is correct. We've just defined that a wrong answer is **anything except `c`** - so your  next bit of code will define what happens if the answer given **is `c`**. If the user chooses `c`, the code should then take a message (this needs to be a **string**), and pass it into your  `atbash` function as the text to be encoded.
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-<span style="color: #0faeb0">Passing</span> information into a function allows us to store information in variables and use these values when the function is called. The <span style="color: #0faeb0">parameters</span>  of a function (listed in the brackets in the function's definition) mean we can <span style="color: #0faeb0">pass</span> a value into it through one of the parameters. This value is then used by the function in it's operation. 
+<span style="color: #0faeb0">Passing</span> information into a function allows us to store information in variables and use these values when the function is called. The <span style="color: #0faeb0">parameters</span>  of a function (listed in the brackets in the function's definition) mean you can <span style="color: #0faeb0">pass</span> a value into it through one of the parameters. This value is then used by the function in it's operation. 
 </p>
 
 --- task ---
 
 Underneath the last line (making sure you still have an indent!) type:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 47
+line_highlights: 57-61
+---
+def menu():
+  
+  # Start with a wrong answer for choice. 
+  choice = None
+  
+  # Keep asking the user for the right answer
+  while choice != 'c' and choice != 'f':
+    
+    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
+  
+  if choice == 'c':
+    print('Running your message through the cypher…')
+    message = 'my secret message' 
+    code = atbash(message)
+    print(code)
+
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+On line 58, change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded :
 
 --- code ---
 ---
