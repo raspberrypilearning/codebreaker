@@ -153,7 +153,7 @@ This section of code looks at each of the letters in your message `text`, and if
 
 --- task ---
 
-Create On line 40, make sure to keep the indentation and type:
+Create a loop which converts the number of times the letters appear into a percentage of the whole message. On line 39, make sure to keep the indentation and type:
  
 --- code ---
 ---
@@ -161,7 +161,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21
-line_highlights: 40-41
+line_highlights: 39-41
 ---
 # Calculate the frequency of all letters in a piece of text
 
@@ -184,8 +184,47 @@ def frequency(text):
   # Convert from counts to percentages
   for letter in freq:
     freq[letter] = freq[letter] / total_letters * 100
+ 
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Return** the frequency dictionary so it can be used elsewhere in your code. Leave a blnk line and type:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 21
+line_highlights: 43
+---
+# Calculate the frequency of all letters in a piece of text
+
+def frequency(text):
   
+  text = list(text.lower()) # Lowercase the message and make it a list
+  
+  # Create a dict of every letter, with a count of 0
+  freq = {}
+  for letter in alphabet:
+    freq[letter] = 0
+  
+  # Count the letters in the message
+  total_letters = len(text)
+  
+  for letter in text:
+    if letter in freq: 
+      freq[letter] += 1
+  
+  # Convert from counts to percentages
+  for letter in freq:
+    freq[letter] = freq[letter] / total_letters * 100
+
   return freq
+ 
 --- /code ---
 
 --- /task ---
