@@ -94,7 +94,7 @@ Once you know how long the message is, you can begin counting the letters in it 
 
 --- task ---
 
- Leave a blank line at the end of your script, make sure you keep the indentation and add:
+Leave a blank line at the end of your script, make sure you keep the indentation and add:
 
 --- code ---
 ---
