@@ -4,7 +4,7 @@ If you are following the [More Python](https://projects.raspberrypi.org/en/raspb
 
 --- print-only ---
 
-![ProjectName project](images/mapping-data-project.png)
+![An Image showing the Mapping data project output](images/mapping-data-project.png)
 
 --- /print-only ---
 
