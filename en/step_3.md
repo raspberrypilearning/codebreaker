@@ -221,7 +221,7 @@ def menu():
 
 --- task ---
 
-On line 58, change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded :
+On line 59, change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded :
 
 --- code ---
 ---
@@ -229,7 +229,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 47
-line_highlights: 57-61
+line_highlights: 59
 ---
 def menu():
   
