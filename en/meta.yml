@@ -10,7 +10,7 @@ steps:
   - title: Encode the alphabet
   - title: Encode a message
   - title: Encode text from a file
-  - title: Create frequency analyser
+  - title: Create a frequency analyser
   - title: Analyse the frequency
   - title: Reflection
     knowledge_quiz:
