@@ -278,8 +278,8 @@ line_highlights: 88-92
 
   elif choice == 'f':
     print('Analysing message…')
-    message = get_text('input.txt') # Take input from the same file. you have a 'longer.txt' or similar containing cyphertext you know to perform reasonably well for frequency analysis
-    message_freq = frequency(message) # Get the frequency of the letters in the message, as %
+    message = get_text('input.txt')
+    message_freq = frequency(message)
     print(message_freq)
 --- /code ---
 
