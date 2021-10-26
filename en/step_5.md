@@ -178,7 +178,7 @@ def frequency(text):
   total_letters = len(text)
   
   for letter in text:
-    if letter in freq: # Maybe it's punctuation? First use of in as a conditional clause
+    if letter in freq: 
       freq[letter] += 1
   
   # Convert from counts to percentages
