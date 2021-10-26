@@ -5,7 +5,7 @@
 In this step, you will code a frequency analyser function to work out how often each letter of the alphabet appears in your text. 
 </div>
 <div>
-![Image showing output of frequency analysis function as percentages](/images/freq-analysis-output.jpg)
+![Image showing output of frequency analysis function as percentages](images/freq-analysis-output.jpg)
 </div>
 </div>
 
