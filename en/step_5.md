@@ -235,7 +235,7 @@ Underneath your first `if` statement asking the user to select `c`, you need to 
 
 --- task ---
 
-Leave a blank line after the `if` statement and on line 88 type:
+Leave a blank line after the `if` statement and on line 89 type:
 
 --- code ---
 ---
