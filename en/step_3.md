@@ -53,6 +53,14 @@ Press Enter. You should see the next line indented.
 
 --- /task ---
 
+--- collapse ---
+---
+title: Passing parameter arguments
+---
+**Passing** information into a function allows us to store information in variables and use these values when the function is called. The **parameters** of a function (listed in the brackets in the function's definition) mean you can pass a value into it through one of the parameters as an **argument**. This value is then used by the function in it's operation. 
+
+--- /collapse ---
+
 First your function needs to convert the `text` to lowercase. A new **variable** called `output` will then need to be created to hold the encoded message.
 
 --- task ---
@@ -181,10 +189,6 @@ def menu():
 --- /task ---
 
 You want to run your  `atbash` function when the answer is correct. We've just defined that a wrong answer is **anything except `c`** - so your  next bit of code will define what happens if the answer given **is `c`**. If the user chooses `c`, the code should then take a message (this needs to be a **string**), and pass it into your  `atbash` function as the text to be encoded.
-
-<p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-<span style="color: #0faeb0">Passing</span> information into a function allows us to store information in variables and use these values when the function is called. The <span style="color: #0faeb0">parameters</span>  of a function (listed in the brackets in the function's definition) mean you can <span style="color: #0faeb0">pass</span> a value into it through one of the parameters. This value is then used by the function in it's operation. 
-</p>
 
 --- task ---
 
