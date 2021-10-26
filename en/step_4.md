@@ -18,8 +18,8 @@ Find the `# Fetch and return text from a file` comment on line 70 then define a 
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 70
-line_highlights: 72-76
+line_number_start: 42
+line_highlights: 44-48
 ---
 # Fetch and return text from a file
 
