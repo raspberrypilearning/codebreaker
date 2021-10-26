@@ -27,8 +27,8 @@ line_highlights: 23-25
 # Calculate the frequency of all letters in a piece of text
 
 def frequency(text):
-  
-  text = list(text.lower()) # Lowercase the message and make it a list
+    
+    text = list(text.lower()) # Lowercase the message and make it a list
 --- /code ---
 
 --- /task ---
@@ -42,7 +42,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21
-line_highlights: 27-30
+line_highlights: 28-30
 ---
 # Calculate the frequency of all letters in a piece of text
 
@@ -68,7 +68,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21
-line_highlights: 32-33
+line_highlights: 33
 ---
 # Calculate the frequency of all letters in a piece of text
 
