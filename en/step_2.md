@@ -5,9 +5,11 @@
 To start you will create a dictionary for your encoded letters. 
 </div>
 <div>
-![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG){:width="400px"}
+
 </div>
 </div>
+
+![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG){:width="600px"}
 
 --- task ---
 
@@ -128,9 +130,13 @@ In order to test that your `code` dictionary has populated correctly, you can `p
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 16
+line_number_start: 12
 line_highlights: 19
 ---
+def create_code():
+
+  backwards = list(reversed(alphabet))
+  
   for i in range(len(alphabet)): # Getting length of a list
     code[alphabet[i]] = backwards[i] # Populate the code dictionary with a letter of the alphabet and its encoded letter
   
@@ -142,7 +148,8 @@ line_highlights: 19
 
 **Test:** Run your code to see if the `code` dictionary displays correctly. You should see a pattern starting with `a` paired with `z` and `b` being paired with `y`.
 
-![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG)
+
+![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG){:width="600px"}
 
 **Debug:** There are no error messages but your code dictionary is not displaying on the screen:
 - make sure that `print(code)` is indented correctly within the `create_code` function
