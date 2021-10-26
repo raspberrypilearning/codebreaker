@@ -46,7 +46,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21
-line_highlights: 27-29
+line_highlights: 27-30
 ---
 # Calculate the frequency of all letters in a piece of text
 
@@ -54,6 +54,7 @@ def frequency(text):
   
   text = list(text.lower()) # Lowercase the message and make it a list
   
+  # Create a dict of every letter, with a count of 0
   freq = {}
   for letter in alphabet:
     freq[letter] = 0
@@ -63,7 +64,9 @@ def frequency(text):
 
 --- task ---
 
-The next thing you need your function to do is to calculate the length of the message. On line 31, make sure you **keep the indentation** and type:
+The next thing you need your function to do is to count the letters in the message, create a variable called `total_letters` and assign the length of the text to that variable. 
+
+On line 31, make sure you **keep the indentation** and type:
 
 --- code ---
 ---
@@ -71,7 +74,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21
-line_highlights: 30-31
+line_highlights: 32-33
 ---
 # Calculate the frequency of all letters in a piece of text
 
@@ -79,10 +82,12 @@ def frequency(text):
   
   text = list(text.lower()) # Lowercase the message and make it a list
   
+  # Create a dict of every letter, with a count of 0
   freq = {}
   for letter in alphabet:
     freq[letter] = 0
-  
+
+  # Count the letters in the message
   total_letters = len(text)
 --- /code ---
 
@@ -92,7 +97,7 @@ Once you know how long the message is, you can begin counting the letters in it 
 
 --- task ---
 
-Leave a blank line at the end of your script, make sure you keep the indentation and add:
+Create a for loop to count every time each letter appears in the text. Leave a blank line at the end of your script, make sure you keep the indentation and add:
 
 --- code ---
 ---
@@ -123,7 +128,10 @@ def frequency(text):
 
 --- /task ---
 
-This section of code:
+--- collapse ---
+---
+title: Counting the letters 
+---
 
 --- code ---
 ---
@@ -138,11 +146,13 @@ for letter in text:
         freq[letter] += 1
 --- /code ---
 
-looks at each of the letters in your message `text`, and if the letter appears in your frequency list it adds 1 to that letter's value. The more times a letter appears, the higher that value will be. Once you know how often each letter appears, you can then convert from this count to a percentage of the whole message (since you know the length).
+This section of code looks at each of the letters in your message `text`, and if the letter appears in your frequency list it adds 1 to that letter's value. The more times a letter appears, the higher that value will be. Once you know how often each letter appears, you can then convert from this count to a percentage of the whole message (since you know the length).
+
+--- /collapse ---
 
 --- task ---
 
-On line 40, under the comment that reads `# Convert from counts to percentages` make sure to keep the indentation and type:
+Create On line 40, make sure to keep the indentation and type:
  
 --- code ---
 ---
