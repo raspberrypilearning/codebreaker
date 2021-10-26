@@ -140,7 +140,7 @@ line_highlights: 19
 --- /task ---
 --- task ---
 
-**Test:** Run your code to see if the `code` dictionary displays correctly. You should see a pattern starting with `a` paired with `z` and `b` being paired with `y`.  
+**Test:** Run your code to see if the `code` dictionary displays correctly. You should see a pattern starting with `a` paired with `z` and `b` being paired with `y`.
 
 ![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG)
 

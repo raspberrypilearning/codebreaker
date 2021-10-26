@@ -2,6 +2,8 @@
 
 Analyse a frequency graph to crack the code, whilst learning about lists and functions. 
 
+![A bar chart showing the frequency of letters in the English language compared to the frequency of letters used in the encoded message.](images/frequency-analysis.PNG){:width="400px"}
+
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 The <span style="color: #0faeb0">Atbash</span> cypher is one of the world's oldest known cyphers. Originally developed in the <span style="color: #0faeb0">Hebrew</span> language, it takes the alphabet and matches it to it's reverse in order to create a secret message. The name derives from the first, last, second, and second-last Hebrew letters: <span style="color: #0faeb0">Aleph, Taw, Bet </span> and <span style="color: #0faeb0">Shin</span></p>
 
