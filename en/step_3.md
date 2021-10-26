@@ -33,7 +33,7 @@ We will now add our new function that will reverse the dictionary we have create
 
 --- task ---
 
-Find the comment which says `# Encrypt/decrypt a pice of text — atbash is symetrical` on line 29. Underneath the comment, define a function called `atbash` with the parameter `text`.
+Find the comment which says `# Encode/decode a piece of text — atbash is symmetrical` on line 29. Underneath the comment, define a function called `atbash` with the parameter `text`.
 
 --- code ---
 ---
