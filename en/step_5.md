@@ -17,7 +17,7 @@ Frequency Analysis measures how often something appears so you can look for patt
 
 --- task ---
 
-On line 22, beneath the comment that reads `# Calculate the frequency of all letters in a piece of text`, define a function called `frequency`, and have the first thing it does be to convert your message to lower case:
+On line 23, beneath the comment that reads `# Calculate the frequency of all letters in a piece of text`, define a function called `frequency`, and have the first thing it does be to convert your message to lower case:
 
 --- code ---
 ---
@@ -37,7 +37,8 @@ def frequency(text):
 --- /task ---
 
 --- task ---
-On line 22, beneath the comment that reads `# Create a dict of every letter, with a count of 0`, make sure you **keep the indentation** and type:
+
+On line 28 beneath, we will create a dictionary called `freq` and for every `letter` in the list `alphabet` it assigns a value of 0. Make sure you **keep the indentation** and type:
 
 --- code ---
 ---
@@ -45,7 +46,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21
-line_highlights: 28-30
+line_highlights: 27-29
 ---
 # Calculate the frequency of all letters in a piece of text
 
@@ -53,7 +54,6 @@ def frequency(text):
   
   text = list(text.lower()) # Lowercase the message and make it a list
   
-  # Create a dict of every letter, with a count of 0
   freq = {}
   for letter in alphabet:
     freq[letter] = 0
@@ -63,7 +63,7 @@ def frequency(text):
 
 --- task ---
 
-The next thing you need your function to do is to calculate the length of the message. On line 31, beneath the comment that reads `# Count the letters in the message`, make sure you **keep the indentation** and type:
+The next thing you need your function to do is to calculate the length of the message. On line 31, make sure you **keep the indentation** and type:
 
 --- code ---
 ---
@@ -71,7 +71,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 21
-line_highlights: 33
+line_highlights: 30-31
 ---
 # Calculate the frequency of all letters in a piece of text
 
@@ -79,12 +79,10 @@ def frequency(text):
   
   text = list(text.lower()) # Lowercase the message and make it a list
   
-  # Create a dict of every letter, with a count of 0
   freq = {}
   for letter in alphabet:
     freq[letter] = 0
   
-  # Count the letters in the message
   total_letters = len(text)
 --- /code ---
 
