@@ -53,7 +53,7 @@ Press Enter. You should see the next line indented.
 
 --- /task ---
 
-We will need this new **function** to take our text, convert it to lower case, then add it all to another list. Then, we want it to swap out the letters in the list for the letters in our cypher - thus creating an encoded message! First, we need to **create the list** of our text.
+First our function needs to convert the `text` to lowercase. A new **variable** called `output` will then need to be created to hold the encoded message.
 
 --- task ---
 
@@ -77,7 +77,7 @@ def atbash(text):
 
 --- /task ---
 
-The next part of your code will **encode** the `text` that has been **passed** into the function. First it will convert the `text` to lowercase. A new **variable** called `output` will then need to be created to hold the encoded message. Next, a `for` loop will need to be used to go through each letter in the `text` and convert it to an encoded letter using the `code` dictionary. Finally, it will **return** the encoded message.   
+The next part of your code will **encode** the `text` that has been **passed** into the function. A `for` loop will need to be used to go through each letter in the `text` and convert it to an encoded letter using the `code` dictionary. Finally, it will **return** the encoded message.   
 
 --- task ---
 
