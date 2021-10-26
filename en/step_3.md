@@ -9,8 +9,6 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 </div>
 </div>
 
- First, we will remove the print statement in our previous function, because we won't need it now we know our dictionary is working. 
-
 --- task ---
  
 **Comment out** the print statement on line 19 by placing a hashtag at the beginning of the line:
@@ -42,10 +40,11 @@ Find the comment which says `# Encrypt/decrypt a pice of text — atbash is syme
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 53 
-line_highlights: 54
+line_number_start: 29 
+line_highlights: 31
 ---
-# Encrypt/decrypt a pice of text — atbash is symetrical
+# Encode/decode a piece of text — atbash is symmetrical
+
 def atbash(text):
 
 --- /code ---
@@ -65,14 +64,15 @@ We will need this new function to take our text, convert it to lower case, then 
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 53 
-line_highlights: 55-57
+line_number_start: 29 
+line_highlights: 32-34
 ---
-# Encrypt/decrypt a piece of text — atbash is symmetrical
+# Encode/decode a piece of text — atbash is symmetrical
+
 def atbash(text):
     text = text.lower() # Converting text to lowercase
     text = list(text)
-    output = []
+    output = ''
 
 --- /code ---
 
