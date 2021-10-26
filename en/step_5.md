@@ -229,27 +229,7 @@ def frequency(text):
 
 --- /task ---
 
-Now you have a function which can calculate the frequency of letters in your message, you need to link it to your user menu. Right now, the user can only choose the letter `c` to encode or decode a message. We're now going to add the option `f` to analyse the letter frequency of your message by calling your new function. 
-
---- task ---
-
-Scroll down to your `menu` function at the bottom of your script. On line 78 and 80 change your code to match the following:
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 77 
-line_highlights: 78-80
----
-  # Keep asking the user for the right answer
-  while choice != 'c' and choice != 'f':
-    
-    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
---- /code ---
-
---- /task ---
+Now you have a function which can calculate the frequency of letters in your message, you need to link it to your user menu. Right now, the user can only choose the letter `c` to encode or decode a message. If they type the letter `f`, nothing happens. You are now going to add the option `f` to analyse the letter frequency of your message by calling your new function. 
 
 Underneath your first `if` statement asking the user to select `c`, you need to add an `elif` statement so the user can choose the option to analyse and print the letter frequency by pressing `f`.
 
@@ -262,8 +242,8 @@ Leave a blank line after the `if` statement and on line 88 type:
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 77
-line_highlights: 88-92
+line_number_start: 78
+line_highlights: 89-93
 ---
   # Keep asking the user for the right answer
   while choice != 'c' and choice != 'f':
@@ -282,6 +262,10 @@ line_highlights: 88-92
     message_freq = frequency(message)
     print(message_freq)
 --- /code ---
+
+--- /task ---
+
+--- task ---
 
 Save and run your code. Choose `f` at the prompt and you should see a readout of the letter frequency of your message in the console.
 
