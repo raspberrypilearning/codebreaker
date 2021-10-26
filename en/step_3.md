@@ -107,7 +107,7 @@ def atbash(text):
 
 --- /task ---
 
-Now that we have a **function** which will **encode text** we give it and output a new encoded message, we need to run it to make sure it works. To do that, we will create a menu by coding a **loop** that will repeatedly ask our user which function they would like to use. As we only have one function at the moment, it's pretty simple. 
+Now that we have a **function** which will **encode text**, we need to run it to make sure it works. To do that, we will create a menu by coding a **loop** that will repeatedly ask our user which function they would like to use. As we only have one function at the moment, it's pretty simple. 
 
 --- task ---
 
@@ -132,7 +132,7 @@ Now we are going to set the `choice` when the program first runs to `None`. Beca
 
 --- task ---
 
-**Find** the comment in your code that says `# Start with a wrong answer for choice`. Underneath this line (making sure you have an indent!) type:
+Create a new variable called `choice` and set the value to `None`:
 
 --- code ---
 ---
@@ -146,18 +146,18 @@ line_highlights: 49-50
 
 def menu():
   
-  # Start with a wrong answer for choice. Introduce None?
+  # Start with a wrong answer for choice. 
   choice = None
 
 --- /code ---
 
 --- /task ---
 
-Now that we have set choice to a wrong answer, we want to create a **loop** that will only break if an `input` that matches a right answer is given. We want a while loop, that runs as long as our answer **DOES NOT** match one we have defined. 
+Now that we have set `choice` to a wrong answer, we want to create a **loop** that will only break if an `input` that matches a right answer is given. We want a **while loop**, that runs as long as our answer **DOES NOT** match one we have defined. 
 
 --- task ---
 
-**Find** the comment in your script that says `# Keep asking the user for the right answer`. Underneath this line (making sure you have an indent!) type:
+Enter the code that will set the **conditions** for this **while loop** and prompt the user for input:
 
 --- code ---
 ---
@@ -169,7 +169,7 @@ line_highlights: 52-55
 ---
 def menu():
   
-  # Start with a wrong answer for choice. Introduce None?
+  # Start with a wrong answer for choice. 
   choice = None
   
   # Keep asking the user for the right answer
@@ -200,7 +200,7 @@ line_highlights: 57-61
 ---
 def menu():
   
-  # Start with a wrong answer for choice. Introduce None?
+  # Start with a wrong answer for choice. 
   choice = None
   
   # Keep asking the user for the right answer
