@@ -130,9 +130,13 @@ In order to test that your `code` dictionary has populated correctly, you can `p
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 16
+line_number_start: 12
 line_highlights: 19
 ---
+def create_code():
+
+  backwards = list(reversed(alphabet))
+  
   for i in range(len(alphabet)): # Getting length of a list
     code[alphabet[i]] = backwards[i] # Populate the code dictionary with a letter of the alphabet and its encoded letter
   
