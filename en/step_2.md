@@ -142,7 +142,8 @@ line_highlights: 19
 
 **Test:** Run your code to see if the `code` dictionary displays correctly. You should see a pattern starting with `a` paired with `z` and `b` being paired with `y`.
 
-![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG)
+
+![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG){:width="600px"}
 
 **Debug:** There are no error messages but your code dictionary is not displaying on the screen:
 - make sure that `print(code)` is indented correctly within the `create_code` function
