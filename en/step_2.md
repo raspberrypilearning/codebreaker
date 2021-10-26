@@ -2,10 +2,10 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-To start, you will **define** a function named `create_code` which will make a **list** with the letters of the alphabet and then create a **dictionary** you can use for your cypher.
+To start you will create a dictionary for your encoded letters. 
 </div>
 <div>
-![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG){:width="300px"}
+![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG){:width="400px"}
 </div>
 </div>
 
