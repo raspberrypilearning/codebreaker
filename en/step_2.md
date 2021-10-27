@@ -22,7 +22,8 @@ If you have a `Trinket account`, you can click on the **Remix button** to save a
 
 The codebreaker program starts with two data structures. The first is a `list` of all the letters in the alphabet and the second is a `code` dictionary. To save typing time you can create a list from a string by using the `list()` function.  
 
-<!--- I want an ingredient here that describes how the list function works. I don't know how to make one -->
+[[[list-function]]]
+
 --- task ---
 
 Find the `# Set up data structures` comment then use the `list()` function to create a **list** of letters from the `alphabet`. Next, **initialise** the `code` dictionary so that you can populate it in a later step.  
