@@ -53,13 +53,7 @@ Press Enter. You should see the next line indented.
 
 --- /task ---
 
---- collapse ---
----
-title: Passing parameter arguments
----
-**Passing** information into a function allows us to store information in variables and use these values when the function is called. The **parameters** of a function (listed in the brackets in the function's definition) mean you can pass a value into it through one of the parameters as an **argument**. This value is then used by the function in it's operation. 
-
---- /collapse ---
+[[[parameters]]]
 
 First your function needs to convert the `text` to lowercase. A new **variable** called `output` will then need to be created to hold the encoded message.
 
