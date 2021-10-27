@@ -164,4 +164,6 @@ def create_code():
 
 --- /task ---
 
+In the next step you will **encode** a message with the help of your `code` dictionary. 
+
 --- save ---
