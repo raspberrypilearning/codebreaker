@@ -29,7 +29,7 @@ line_highlights: 19
  
 --- /task ---
 
-You will now add your new **function** that will reverse the **dictionary** you have created.
+You will now add your new **function** that will encode some text using the **atbash** cypher.
 
 --- task ---
 
@@ -109,7 +109,7 @@ def atbash(text):
 
 --- /task ---
 
-Now that you have a **function** which will **encode text**, you need to run it to make sure it works. To do that, you will create a menu by coding a **loop** that will repeatedly ask your  user which function they would like to use. As you only have one function at the moment, it's pretty simple. 
+Now that you have a **function** which will **encode text**, you need to run it to make sure it works. To do that, you will create a menu to allow your user to encode the text.  
 
 --- task ---
 
@@ -130,7 +130,7 @@ def menu():
 
 --- /task ---
 
-Now you are going to set the `choice` when the program first runs to `None`. Because the **loop** you are about to write requires a 'correct' answer (one you have defined) to break the loop, storing an initial wrong answer will keep the menu loop running until another 'correct' answer is entered. 
+Your menu needs a **loop** that continually asks the user what they would like to do until they have entered a valid choice. To get this started, you will create a **variable** called `choice` and set it to `None`. This will allow the **while** loop to run its first loop. 
 
 --- task ---
 
@@ -155,7 +155,7 @@ def menu():
 
 --- /task ---
 
-Now that you have set `choice` to a wrong answer, you want to create a **loop** that will only break if an `input` that matches a right answer is given. you want a **while loop**, that runs as long as your  answer **DOES NOT** match one you have defined. 
+Now that you have set `choice` to a wrong answer, you want to create a **loop** that will only break if an `input` that matches a right answer is given. You want a **while loop**, that runs as long as your answer **DOES NOT** match one you have defined. 
 
 --- task ---
 
@@ -182,7 +182,9 @@ def menu():
 
 --- /task ---
 
-You want to run your  `atbash` function when the answer is correct. We've just defined that a wrong answer is **anything except `c`** - so your  next bit of code will define what happens if the answer given **is `c`**. If the user chooses `c`, the code should then take a message (this needs to be a **string**), and pass it into your  `atbash` function as the text to be encoded.
+You want to run your  `atbash` function when the answer is correct. You've just defined that a wrong answer is **anything except `c` or `f`** - so your  next bit of code will define what happens if the answer given **is `c`**. If the user chooses `c`, the code should then take a message (this needs to be a **string**), and pass it into your `atbash` function as the text to be encoded.
+
+You will decide what happens when a user enters `f` in a later step. 
 
 --- task ---
 

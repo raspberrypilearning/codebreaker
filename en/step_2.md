@@ -20,7 +20,7 @@ If you have a `Trinket account`, you can click on the **Remix button** to save a
 --- /task ---
 ### Set up the alphabet list and the code dictionary
 
-The codebreaker program starts with two data structures. The first is a `list` of all the letters in the alphabet and the second is a `code` dictionary. To save typing time you can create a list from a string by using the `list()` function.  
+The codebreaker program starts with two data structures. The first is a **list** of all the letters in the alphabet and the second is a `code` dictionary. To save typing time you can create a list from a string by using the `list()` function.  
 
 [[[list-function]]]
 
