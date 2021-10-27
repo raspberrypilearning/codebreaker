@@ -121,5 +121,6 @@ You can copy text and paste a copy in another place.
 
 --- /task ---
 
+In the next step you will write the code to **analyse the frequency** of letters in your text file. 
 
 --- save ---

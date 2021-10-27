@@ -289,5 +289,6 @@ You should see your input prompt appear in the shell - press `c` and then `Enter
 
 --- /task ---
 
+In the next step you will use your `atbash()` to encode the contents of a text file. 
 
 --- save ---
