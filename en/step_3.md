@@ -11,15 +11,15 @@ In this step you will create a function which can take your text, flip it and re
 
 --- task ---
  
-**Comment out** the print statement used for testing on line 19 by placing a hashtag at the beginning of the line:
+**Comment out** the print statement used for testing on line 17 by placing a hashtag at the beginning of the line:
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 16
-line_highlights: 19
+line_number_start: 14
+line_highlights: 17
 ---
   for i in range(len(alphabet)): # Getting length of a list
     code[alphabet[i]] = backwards[i] # Populate the code dictionary with a letter of the alphabet and its encoded letter
@@ -33,15 +33,15 @@ You will now add your new **function** that will encode some text using the **at
 
 --- task ---
 
-Find the comment which says `# Encode/decode a piece of text — atbash is symmetrical` on line 29. Underneath the comment; define a function called `atbash`, with the **parameter** `text`. Parameters allow you to pass values into functions that can be used within that function.
+Find the comment which says `# Encode/decode a piece of text — atbash is symmetrical` on line 26. Underneath the comment; define a function called `atbash`, with the **parameter** `text`. Parameters allow you to pass values into functions that can be used within that function.
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 29 
-line_highlights: 31
+line_number_start: 26 
+line_highlights: 27
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
@@ -65,8 +65,8 @@ First your function needs to convert the `text` to lowercase. A new **variable**
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 29 
-line_highlights: 32-33
+line_number_start: 27 
+line_highlights: 28-29
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
@@ -88,8 +88,8 @@ Leave a blank line under the last code you entered (make sure you keep the inden
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 29 
-line_highlights: 35-39
+line_number_start: 27
+line_highlights: 31-35
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
@@ -108,17 +108,22 @@ def atbash(text):
 
 --- task ---
 
-Now that you have a **function** which will **encode text**, you need to run it to make sure it works. Create a function call to run the `atbash` function and pass some text into it as the parameter. 
+Now that you have a **function** which will **encode text**, you need to run it to make sure it works. Find your `main()` function on line 47 and add in a function call to run the `atbash()` function. 
+
+The 'Test' string is **passed** into the function so that it can be encoded. 
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 1
-line_highlights: 
+line_number_start: 46
+line_highlights: 49
 ---
-print(atbash('Test'))
+# Start up
+def main():
+  create_code()
+  print(atbash('Test'))
 
 --- /code ---
 
@@ -126,18 +131,39 @@ print(atbash('Test'))
 
 --- task ---
 
-**Find** the comment in your code that says `# Create a text-based menu system` on line 45 and begin by defining a function called `menu()`:
+**Comment out** your `print(atbash('Test'))` line of code now that you have finished testing. 
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 45
-line_highlights: 47
+line_number_start: 46
+line_highlights: 49
+---
+# Start up
+def main():
+  create_code()
+  #print(atbash('Test'))
+
+--- /code ---
+
+--- /task ---
+
+
+--- task ---
+
+**Find** the comment in your code that says `# Create a text-based menu system` on line 42 and begin by defining a function called `menu()`:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 42
+line_highlights: 43
 ---
 # Create a text-based menu system
-
 def menu():
 --- /code ---
 
@@ -154,8 +180,8 @@ Create a new variable called `choice` and set the value to `None`:
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 45
-line_highlights: 49-50
+line_number_start: 42
+line_highlights: 44
 ---
 # Create a text-based menu system  
 def menu():
@@ -176,14 +202,13 @@ You can use a **while loop** to run a piece of code **while** a **condition** is
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 47
-line_highlights: 52-55
+line_number_start: 43
+line_highlights: 46-47
 ---
 def menu():
   choice = '' # Start with a wrong answer for choice.
   
   while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
-    
     choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
 --- /code ---
 
@@ -202,8 +227,8 @@ Underneath the last line (making sure you still have an indent!) type:
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 47
-line_highlights: 57-61
+line_number_start: 43
+line_highlights: 49-53
 ---
 def menu():
   choice = '' # Start with a wrong answer for choice.
@@ -224,15 +249,15 @@ def menu():
 
 --- task ---
 
-On line 59, change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded :
+On line 51, change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded :
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 47
-line_highlights: 59
+line_number_start: 43
+line_highlights: 51
 ---
 def menu():
   choice = '' # Start with a wrong answer for choice.
@@ -253,24 +278,23 @@ def menu():
 
 --- task ---
 
-At the end of your `main()` function on line 66 type:
+At the end of your `main()` function on line 59 type `menu()` to call the `menu` function when the program runs:
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 64
-line_highlights: 68
+line_number_start: 55
+line_highlights: 59
 ---
 # Start up
 def main():
   create_code()
+  #print(atbash('Test'))
   menu()
 
 --- /code ---
-
-To call the `menu` function when the program runs.
 
 --- /task ---
 
