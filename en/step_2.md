@@ -39,7 +39,6 @@ line_number_start: 5
 line_highlights: 7-8
 ---
 # Set up data structures 
-
 alphabet = list(' abcdefghijklmnopqrstuvwxyz ') # List from a string
 code = {}
 
@@ -64,9 +63,7 @@ line_number_start: 10
 line_highlights: 12-14
 ---
 # Create the atbash code by reversing the alphabet
-
 def create_code():
-  
   backwards = list(reversed(alphabet)) # Reversing a list
 
 --- /code ---
@@ -94,7 +91,6 @@ line_number_start: 12
 line_highlights: 16-17
 ---
 def create_code():
-  
   backwards = list(reversed(alphabet)) # Reversing a list
   
   for i in range(len(alphabet)): # Getting length of a list
@@ -118,11 +114,9 @@ line_number_start: 39
 line_highlights: 41-45
 ---
 # Start up
-
 def main():
   create_code()
 
-  
 main()
 --- /code ---
 
@@ -141,7 +135,6 @@ line_number_start: 12
 line_highlights: 19
 ---
 def create_code():
-
   backwards = list(reversed(alphabet))
   
   for i in range(len(alphabet)): # Getting length of a list

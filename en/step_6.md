@@ -48,9 +48,7 @@ line_number_start: 47
 line_highlights: 49-52
 ---
 # Make frequency chart
-
 def make_chart(text, language):
-  
   chart = Bar()
   chart.title = 'Frequency analysis'
 --- /code ---
@@ -70,7 +68,6 @@ line_number_start: 49
 line_highlights: 53
 ---
 def make_chart(text, language):
-  
   chart = Bar()
   chart.title = 'Frequency analysis'
   chart.x_labels = text.keys() # Label the chart with the dictionary keys (A-Z)
@@ -91,7 +88,6 @@ line_number_start: 49
 line_highlights: 54-55
 ---
 def make_chart(text, language):
-  
   chart = Bar()
   chart.title = 'Frequency analysis'
   chart.x_labels = text.keys() # Label the chart with the dictionary keys (A-Z)
@@ -114,7 +110,6 @@ line_number_start: 49
 line_highlights: 57
 ---
 def make_chart(text, language):
-  
   chart = Bar()
   chart.title = 'Frequency analysis'
   chart.x_labels = text.keys() # Label the chart with the dictionary keys (A-Z)
