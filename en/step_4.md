@@ -24,7 +24,6 @@ line_number_start: 42
 line_highlights: 44-48
 ---
 # Fetch and return text from a file
-
 def get_text(filename):
     with open(filename) as f:
       text = f.read().replace('\n','') # Need to strip the newline characters

@@ -44,7 +44,6 @@ line_number_start: 29
 line_highlights: 31
 ---
 # Encode/decode a piece of text — atbash is symmetrical
-
 def atbash(text):
 
 --- /code ---
@@ -70,7 +69,6 @@ line_number_start: 29
 line_highlights: 32-33
 ---
 # Encode/decode a piece of text — atbash is symmetrical
-
 def atbash(text):
   text = text.lower() # Converting text to lowercase
   output = ''
@@ -94,7 +92,6 @@ line_number_start: 29
 line_highlights: 35-39
 ---
 # Encode/decode a piece of text — atbash is symmetrical
-
 def atbash(text):
   text = text.lower() # Converting text to lowercase
   output = ''
@@ -161,11 +158,8 @@ line_number_start: 45
 line_highlights: 49-50
 ---
 # Create a text-based menu system  
-
 def menu():
-  
-  # Start with a wrong answer for choice. 
-  choice = ''
+  choice = '' # Start with a wrong answer for choice. 
 
 --- /code ---
 
@@ -186,12 +180,9 @@ line_number_start: 47
 line_highlights: 52-55
 ---
 def menu():
+  choice = '' # Start with a wrong answer for choice.
   
-  # Start with a wrong answer for choice. 
-  choice = None
-  
-  # Keep asking the user for the right answer
-  while choice != 'c' and choice != 'f':
+  while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
     
     choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
 --- /code ---
@@ -215,13 +206,9 @@ line_number_start: 47
 line_highlights: 57-61
 ---
 def menu():
-  
-  # Start with a wrong answer for choice. 
-  choice = None
-  
-  # Keep asking the user for the right answer
-  while choice != 'c' and choice != 'f':
-    
+  choice = '' # Start with a wrong answer for choice.
+
+  while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
     choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
   
   if choice == 'c':
@@ -248,13 +235,9 @@ line_number_start: 47
 line_highlights: 59
 ---
 def menu():
+  choice = '' # Start with a wrong answer for choice.
   
-  # Start with a wrong answer for choice. 
-  choice = None
-  
-  # Keep asking the user for the right answer
-  while choice != 'c' and choice != 'f':
-    
+  while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
     choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
   
   if choice == 'c':
@@ -280,9 +263,7 @@ line_numbers: true
 line_number_start: 64
 line_highlights: 68
 ---
-
 # Start up
-
 def main():
   create_code()
   menu()
