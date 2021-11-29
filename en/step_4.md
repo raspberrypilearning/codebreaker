@@ -20,8 +20,8 @@ Find the `# Fetch and return text from a file` comment on line 38 then define a 
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 38
-line_highlights: 39-43
+line_number_start: 40
+line_highlights: 41-45
 ---
 # Fetch and return text from a file
 def get_text(filename):
@@ -43,8 +43,8 @@ The `menu()` function needs to encode a secret message from a text file. Find li
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 53
-line_highlights: 55
+line_number_start: 55
+line_highlights: 57
 ---
   if choice == 'c':
     print('Running your message through the cypher…')
