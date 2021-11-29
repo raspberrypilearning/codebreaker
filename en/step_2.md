@@ -37,7 +37,6 @@ line_number_start: 5
 line_highlights: 7-8
 ---
 # Set up data structures 
-
 alphabet = list(' abcdefghijklmnopqrstuvwxyz ') # List from a string
 code = {}
 
