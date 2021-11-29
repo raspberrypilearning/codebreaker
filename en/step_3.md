@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The next step is to create a function which can take your  text, flip it and reverse it with your  atbash cypher list, and return it as an encoded message. 
+In this step you will create a function which can take your text, flip it and reverse it with your atbash cypher list, and return it as an encoded message. 
 </div>
 <div>
 ![A screenshot of the output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
@@ -11,7 +11,7 @@ The next step is to create a function which can take your  text, flip it and rev
 
 --- task ---
  
-**Comment out** the print statement on line 19 by placing a hashtag at the beginning of the line:
+**Comment out** the print statement used for testing on line 19 by placing a hashtag at the beginning of the line:
 
 --- code ---
 ---
@@ -33,7 +33,7 @@ You will now add your new **function** that will encode some text using the **at
 
 --- task ---
 
-Find the comment which says `# Encode/decode a piece of text — atbash is symmetrical` on line 29. Underneath the comment, define a function called `atbash` with the **parameter** `text`.
+Find the comment which says `# Encode/decode a piece of text — atbash is symmetrical` on line 29. Underneath the comment; define a function called `atbash`, with the **parameter** `text`. Parameters allow you to pass values into functions that can be used within that function.
 
 --- code ---
 ---
@@ -109,7 +109,23 @@ def atbash(text):
 
 --- /task ---
 
-Now that you have a **function** which will **encode text**, you need to run it to make sure it works. To do that, you will create a menu to allow your user to encode the text.  
+--- task ---
+
+Now that you have a **function** which will **encode text**, you need to run it to make sure it works. Create a function call to run the `atbash` function and pass some text into it as the parameter. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 
+---
+print(atbash('Test'))
+
+--- /code ---
+
+--- /task ---
 
 --- task ---
 
@@ -149,7 +165,7 @@ line_highlights: 49-50
 def menu():
   
   # Start with a wrong answer for choice. 
-  choice = None
+  choice = ''
 
 --- /code ---
 
@@ -159,7 +175,7 @@ Now that you have set `choice` to a wrong answer, you want to create a **loop** 
 
 --- task ---
 
-Enter the code that will set the **conditions** for this **while loop** and prompt the user for input:
+You can use a **while loop** to run a piece of code **while** a **condition** is **True**. In this instance, as long as the user **does not** choose `c` or `f`, the loop will continue to run. Enter the code that will set the **conditions** for a **while loop** and prompt the user for input:
 
 --- code ---
 ---
@@ -182,7 +198,7 @@ def menu():
 
 --- /task ---
 
-You want to run your  `atbash` function when the answer is correct. You've just defined that a wrong answer is **anything except `c` or `f`** - so your  next bit of code will define what happens if the answer given **is `c`**. If the user chooses `c`, the code should then take a message (this needs to be a **string**), and pass it into your `atbash` function as the text to be encoded.
+Once the user has given a correct answer, the loop will end. Next create an if statement that will run your `atbash` function if the user picks `c`.
 
 You will decide what happens when a user enters `f` in a later step. 
 

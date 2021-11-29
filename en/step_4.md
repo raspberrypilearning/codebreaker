@@ -2,16 +2,18 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Its time to encode a message from a text file. 
+Its time to encode a message from a text file.
 </div>
 <div>
 ![A screenshot of the output of the code displaying an encoded message. ](images/encoded-message.PNG){:width="400px"}
 </div>
 </div>
 
+Loading the text from a file is more efficient than typing or pasting a large string into a program. There is less opportunity to 'break' your code when changing a single target filename, than to copy and paste large blocks of text each time.
+
 --- task ---
 
-Find the `# Fetch and return text from a file` comment on line 70 then define a `get_text()` function. This function has one parameter called `filename`. Use the `filename` to open the file and read it into the `text` variable, then **return** the `text` variable.
+Find the `# Fetch and return text from a file` comment on line 42 then define a `get_text()` function. This function has one parameter called `filename`. Use the `filename` to open the file and read it into the `text` variable, then **return** the `text` variable.
 
 --- code ---
 ---
@@ -24,7 +26,7 @@ line_highlights: 44-48
 # Fetch and return text from a file
 
 def get_text(filename):
-    with open(filename, 'r') as f:
+    with open(filename) as f:
       text = f.read().replace('\n','') # Need to strip the newline characters
     
     return text
@@ -35,7 +37,7 @@ def get_text(filename):
 
 --- task ---
 
-The `menu()` function needs to encode a secret message from a text file. Find line 64 and **replace** `message = 'my secret message'` with the `get_text()` function call. Enter the name of the file `input.txt` as an **argument**.
+The `menu()` function needs to encode a secret message from a text file. Find line 64 and **replace** `'my secret message'` with the `get_text()` function call. Enter the name of the file `input.txt` as an **argument**.
 
 --- code ---
 ---
@@ -86,11 +88,13 @@ Find the `input.txt` tab in Trinket to access the contents of the text file. You
 
 ### Decode the message
 
-The atbash cypher **encodes** a message using the reverse letters of the alphabet. This means that exactly the same **algorithm** can be used to **decode** the message. You can test this by taking your encoded message, copy and pasting it into your `input.txt` file and running the code again. 
+The atbash cypher **encodes** a message using the reverse letters of the alphabet. This means that exactly the same code can be used to **decode** the message. You can test this by taking your encoded message, copy and pasting it into your `input.txt` file and running the code again. 
 
 --- task ---
 
 **Run** your code so that it displays your encoded message. **Select** the encoded message and copy it. Go back to `input.txt` and delete your message. Next, **paste** your new message into the empty file. 
+
+Remember that your code converts any text to lowercase so you will see your message in lowercase letters. 
 
 --- collapse ---
 ---
