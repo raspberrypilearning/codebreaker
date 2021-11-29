@@ -10,14 +10,14 @@ In this step, you will code a frequency analyser function to work out how often 
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-Frequency Analysis measures how often something appears so you can look for patterns in that data. It is possible to decode monoalphabetic cyphers (if you know the language the message is in) by looking at how often each letter appears and matching it to the [most commonly used letters](http://letterfrequency.org/letter-frequency-by-language/) in that language.
+Frequency Analysis measures how often something appears so you can look for patterns in that data. It is possible to decode monoalphabetic cyphers (if you know the language the message is in) by looking at how often each letter appears and matching it to the [most commonly used letters](http://letterfrequency.org/letter-frequency-by-language/) in that language. This will be explained in further detail later on.
 </p>
 
  You now need to create a function that will take your text and convert it all to one case (to avoid confusion), count the number of times each letter in the message appears, then convert that number into a percentage of the whole so you can compare it to the frequency of letters in English.
 
 --- task ---
 
-On line 23, beneath the comment that reads `# Calculate the frequency of all letters in a piece of text`, define a function called `frequency`, and have the first thing it does be to convert your message to lower case:
+On line 23, beneath the comment that reads `# Calculate the frequency of all letters in a piece of text`, define a function called `frequency`, and have the first thing it does be to convert your message to lower case and make it a list:
 
 --- code ---
 ---
@@ -147,7 +147,7 @@ for letter in text:
 
 --- /code ---
 
-This section of code looks at each of the letters in your message `text`, and if the letter appears in your frequency list it adds 1 to that letter's value. The more times a letter appears, the higher that value will be. Once you know how often each letter appears, you can then convert from this count to a percentage of the whole message (since you know the length).
+This section of code looks at each of the letters in your message `text`, and if the letter appears in your frequency list it adds 1 to that letter's value. The more times a letter appears, the higher that value will be. Once you know how often each letter appears, you can then convert from this count to a percentage of the whole message (since you know the length). Any characters like punctuation that are not in the dictionary will be ignored, and won't appear in the message.
 
 --- /collapse ---
 
