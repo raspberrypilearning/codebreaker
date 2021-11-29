@@ -24,8 +24,8 @@ On line 18, beneath the comment that reads `# Calculate the frequency of all let
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 18 
-line_highlights: 19-20
+line_number_start: 20 
+line_highlights: 21-22
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -43,8 +43,8 @@ On line 22 beneath, create a dictionary called `freq` and for every `letter` in 
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 18
-line_highlights: 22-24
+line_number_start: 20
+line_highlights: 24-26
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -68,8 +68,8 @@ On line 26, make sure you **keep the indentation** and type:
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 18
-line_highlights: 26
+line_number_start: 20
+line_highlights: 28
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -95,8 +95,8 @@ Create a for loop to count every time each letter appears in the text. Leave a b
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 18
-line_highlights: 28-30
+line_number_start: 20
+line_highlights: 30-32
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -146,8 +146,8 @@ Create a loop which converts the number of times the letters appear into a perce
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 18
-line_highlights: 32-33
+line_number_start: 20
+line_highlights: 34-35
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -178,8 +178,8 @@ def frequency(text):
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 18
-line_highlights: 35
+line_number_start: 20
+line_highlights: 37
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -216,8 +216,8 @@ Leave a blank line after the `if` statement and on line 89 type:
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 65
-line_highlights: 74-
+line_number_start: 68
+line_highlights: 77-82
 ---
   while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
     choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )

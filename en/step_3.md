@@ -66,7 +66,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 27 
-line_highlights: 28-29
+line_highlights: 28-30
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
@@ -88,8 +88,8 @@ Leave a blank line under the last code you entered (make sure you keep the inden
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 27
-line_highlights: 31-35
+line_number_start: 28
+line_highlights: 32-36
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
@@ -117,8 +117,8 @@ The 'Test' string is **passed** into the function so that it can be encoded.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 46
-line_highlights: 49
+line_number_start: 48
+line_highlights: 51
 ---
 # Start up
 def main():
@@ -138,8 +138,8 @@ def main():
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 46
-line_highlights: 49
+line_number_start: 48
+line_highlights: 51
 ---
 # Start up
 def main():
@@ -160,8 +160,8 @@ def main():
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 42
-line_highlights: 43
+line_number_start: 44
+line_highlights: 45
 ---
 # Create a text-based menu system
 def menu():
@@ -180,8 +180,8 @@ Create a new variable called `choice` and set the value to `None`:
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 42
-line_highlights: 44
+line_number_start: 44
+line_highlights: 46
 ---
 # Create a text-based menu system  
 def menu():
@@ -202,8 +202,8 @@ You can use a **while loop** to run a piece of code **while** a **condition** is
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 43
-line_highlights: 46-47
+line_number_start: 45
+line_highlights: 48-49
 ---
 def menu():
   choice = '' # Start with a wrong answer for choice.
@@ -227,8 +227,8 @@ Underneath the last line (making sure you still have an indent!) type:
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 43
-line_highlights: 49-53
+line_number_start: 45
+line_highlights: 51-55
 ---
 def menu():
   choice = '' # Start with a wrong answer for choice.
@@ -249,15 +249,15 @@ def menu():
 
 --- task ---
 
-On line 51, change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded :
+On line 53, change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded :
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 43
-line_highlights: 51
+line_number_start: 45
+line_highlights: 53
 ---
 def menu():
   choice = '' # Start with a wrong answer for choice.
@@ -285,8 +285,8 @@ At the end of your `main()` function on line 59 type `menu()` to call the `menu`
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 55
-line_highlights: 59
+line_number_start: 58
+line_highlights: 62
 ---
 # Start up
 def main():
