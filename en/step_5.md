@@ -131,7 +131,6 @@ line_highlights:
 for letter in text:
     if letter in freq:
         freq[letter] += 1
-
 --- /code ---
 
 This section of code looks at each of the letters in your message `text`, and if the letter appears in your frequency list it adds 1 to that letter's value. The more times a letter appears, the higher that value will be. Once you know how often each letter appears, you can then convert from this count to a percentage of the whole message (since you know the length). Any characters like punctuation that are not in the dictionary will be ignored, and won't appear in the message.
@@ -166,7 +165,6 @@ def frequency(text):
   
   for letter in freq: # Convert from counts to percentages
     freq[letter] = freq[letter] / total_letters * 100
- 
 --- /code ---
 
 --- /task ---
@@ -201,7 +199,6 @@ def frequency(text):
     freq[letter] = freq[letter] / total_letters * 100
 
   return freq
- 
 --- /code ---
 
 --- /task ---
