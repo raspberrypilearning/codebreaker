@@ -17,15 +17,15 @@ Frequency Analysis measures how often something appears so you can look for patt
 
 --- task ---
 
-On line 23, beneath the comment that reads `# Calculate the frequency of all letters in a piece of text`, define a function called `frequency`, and have the first thing it does be to convert your message to lower case and make it a list:
+On line 18, beneath the comment that reads `# Calculate the frequency of all letters in a piece of text`, define a function called `frequency`, and have the first thing it does be to convert your message to lower case and make it a list:
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 21 
-line_highlights: 23-25
+line_number_start: 18 
+line_highlights: 19-20
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -36,15 +36,15 @@ def frequency(text):
 
 --- task ---
 
-On line 28 beneath, we will create a dictionary called `freq` and for every `letter` in the list `alphabet` it assigns a value of 0. Make sure you **keep the indentation** and type:
+On line 22 beneath, create a dictionary called `freq` and for every `letter` in the list `alphabet` assign a value of 0. Make sure you **keep the indentation** and type:
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 21
-line_highlights: 27-30
+line_number_start: 18
+line_highlights: 22-24
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -61,15 +61,15 @@ def frequency(text):
 
 The next thing you need your function to do is to count the letters in the message, create a variable called `total_letters` and assign the length of the text to that variable. 
 
-On line 31, make sure you **keep the indentation** and type:
+On line 26, make sure you **keep the indentation** and type:
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 21
-line_highlights: 32-33
+line_number_start: 18
+line_highlights: 26
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -95,8 +95,8 @@ Create a for loop to count every time each letter appears in the text. Leave a b
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 21
-line_highlights: 35-37
+line_number_start: 18
+line_highlights: 28-30
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -146,8 +146,8 @@ Create a loop which converts the number of times the letters appear into a perce
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 21
-line_highlights: 39-41
+line_number_start: 18
+line_highlights: 32-33
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -178,8 +178,8 @@ def frequency(text):
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 21
-line_highlights: 43
+line_number_start: 18
+line_highlights: 35
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -216,8 +216,8 @@ Leave a blank line after the `if` statement and on line 89 type:
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 78
-line_highlights: 89-93
+line_number_start: 65
+line_highlights: 74-
 ---
   while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
     choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )

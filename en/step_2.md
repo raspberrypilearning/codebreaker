@@ -36,7 +36,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 5 
-line_highlights: 7-8
+line_highlights: 6-7
 ---
 # Set up data structures 
 alphabet = list(' abcdefghijklmnopqrstuvwxyz ') # List from a string
@@ -60,7 +60,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 10 
-line_highlights: 12-14
+line_highlights: 11-12
 ---
 # Create the atbash code by reversing the alphabet
 def create_code():
@@ -87,8 +87,8 @@ Within your `create_code` function, **populate** the `code` dictionary with data
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 12
-line_highlights: 16-17
+line_number_start: 11
+line_highlights: 14-15
 ---
 def create_code():
   backwards = list(reversed(alphabet)) # Reversing a list
@@ -110,8 +110,8 @@ Find the `# Start up` comment and **define** a `main()` function to call your `c
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 39
-line_highlights: 41-45
+line_number_start: 38
+line_highlights: 39-42
 ---
 # Start up
 def main():
@@ -131,8 +131,8 @@ In order to test that your `code` dictionary has populated correctly, you can `p
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 12
-line_highlights: 19
+line_number_start: 11
+line_highlights: 17
 ---
 def create_code():
   backwards = list(reversed(alphabet))
