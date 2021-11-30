@@ -14,15 +14,15 @@ In all languages, each letter in its alphabet has a 'personality' or set of trai
 </p>
 --- task ---
 
-The `print(message_freq)` line of code on line 78 is no longer needed. Add a `#` to the beginning of it so that Python ignores it when the code is run. 
+The `print(message_freq)` line of code on line 81 is no longer needed. Add a `#` to the beginning of it so that Python ignores it when the code is run. 
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 74
-line_highlights: 78
+line_number_start: 77
+line_highlights: 81
 ---
   elif choice == 'f':
     print('Analysing message…')
@@ -37,15 +37,15 @@ line_highlights: 78
 
 --- task ---
 
-Find the `# Make frequency chart` comment on line 37 and create a new function called `make_chart()`. This function needs two parameters called `text` and `language`. The frequency chart will be a **bar** chart and the **title** is `Frequency analysis`.
+Find the `# Make frequency chart` comment on line 40 and create a new function called `make_chart()`. This function needs two parameters called `text` and `language`. The frequency chart will be a **bar** chart and the **title** is `Frequency analysis`.
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 37
-line_highlights: 38-40
+line_number_start: 40
+line_highlights: 41-43
 ---
 # Make frequency chart
 def make_chart(text, language):
@@ -64,8 +64,8 @@ Create **x-axis** labels using the **keys** from the `freq` dictionary. The `fre
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 37
-line_highlights: 41
+line_number_start: 40
+line_highlights: 44
 ---
 # Make frequency chart
 def make_chart(text, language):
@@ -85,8 +85,8 @@ Label the chart with the **frequency** of letters in the encoded message and the
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 37
-line_highlights: 42-43
+line_number_start: 40
+line_highlights: 45-46
 ---
 # Make frequency chart
 def make_chart(text, language):
@@ -108,8 +108,8 @@ def make_chart(text, language):
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 37
-line_highlights: 45
+line_number_start: 40
+line_highlights: 48
 ---
 # Make frequency chart
 def make_chart(text, language):
@@ -128,15 +128,15 @@ def make_chart(text, language):
 
 --- task ---
 
-Find your `elif` in the `menu()` function on line 80. Add a line of code that will **import** the `english` frequency dictionary from the `frequency.py` file. Add another line of code that will **call** the `make_chart` function to draw the chart. 
+Find your `elif` in the `menu()` function on line 84. Add a line of code that will **import** the `english` frequency dictionary from the `frequency.py` file. Add another line of code that will **call** the `make_chart` function to draw the chart. 
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 80
-line_highlights: 85-86
+line_number_start: 84
+line_highlights: 89-90
 ---
   elif choice == 'f':
     print('Analysing message…')
@@ -178,15 +178,15 @@ Codebreakers can use the frequency of letters to work out the type of encoding t
 
 Your secret message is quite small making it tricky to analyse using a frequency chart. Change your code so that it analyses the message in `longer.txt` instead. 
 
-Go to line 82 and change `input.txt` to `longer.txt`.
+Go to line 86 and change `input.txt` to `longer.txt`.
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 80
-line_highlights: 82
+line_number_start: 84
+line_highlights: 86
 ---
   elif choice == 'f':
     print('Analysing message…')
