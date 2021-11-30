@@ -217,7 +217,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 68
-line_highlights: 77-82
+line_highlights: 77-81
 ---
   while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
     choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
