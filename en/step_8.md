@@ -13,17 +13,18 @@ In this step, discover ways to upgrade your project!
 ### Get Inspiration
 Have a look at these example projects to spark some ideas of your own!
 
-<mark>!!! THESE TWO SAMPLE PROJECTS WILL BE UPDATED LATER !!!</mark>
+This project has an extra menu option to enter and encode your own short text:
 
-</div>
 <div class="trinket">
-<iframe src="https://trinket.io/embed/python/a867876e98?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/python/f6e8fef189?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
+[See Inside](https://trinket.io/python/f6e8fef189){:target="_blank"}
 
-</div>
+
+This project can complete frequency analysis in English, French or Spanish:
 <div class="trinket">
-<iframe src="https://trinket.io/embed/python/a867876e98?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/python/c774dbcf4c?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
 
