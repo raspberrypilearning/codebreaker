@@ -10,8 +10,8 @@ If you are following the [More Python](https://projects.raspberrypi.org/en/raspb
 
 --- no-print ---
 
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://trinket.io/python/ff931d5dd5" frameborder="0"></iframe>
+<div class="trinket">
+<iframe src="https://trinket.io/embed/python/ff931d5dd5?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 --- /no-print ---
