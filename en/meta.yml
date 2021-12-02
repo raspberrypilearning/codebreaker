@@ -9,6 +9,7 @@ steps:
   - title: Introduction
   - title: Encode the alphabet
   - title: Encode a message
+  - title: Create a menu
   - title: Encode text from a file
   - title: Create a frequency analyser
   - title: Analyse the frequency

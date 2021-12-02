@@ -29,7 +29,7 @@ line_highlights: 17
  
 --- /task ---
 
-### Define the encoding function
+### Setup your atbash function
 
 You will now add your new **function** that will encode some text using the **atbash** cypher.
 
@@ -56,6 +56,8 @@ Press Enter. You should see the next line indented.
 
 [[[parameters]]]
 
+### Convert text to lowercase 
+
 First your function needs to convert the `text` to lowercase. A new **variable** called `output` will then need to be created to hold the encoded message.
 
 --- task ---
@@ -78,6 +80,8 @@ def atbash(text):
 --- /code ---
 
 --- /task ---
+
+### Encode your text
 
 The next part of your code will **encode** the `text` that has been **passed** into the function. A `for` loop will need to be used to go through each letter in the `text` and convert it to an encoded letter using the `code` dictionary. Finally, it will **return** the encoded message.   
 
@@ -154,162 +158,3 @@ def main():
 
 --- /task ---
 
-
---- task ---
-
-**Find** the comment in your code that says `# Create a text-based menu system` on line 42 and begin by defining a function called `menu()`:
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 44
-line_highlights: 45
----
-# Create a text-based menu system
-def menu():
---- /code ---
-
---- /task ---
-
-Your menu needs a **loop** that continually asks the user what they would like to do until they have entered a valid choice. To get this started, you will create a **variable** called `choice` and set it to `None`. This will allow the **while** loop to run its first loop. 
-
---- task ---
-
-Create a new variable called `choice` and set the value to `None`:
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 44
-line_highlights: 46
----
-# Create a text-based menu system  
-def menu():
-  choice = '' # Start with a wrong answer for choice. 
-
---- /code ---
-
---- /task ---
-
-Now that you have set `choice` to a wrong answer, you want to create a **loop** that will only break if an `input` that matches a right answer is given. You want a **while loop**, that runs as long as your answer **DOES NOT** match one you have defined. 
-
---- task ---
-
-You can use a **while loop** to run a piece of code **while** a **condition** is **True**. In this instance, as long as the user **does not** choose `c` or `f`, the loop will continue to run. Enter the code that will set the **conditions** for a **while loop** and prompt the user for input:
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 45
-line_highlights: 48-49
----
-def menu():
-  choice = '' # Start with a wrong answer for choice.
-  
-  while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
-    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
---- /code ---
-
---- /task ---
-
-Once the user has given a correct answer, the loop will end. Next create an if statement that will run your `atbash` function if the user picks `c`.
-
-You will decide what happens when a user enters `f` in a later step. 
-
---- task ---
-
-Underneath the last line (making sure you still have an indent!) type:
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 45
-line_highlights: 51-55
----
-def menu():
-  choice = '' # Start with a wrong answer for choice.
-
-  while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
-  
-  if choice == 'c':
-    print('Running your message through the cypher…')
-    message = 'my secret message' 
-    code = atbash(message)
-    print(code)
-
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-On line 53, change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded :
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 45
-line_highlights: 53
----
-def menu():
-  choice = '' # Start with a wrong answer for choice.
-  
-  while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
-    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
-  
-  if choice == 'c':
-    print('Running your message through the cypher…')
-    message = 'my secret message' 
-    code = atbash(message)
-    print(code)
-
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-At the end of your `main()` function on line 59 type `menu()` to call the `menu` function when the program runs:
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 58
-line_highlights: 62
----
-# Start up
-def main():
-  create_code()
-  #print(atbash('Test'))
-  menu()
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-**Save and run** your script. 
-
-You should see your input prompt appear in the shell - press `c` and then `Enter` to encode your message string!
-
---- /task ---
-
-In the next step you will use your `atbash()` to encode the contents of a text file. 
-
---- save ---

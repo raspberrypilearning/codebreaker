@@ -1,248 +1,129 @@
-## Create a Frequency Analyser
+## Encode text from a file
 
-<div style="display: flex; flex-wrap: wrap;">
+<div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will code a frequency analyser function to work out how often each letter of the alphabet appears in your text. 
+Its time to encode a message from a text file.
 </div>
 <div>
-![Image showing output of frequency analysis function as percentages](images/freq-analysis-output.jpg)
+![A screenshot of the output of the code displaying an encoded message. ](images/encoded-message.PNG){:width="400px"}
 </div>
 </div>
 
-<p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-Frequency Analysis measures how often something appears so you can look for patterns in that data. It is possible to decode monoalphabetic cyphers (if you know the language the message is in) by looking at how often each letter appears and matching it to the [most commonly used letters](http://letterfrequency.org/letter-frequency-by-language/) in that language. This will be explained in further detail later on.
-</p>
-
- You now need to create a function that will take your text and convert it all to one case (to avoid confusion), count the number of times each letter in the message appears, then convert that number into a percentage of the whole so you can compare it to the frequency of letters in English.
+Loading the text from a file is more efficient than typing or pasting a large string into a program. There is less opportunity to 'break' your code when changing a single target filename, than to copy and paste large blocks of text each time.
 
 --- task ---
 
-On line 18, beneath the comment that reads `# Calculate the frequency of all letters in a piece of text`, define a function called `frequency`, and have the first thing it does be to convert your message to lower case and make it a list:
+Find the `# Fetch and return text from a file` comment on line 38 then define a `get_text()` function. This function has one parameter called `filename`. Use the `filename` to open the file and read it into the `text` variable, then **return** the `text` variable.
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 20 
-line_highlights: 21-22
+line_number_start: 40
+line_highlights: 41-45
 ---
-# Calculate the frequency of all letters in a piece of text
-def frequency(text):
-    text = list(text.lower()) # Lowercase the message and make it a list
+# Fetch and return text from a file
+def get_text(filename):
+    with open(filename) as f:
+      text = f.read().replace('\n','') # Need to strip the newline characters
+    
+    return text
 --- /code ---
+
 
 --- /task ---
 
 --- task ---
 
-On line 22 beneath, create a dictionary called `freq` and for every `letter` in the list `alphabet` assign a value of 0. Make sure you **keep the indentation** and type:
+The `menu()` function needs to encode a secret message from a text file. Find line 55 and **replace** `'my secret message'` with the `get_text()` function call. Enter the name of the file `input.txt` as an **argument**.
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 20
-line_highlights: 24-26
+line_number_start: 55
+line_highlights: 57
 ---
-# Calculate the frequency of all letters in a piece of text
-def frequency(text):
-  text = list(text.lower()) # Lowercase the message and make it a list
-
-  freq = {} # Create a dict of every letter, with a count of 0
-  for letter in alphabet:
-    freq[letter] = 0
---- /code ---
-
---- /task ---
-
---- task ---
-
-The next thing you need your function to do is to count the letters in the message, create a variable called `total_letters` and assign the length of the text to that variable. 
-
-On line 26, make sure you **keep the indentation** and type:
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 20
-line_highlights: 28
----
-# Calculate the frequency of all letters in a piece of text
-def frequency(text):
-  text = list(text.lower()) # Lowercase the message and make it a list
-  
-  freq = {} # Create a dict of every letter, with a count of 0
-  for letter in alphabet:
-    freq[letter] = 0
-
-  total_letters = len(text) # Count the letters in the message
---- /code ---
-
---- /task ---
-
-Once you know how long the message is, you can begin counting the letters in it to determine how often they appear.
-
---- task ---
-
-Create a for loop to count every time each letter appears in the text. Leave a blank line at the end of your script, make sure you keep the indentation and add:
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 20
-line_highlights: 30-32
----
-# Calculate the frequency of all letters in a piece of text
-def frequency(text):
-  text = list(text.lower()) # Lowercase the message and make it a list
- 
-  freq = {} # Create a dict of every letter, with a count of 0
-  for letter in alphabet:
-    freq[letter] = 0
-  
-  total_letters = len(text) # Count the letters in the message
-  
-  for letter in text:
-    if letter in freq: # Maybe it's punctuation? First use of in as a conditional clause
-      freq[letter] += 1
---- /code ---
-
---- /task ---
-
---- collapse ---
----
-title: Counting the letters 
----
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: false
-line_number_start: 
-line_highlights:
----
-for letter in text:
-    if letter in freq:
-        freq[letter] += 1
---- /code ---
-
-This section of code looks at each of the letters in your message `text`, and if the letter appears in your frequency list it adds 1 to that letter's value. The more times a letter appears, the higher that value will be. Once you know how often each letter appears, you can then convert from this count to a percentage of the whole message (since you know the length). Any characters like punctuation that are not in the dictionary will be ignored, and won't appear in the message.
-
---- /collapse ---
-
---- task ---
-
-Create a loop which converts the number of times the letters appear into a percentage of the whole message. On line 39, make sure to keep the indentation and type:
- 
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 20
-line_highlights: 34-35
----
-# Calculate the frequency of all letters in a piece of text
-def frequency(text):
-  text = list(text.lower()) # Lowercase the message and make it a list
- 
-  freq = {} # Create a dict of every letter, with a count of 0
-  for letter in alphabet:
-    freq[letter] = 0
- 
-  total_letters = len(text) # Count the letters in the message
-  
-  for letter in text:
-    if letter in freq: 
-      freq[letter] += 1
-  
-  for letter in freq: # Convert from counts to percentages
-    freq[letter] = freq[letter] / total_letters * 100
---- /code ---
-
---- /task ---
-
---- task ---
-
-**Return** the frequency dictionary so it can be used elsewhere in your code. Leave a blank line and type:
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 20
-line_highlights: 37
----
-# Calculate the frequency of all letters in a piece of text
-def frequency(text):
-  text = list(text.lower()) # Lowercase the message and make it a list
-  
-  freq = {} # Create a dict of every letter, with a count of 0
-  for letter in alphabet:
-    freq[letter] = 0
-  
-  total_letters = len(text) # Count the letters in the message
-  
-  for letter in text:
-    if letter in freq: 
-      freq[letter] += 1
-  
-  for letter in freq: # Convert from counts to percentages
-    freq[letter] = freq[letter] / total_letters * 100
-
-  return freq
---- /code ---
-
---- /task ---
-
-Now you have a function which can calculate the frequency of letters in your message, you need to link it to your user menu. Right now, the user can only choose the letter `c` to encode or decode a message. If they type the letter `f`, nothing happens. You are now going to add the option `f` to analyse the letter frequency of your message by calling your new function. 
-
-Underneath your first `if` statement asking the user to select `c`, you need to add an `elif` statement so the user can choose the option to analyse and print the letter frequency by pressing `f`.
-
---- task ---
-
-Leave a blank line after the `if` statement and on line 89 type:
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 68
-line_highlights: 77-81
----
-  while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
-    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
-  
   if choice == 'c':
     print('Running your message through the cypher…')
     message = get_text('input.txt') # Take input from a file 
     code = atbash(message)
     print(code)
-
-  elif choice == 'f':
-    print('Analysing message…')
-    message = get_text('input.txt')
-    message_freq = frequency(message)
-    print(message_freq)
 --- /code ---
+
+
+--- /task ---
+
+You can now **add** your own secret message to the `input.txt` file. 
+
+--- task ---
+
+Find the `input.txt` tab in Trinket to access the contents of the text file. You will see this just above your code window. Delete the `replace with your message` text and enter your own secret message. 
+
+![Animation demonstrating how to find the input.txt tab at the top of the trinket window.](images/input.gif)
+
+<!-- Does this need any instructions for offline use?-->
 
 --- /task ---
 
 --- task ---
 
-Save and run your code. Choose `f` at the prompt and you should see a readout of the letter frequency of your message in the console.
+**Test:** Run your code to see if it displays your encoded message after entering the letter **c** when prompted. 
+
+![A screenshot displaying the encoded secret message](images/input-text-test.PNG)
+
+**Debug:** Your encoded message doesn't look exactly like the message in the screenshot:
+- This is normal. This is the encoded message for the text `replace with your message`. Your message will be different.
+
+**Debug:** You see an error message that says `TypeError: get_text() takes exactly 1 arguments`:
+- Check that you have entered `input.txt` inside the round brackets on line 64
+
+**Debug:** You see an `Indentation error` message:
+- Check that you have correctly indented all of your new code. Revisit the tasks above to check. 
 
 --- /task ---
 
-In the next step you will display the frequency analysis data in a cool looking chart!
+### Decode the message
+
+The atbash cypher **encodes** a message using the reverse letters of the alphabet. This means that exactly the same code can be used to **decode** the message. You can test this by taking your encoded message, copy and pasting it into your `input.txt` file and running the code again. 
+
+--- task ---
+
+**Run** your code so that it displays your encoded message. **Select** the encoded message and copy it. Go back to `input.txt` and delete your message. Next, **paste** your new message into the empty file. 
+
+Remember that your code converts any text to lowercase so you will see your message in lowercase letters. 
+
+--- collapse ---
+---
+title: Copying and pasting
+---
+
+You can copy text and paste a copy in another place.
+
+ 1. Select the text you want to copy by dragging your mouse over it while holding down the left button.
+ 2. Copy the text by using your browser's menu — choose `Edit > Copy`. You can also use a keyboard shortcut — `Ctrl + C` on Windows or Linux, or `Cmd + C` on a Mac.
+ 3. Move your text cursor (the flashing line that shows where you are typing) to where you want to place a copy of the text.
+ 4. Paste the text by using your browser's menu — choose `Edit > Paste`. You can also use a keyboard shortcut — `Ctrl + V` on Windows or Linux, or `Cmd + V` on a Mac.
+
+--- /collapse ---
+
+![Animation showing the encoded message being copy and pasted into the input.txt file.](images/decode-message.gif)
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code again and press **c** when prompted. It will display the **decoded** version of your original message. 
+
+![A screenshot of the decoded message being displayed as output.](images/decoded.PNG)
+
+**Debug:** It still displays the encoded message:
+- Make sure that you have copy and pasted the **encoded** message into `input.txt`
+
+--- /task ---
+
+In the next step you will write the code to **analyse the frequency** of letters in your text file. 
 
 --- save ---

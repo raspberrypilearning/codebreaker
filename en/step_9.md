@@ -1,19 +1,65 @@
-## What next?
+## Upgrade your project
 
-If you are following the [More Python](https://projects.raspberrypi.org/en/raspberrypi/python-2) pathway, you can move on to the [Encoded Art](https://learning-admin.raspberrypi.org/en/projects/encoded-art/0) project. In this project, you will make amazing artwork using data!
+<div style="display: flex; flex-wrap: wrap">
+<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
+In this step, discover ways to upgrade your project!
 
---- print-only ---
-
-![An Image showing the Mapping data project output](images/example-projects.png)
-
---- /print-only ---
-
---- no-print ---
-
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://trinket.io/python/ff931d5dd5" frameborder="0"></iframe>
+</div>
+<div>
+![A boy and a girl sit at a computer, working together on a programming project.](images/partner-work.PNG){:width="300px"}
+</div>
 </div>
 
---- /no-print ---
+### Get Inspiration
+Have a look at these example projects to spark some ideas of your own!
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python&curriculum%5B%5D=%202).
+This project has an extra menu option to enter and encode your own short text:
+
+<div class="trinket">
+<iframe src="https://trinket.io/python/f6e8fef189?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+</div>
+[See Inside](https://trinket.io/python/f6e8fef189){:target="_blank"}
+
+
+This project can complete frequency analysis in English, French or Spanish:
+<div class="trinket">
+<iframe src="https://trinket.io/python/c774dbcf4c?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+</div>
+
+--- task ---
+
+Change the starting letter of the alphabet to create a different cypher. You can do this by changing the original `alphabet` list. 
+
+--- /task ---
+
+--- task ---
+
+Add another language to your frequency analysis. You will need to investigate the frequency of letters used and place them into a dictionary in the `frequency.py` program. 
+
+--- /task ---
+
+--- task ---
+
+Add another menu item to allow users to change the language. 
+
+--- /task ---
+
+--- task ---
+
+If possible, swap your cyphertext with a partner and see if they can crack your code using their frequency analyser. 
+
+--- /task ---
+
+--- collapse ---
+
+---
+title: Completed project
+---
+
+You can view the [completed project here](https://trinket.io/python/a867876e98){:target="_blank"}.
+
+--- /collapse ---
+
+--- save ---
