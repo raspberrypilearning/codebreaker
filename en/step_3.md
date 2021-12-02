@@ -141,7 +141,7 @@ def main():
 
 **Test:** Run your code to see if the test message displays correctly. You should see the console output `gvhg`.
 
-![A screenshot of the output of the encoded text which is created in this step.](images/test-encoded.PNG){:width="600px"}
+![A screenshot of the output of the encoded text which is created in this step.](images/test-encoded.PNG){:width="200px"}
 
 **Debug:** If you see a message about an indentation error:
 - check that you have indented all of your code correctly

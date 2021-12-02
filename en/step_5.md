@@ -9,7 +9,10 @@ Its time to encode a message from a text file.
 </div>
 </div>
 
+<p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
 Loading the text from a file is more efficient than typing or pasting a large string into a program. There is less opportunity to 'break' your code when changing a single target filename, than to copy and paste large blocks of text each time.
+</p>
+
 
 --- task ---
 
