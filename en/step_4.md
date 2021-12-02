@@ -161,12 +161,22 @@ def main():
 
 --- task ---
 
-**Save and run** your script. 
+**Test:** Run your code and type `c` and press enter to encode your message string!
 
-You should see your input prompt appear in the shell - press `c` and then `Enter` to encode your message string!
+![A screenshot of the output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
 
+**Debug:** If you see a message about an indentation error:
+- check that you have indented all of your code correctly
+- look back at the sample code on this page to help you check
+
+**Debug:** If you see the error message `c is not defined` when you run your code:
+- check that you have used apostrophes ('') around your c in the condition `choice != 'c'`
+
+**Debug:** If you see nothing happen when you press `c`:
+- check that you have correctly spelled `message`
+  
 --- /task ---
 
-In the next step you will use your `atbash()` to encode the contents of a text file. 
+In the next step you will use your `atbash()` function to encode the contents of a text file. 
 
 --- save ---
