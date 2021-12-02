@@ -1,129 +1,172 @@
-## Encode text from a file
+## Create a menu 
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Its time to encode a message from a text file.
+Now you are going to create a menu system for you user to make choices about what they would like to do. 
 </div>
 <div>
-![A screenshot of the output of the code displaying an encoded message. ](images/encoded-message.PNG){:width="400px"}
+![A screenshot of the output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
 </div>
 </div>
-
-Loading the text from a file is more efficient than typing or pasting a large string into a program. There is less opportunity to 'break' your code when changing a single target filename, than to copy and paste large blocks of text each time.
 
 --- task ---
 
-Find the `# Fetch and return text from a file` comment on line 38 then define a `get_text()` function. This function has one parameter called `filename`. Use the `filename` to open the file and read it into the `text` variable, then **return** the `text` variable.
+**Find** the comment in your code that says `# Create a text-based menu system` on line 42 and begin by defining a function called `menu()`:
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 40
-line_highlights: 41-45
+line_number_start: 44
+line_highlights: 45
 ---
-# Fetch and return text from a file
-def get_text(filename):
-    with open(filename) as f:
-      text = f.read().replace('\n','') # Need to strip the newline characters
-    
-    return text
+# Create a text-based menu system
+def menu():
 --- /code ---
-
 
 --- /task ---
 
+Your menu needs a **loop** that continually asks the user what they would like to do until they have entered a valid choice. To get this started, you will create a **variable** called `choice` and set it to `None`. This will allow the **while** loop to run its first loop. 
+
 --- task ---
 
-The `menu()` function needs to encode a secret message from a text file. Find line 55 and **replace** `'my secret message'` with the `get_text()` function call. Enter the name of the file `input.txt` as an **argument**.
+Create a new variable called `choice` and set the value to `None`:
 
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 55
-line_highlights: 57
+line_number_start: 44
+line_highlights: 46
 ---
+# Create a text-based menu system  
+def menu():
+  choice = '' # Start with a wrong answer for choice. 
+
+--- /code ---
+
+--- /task ---
+
+### Use a `while` loop to get user input
+
+Now that you have set `choice` to a wrong answer, you want to create a **loop** that will only break if an `input` that matches a right answer is given. You want a **while loop**, that runs as long as your answer **DOES NOT** match one you have defined. 
+
+--- task ---
+
+You can use a **while loop** to run a piece of code **while** a **condition** is **True**. In this instance, as long as the user **does not** choose `c` or `f`, the loop will continue to run. Enter the code that will set the **conditions** for a **while loop** and prompt the user for input:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 45
+line_highlights: 48-49
+---
+def menu():
+  choice = '' # Start with a wrong answer for choice.
+  
+  while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
+    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
+--- /code ---
+
+--- /task ---
+
+
+Once the user has given a correct answer, the loop will end. Next create an if statement that will run your `atbash` function if the user picks `c`.
+
+You will decide what happens when a user enters `f` in a later step. 
+
+--- task ---
+
+Underneath the last line (making sure you still have an indent!) type:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 45
+line_highlights: 51-55
+---
+def menu():
+  choice = '' # Start with a wrong answer for choice.
+
+  while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
+    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
+  
   if choice == 'c':
     print('Running your message through the cypher…')
-    message = get_text('input.txt') # Take input from a file 
+    message = 'my secret message' 
     code = atbash(message)
     print(code)
+
+
 --- /code ---
 
-
---- /task ---
-
-You can now **add** your own secret message to the `input.txt` file. 
-
---- task ---
-
-Find the `input.txt` tab in Trinket to access the contents of the text file. You will see this just above your code window. Delete the `replace with your message` text and enter your own secret message. 
-
-![Animation demonstrating how to find the input.txt tab at the top of the trinket window.](images/input.gif)
-
-<!-- Does this need any instructions for offline use?-->
-
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code to see if it displays your encoded message after entering the letter **c** when prompted. 
+On line 53, change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded :
 
-![A screenshot displaying the encoded secret message](images/input-text-test.PNG)
-
-**Debug:** Your encoded message doesn't look exactly like the message in the screenshot:
-- This is normal. This is the encoded message for the text `replace with your message`. Your message will be different.
-
-**Debug:** You see an error message that says `TypeError: get_text() takes exactly 1 arguments`:
-- Check that you have entered `input.txt` inside the round brackets on line 64
-
-**Debug:** You see an `Indentation error` message:
-- Check that you have correctly indented all of your new code. Revisit the tasks above to check. 
-
---- /task ---
-
-### Decode the message
-
-The atbash cypher **encodes** a message using the reverse letters of the alphabet. This means that exactly the same code can be used to **decode** the message. You can test this by taking your encoded message, copy and pasting it into your `input.txt` file and running the code again. 
-
---- task ---
-
-**Run** your code so that it displays your encoded message. **Select** the encoded message and copy it. Go back to `input.txt` and delete your message. Next, **paste** your new message into the empty file. 
-
-Remember that your code converts any text to lowercase so you will see your message in lowercase letters. 
-
---- collapse ---
+--- code ---
 ---
-title: Copying and pasting
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 45
+line_highlights: 53
 ---
+def menu():
+  choice = '' # Start with a wrong answer for choice.
+  
+  while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
+    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
+  
+  if choice == 'c':
+    print('Running your message through the cypher…')
+    message = 'my secret message' 
+    code = atbash(message)
+    print(code)
 
-You can copy text and paste a copy in another place.
 
- 1. Select the text you want to copy by dragging your mouse over it while holding down the left button.
- 2. Copy the text by using your browser's menu — choose `Edit > Copy`. You can also use a keyboard shortcut — `Ctrl + C` on Windows or Linux, or `Cmd + C` on a Mac.
- 3. Move your text cursor (the flashing line that shows where you are typing) to where you want to place a copy of the text.
- 4. Paste the text by using your browser's menu — choose `Edit > Paste`. You can also use a keyboard shortcut — `Ctrl + V` on Windows or Linux, or `Cmd + V` on a Mac.
-
---- /collapse ---
-
-![Animation showing the encoded message being copy and pasted into the input.txt file.](images/decode-message.gif)
+--- /code ---
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code again and press **c** when prompted. It will display the **decoded** version of your original message. 
+At the end of your `main()` function on line 59 type `menu()` to call the `menu` function when the program runs:
 
-![A screenshot of the decoded message being displayed as output.](images/decoded.PNG)
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 58
+line_highlights: 62
+---
+# Start up
+def main():
+  create_code()
+  #print(atbash('Test'))
+  menu()
 
-**Debug:** It still displays the encoded message:
-- Make sure that you have copy and pasted the **encoded** message into `input.txt`
+--- /code ---
 
 --- /task ---
 
-In the next step you will write the code to **analyse the frequency** of letters in your text file. 
+--- task ---
+
+**Save and run** your script. 
+
+You should see your input prompt appear in the shell - press `c` and then `Enter` to encode your message string!
+
+--- /task ---
+
+In the next step you will use your `atbash()` to encode the contents of a text file. 
 
 --- save ---
