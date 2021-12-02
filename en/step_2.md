@@ -12,6 +12,7 @@ Open the [Codebreaker starter project](https://trinket.io/python/0eb6b467c0){:ta
 If you have a `Trinket account`, you can click on the **Remix button** to save a copy to your My Trinkets library.
 
 --- /task ---
+
 ### Set up the alphabet list and the code dictionary
 
 The codebreaker program starts with two data structures. The first data structure is a **list** of all the letters in the alphabet and the second is a `code` **dictionary**. To save typing time you can create a list from a string by using the `list()` function.  
@@ -66,6 +67,10 @@ def create_code():
 
 ### Encode the alphabet
 
+<p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
+Encoding is when you convert data from one form to another. In an atbash cypher for example, the letter 'e' would be **encoded** as a 'v'. 
+</p>
+
 You now have two lists. One contains the alphabet written forwards, another with the alphabet backwards. You are now going to use these two lists to populate a dictionary. The **key** will store the alphabet written forwards and the **paired value** will store the alphabet backwards. 
 
 The code dictionary is really important because you can use it to match each letter from your message using the **key**, with its encoded **paired value**. 
@@ -116,6 +121,8 @@ main()
 
 --- /task ---
 
+### Test and Debug
+
 --- task ---
 
 In order to test that your `code` dictionary has populated correctly, you can `print` the dictionary in full. Under your `for` loop in the `create_code` function, add a `print` function to display the contents. 
@@ -138,6 +145,7 @@ def create_code():
 --- /code ---
 
 --- /task ---
+
 --- task ---
 
 **Test:** Run your code to see if the `code` dictionary displays correctly. You should see a pattern starting with `a` paired with `z` and `b` being paired with `y`.

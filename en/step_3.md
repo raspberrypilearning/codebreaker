@@ -29,6 +29,8 @@ line_highlights: 17
  
 --- /task ---
 
+### Define the encoding function
+
 You will now add your new **function** that will encode some text using the **atbash** cypher.
 
 --- task ---
@@ -105,6 +107,8 @@ def atbash(text):
 --- /code ---
 
 --- /task ---
+
+### Test and Debug
 
 --- task ---
 
