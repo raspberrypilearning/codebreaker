@@ -59,7 +59,7 @@ hello
 
   --- feedback ---
 
-  Not exactly, the code will each letter in `word`. It will not print the whole word each time. 
+  Not exactly, the code will print each letter in `word`. It will not print the whole word each time. 
 
   --- /feedback ---
 
