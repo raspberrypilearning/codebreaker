@@ -4,12 +4,8 @@
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 To start, you will create a dictionary for your encoded letters. 
 </div>
+<div>![A screenshot of the output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}</div>
 <div>
-
-</div>
-</div>
-
-![A screenshot of the output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}
 
 --- task ---
 
