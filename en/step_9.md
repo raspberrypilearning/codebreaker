@@ -10,20 +10,20 @@ In this step, discover ways to upgrade your project!
 </div>
 </div>
 
-### Get Inspiration
+### Get inspiration
 Have a look at these example projects to spark some ideas of your own!
 
 This project has an extra menu option to enter and encode your own short text:
 
-**Custom Short Message Encoder:** [See Inside](https://trinket.io/python/f6e8fef189){:target="_blank"}
+**Custom short message encoder:** [See inside](https://trinket.io/python/f6e8fef189){:target="_blank"}
 
 <div class="trinket">
 <iframe src="https://trinket.io/embed/python/f6e8fef189?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
-This project can complete frequency analysis in English, French or Spanish:
+This project can complete frequency analysis in English, French, or Spanish:
 
-**Three Language Atbash Encoder:** [See Inside](https://trinket.io/python/c774dbcf4c){:target="_blank"}
+**Three language atbash encoder:** [See inside](https://trinket.io/python/c774dbcf4c){:target="_blank"}
 
 <div class="trinket">
 <iframe src="https://trinket.io/embed/python/c774dbcf4c?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>

@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will create a function which can take your text, flip it and reverse it with your atbash cypher list, and return it as an encoded message. 
+In this step, you will create a function that can take your text, flip it and reverse it with your atbash cypher list, and return it as an encoded message. 
 </div>
 <div>
 ![A screenshot of the output of the code created in this step. An encoded version of a secret message is displayed.](images/test-encoded.PNG){:width="300px"}
@@ -21,8 +21,8 @@ line_numbers: true
 line_number_start: 14
 line_highlights: 17
 ---
-  for i in range(len(alphabet)): # Getting length of a list
-    code[alphabet[i]] = backwards[i] # Populate the code dictionary with a letter of the alphabet and its encoded letter
+  for i in range(len(alphabet)): # Gets length of a list
+    code[alphabet[i]] = backwards[i] # Populates the code dictionary with a letter of the alphabet and its encoded letter
   
 #  print(code)
 --- /code ---
@@ -35,7 +35,7 @@ You will now add your new **function** that will encode some text using the **at
 
 --- task ---
 
-Find the comment which says `# Encode/decode a piece of text — atbash is symmetrical` on line 26. Underneath the comment; define a function called `atbash`, with the **parameter** `text`. Parameters allow you to pass values into functions that can be used within that function.
+Find the comment that says `# Encode/decode a piece of text — atbash is symmetrical` on line 26. Underneath the comment, define a function called `atbash`, with the **parameter** `text`. Parameters allow you to pass values into functions that can be used within that function.
 
 --- code ---
 ---
@@ -50,19 +50,19 @@ def atbash(text):
 
 --- /code ---
 
-Press Enter. You should see the next line indented. 
+Press <kbd>Enter</kbd>. You should see the next line indented. 
 
 --- /task ---
 
 [[[parameters]]]
 
-### Convert text to lowercase 
+### Convert text to lower case 
 
-First your function needs to convert the `text` to lowercase. A new **variable** called `output` will then need to be created to hold the encoded message.
+First your function needs to convert the `text` to lower case. A new **variable** called `output` will then need to be created to hold the encoded message.
 
 --- task ---
 
- Beneath the line of code when you have defined the `atbash()` function, type: 
+ Beneath the line of code where you have defined the `atbash()` function, type: 
 
 --- code ---
 ---
@@ -74,7 +74,7 @@ line_highlights: 29-30
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
-  text = text.lower() # Converting text to lowercase
+  text = text.lower() # Converts text to lower case
   output = ''
 
 --- /code ---
@@ -99,12 +99,12 @@ line_highlights: 33-37
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
-  text = text.lower() # Converting text to lowercase
+  text = text.lower() # Converts text to lower case
   output = ''
   
   for letter in text: 
     if letter in code: 
-      output += code[letter] # Populate output with the encoded/decoded message using the dictionary
+      output += code[letter] # Populates output with the encoded/decoded message using the dictionary
   
   return output # Return the encoded/decoded message
 
@@ -112,11 +112,11 @@ def atbash(text):
 
 --- /task ---
 
-### Test and Debug
+### Test and debug
 
 --- task ---
 
-Now that you have a **function** which will **encode text**, you need to run it to make sure it works. Find your `main()` function on line 47 and add in a function call to run the `atbash()` function. 
+Now that you have a **function** that will **encode text**, you need to run it to make sure it works. Find your `main()` function on line 47 and add in a function call to run the `atbash()` function. 
 
 The 'Test' string is **passed** into the function so that it can be encoded. 
 
@@ -141,11 +141,11 @@ def main():
 
 **Test:** Run your code to see if the test message displays correctly. You should see the console output `gvhg`.
 
-![A screenshot of the output of the encoded text which is created in this step.](images/test-encoded.PNG){:width="200px"}
+![A screenshot of the output of the encoded text that is created in this step.](images/test-encoded.PNG){:width="200px"}
 
 **Debug:** If you see a message about an indentation error:
-- check that you have indented all of your code correctly
-- look back at the sample code on this page to help you check
+- Check that you have indented all of your code correctly
+- Look back at the sample code on this page to help you check
 
 --- /task ---
 

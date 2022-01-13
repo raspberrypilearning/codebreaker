@@ -5,7 +5,7 @@
 legend: Question 3 of 3
 ---
 
-A line of code is needed for creating a **bar chart** using **pygal**. The code must select the x axis labels from the **keys** used in the `text` **dictionary**. Which is the correct line of code that can be used for this purpose?
+A line of code is needed to create a **bar chart** using `pygal`. The code must select the x-axis labels from the **keys** used in the `text` **dictionary**. Which is the correct line of code that can be used for this purpose?
 
 --- choices ---
 
@@ -45,7 +45,7 @@ chart.x_labels = text.keys()
 
   --- feedback ---
 
-Correct! This line of code will add the x axis labels based on the **keys** held in the `text` dictionary. 
+Correct! This line of code will add the x-axis labels based on the **keys** held in the `text` dictionary. 
 
   --- /feedback ---
 

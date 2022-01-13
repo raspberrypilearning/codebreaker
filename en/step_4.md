@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now you are going to create a menu system for you user to make choices about what they would like to do. 
+Now you are going to create a menu system for your user to make choices about what they would like to do. 
 </div>
 <div>
 ![A screenshot of the output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
@@ -51,7 +51,7 @@ def menu():
 
 ### Use a `while` loop to get user input
 
-Now that you have set `choice` to a wrong answer, you want to create a **loop** that will only break if an `input` that matches a right answer is given. You want a **while loop**, that runs as long as your answer **DOES NOT** match one you have defined. 
+Now that you have set `choice` to a wrong answer, you want to create a **loop** that will only break if an `input` that matches a right answer is given. You want a **while loop** that runs as long as your answer **DOES NOT** match one you have defined. 
 
 --- task ---
 
@@ -66,22 +66,22 @@ line_number_start: 45
 line_highlights: 48-49
 ---
 def menu():
-  choice = '' # Start with a wrong answer for choice.
+  choice = '' # Start with a wrong answer for choice
   
   while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
-    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
+    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
 --- /code ---
 
 --- /task ---
 
 
-Once the user has given a correct answer, the loop will end. Next create an if statement that will run your `atbash` function if the user picks `c`.
+Once the user has given a correct answer, the loop will end. Next create an `if` statement that will run your `atbash` function if the user picks `c`.
 
 You will decide what happens when a user enters `f` in a later step. 
 
 --- task ---
 
-Underneath the last line (making sure you still have an indent!) type:
+Underneath the last line (making sure you still have an indent!), type:
 
 --- code ---
 ---
@@ -92,10 +92,10 @@ line_number_start: 45
 line_highlights: 51-55
 ---
 def menu():
-  choice = '' # Start with a wrong answer for choice.
+  choice = '' # Start with a wrong answer for choice
 
   while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
+    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
   
   if choice == 'c':
     print('Running your message through the cypher…')
@@ -110,7 +110,7 @@ def menu():
 
 --- task ---
 
-On line 53, change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded :
+On line 53, change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded:
 
 --- code ---
 ---
@@ -124,7 +124,7 @@ def menu():
   choice = '' # Start with a wrong answer for choice.
   
   while choice != 'c' and choice != 'f': # Keep asking the user for the right answer
-    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis:' )
+    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
   
   if choice == 'c':
     print('Running your message through the cypher…')
@@ -139,7 +139,7 @@ def menu():
 
 --- task ---
 
-At the end of your `main()` function on line 59 type `menu()` to call the `menu` function when the program runs:
+At the end of your `main()` function on line 59, type `menu()` to call the `menu` function when the program runs:
 
 --- code ---
 ---
@@ -161,19 +161,17 @@ def main():
 
 --- task ---
 
-**Test:** Run your code and type `c` and press enter to encode your message string!
+**Test:** Run your code. Type `c` and press <kbd>Enter</kbd> to encode your message string!
 
 ![A screenshot of the output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
 
 **Debug:** If you see a message about an indentation error:
-- check that you have indented all of your code correctly
-- look back at the sample code on this page to help you check
+- Check that you have indented all of your code correctly
+- Look back at the sample code on this page to help you check
 
-**Debug:** If you see the error message `c is not defined` when you run your code:
-- check that you have used apostrophes ('') around your c in the condition `choice != 'c'`
+**Debug:** If you see the error message `c is not defined` when you run your code, check that you have used apostrophes ('') around your c in the condition `choice != 'c'`.
 
-**Debug:** If you see nothing happen when you press `c`:
-- check that you have correctly spelled `message`
+**Debug:** If nothing happens when you press `c`, check that you have correctly spelled `message`.
   
 --- /task ---
 

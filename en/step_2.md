@@ -1,21 +1,23 @@
 ## Encode the alphabet
 
-To start you will create a dictionary for your encoded letters. 
-
-
-![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG){:width="600px"}
+<div style="display: flex; flex-wrap: wrap">
+<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
+To start, you will create a dictionary for your encoded letters. 
+</div>
+<div>![A screenshot of the output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}</div>
+<div>
 
 --- task ---
 
 Open the [Codebreaker starter project](https://trinket.io/python/0eb6b467c0){:target="_blank"}. Trinket will open in another browser tab. 
 
-If you have a `Trinket account`, you can click on the **Remix button** to save a copy to your My Trinkets library.
+If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
 
 --- /task ---
 
 ### Set up the alphabet list and the code dictionary
 
-The codebreaker program starts with two data structures. The first data structure is a **list** of all the letters in the alphabet and the second is a `code` **dictionary**. To save typing time you can create a list from a string by using the `list()` function.  
+The codebreaker program starts with two data structures. The first data structure is a **list** of all the letters in the alphabet and the second is a `code` **dictionary**. To save typing time, you can create a list from a string by using the `list()` function.  
 
 [[[list-function]]]
 
@@ -71,7 +73,7 @@ def create_code():
 Encoding is when you convert data from one form to another. In an atbash cypher for example, the letter 'e' would be **encoded** as a 'v'. 
 </p>
 
-You now have two lists. One contains the alphabet written forwards, another with the alphabet backwards. You are now going to use these two lists to populate a dictionary. The **key** will store the alphabet written forwards and the **paired value** will store the alphabet backwards. 
+You now have two lists. One contains the alphabet written forwards, the other with the alphabet backwards. You are now going to use these two lists to populate a dictionary. The **key** will store the alphabet written forwards and the **paired value** will store the alphabet backwards. 
 
 The code dictionary is really important because you can use it to match each letter from your message using the **key**, with its encoded **paired value**. 
 
@@ -79,7 +81,7 @@ The code dictionary is really important because you can use it to match each let
 
 Within your `create_code` function, **populate** the `code` dictionary with data from the two **lists**. Use a `for` loop to get the length of the `alphabet` list and populate the **dictionary** with the data. 
 
-`len()` is a function that you can use to find out the length of an **object**, such as a list. It is used here to iterate a `for` loop, as many times as there are characters in the `alphabet` list - its length. 
+`len()` is a function that you can use to find out the length of an **object**, such as a list. It is used here to iterate a `for` loop, as many times as there are characters in the `alphabet` list — its length. 
 
 --- code ---
 ---
@@ -90,9 +92,9 @@ line_number_start: 11
 line_highlights: 14-15
 ---
 def create_code():
-  backwards = list(reversed(alphabet)) # Reversing a list
+  backwards = list(reversed(alphabet)) # Reverses a list
   
-  for i in range(len(alphabet)): # Getting length of a list
+  for i in range(len(alphabet)): # Gets the length of a list
     code[alphabet[i]] = backwards[i] # Populate the code dictionary with a letter of the alphabet and its encoded letter
 --- /code ---
 
@@ -121,11 +123,11 @@ main()
 
 --- /task ---
 
-### Test and Debug
+### Test and debug
 
 --- task ---
 
-In order to test that your `code` dictionary has populated correctly, you can `print` the dictionary in full. Under your `for` loop in the `create_code` function, add a `print` function to display the contents. 
+To test that your `code` dictionary has populated correctly, you can `print` the dictionary in full. Under your `for` loop in the `create_code` function, add a `print` function to display the contents. 
 
 --- code ---
 ---
@@ -138,8 +140,8 @@ line_highlights: 17
 def create_code():
   backwards = list(reversed(alphabet))
   
-  for i in range(len(alphabet)): # Getting length of a list
-    code[alphabet[i]] = backwards[i] # Populate the code dictionary with a letter of the alphabet and its encoded letter
+  for i in range(len(alphabet)): # Gets length of a list
+    code[alphabet[i]] = backwards[i] # Populates the code dictionary with a letter of the alphabet and its encoded letter
   
   print(code)
 --- /code ---
@@ -151,21 +153,20 @@ def create_code():
 **Test:** Run your code to see if the `code` dictionary displays correctly. You should see a pattern starting with `a` paired with `z` and `b` being paired with `y`.
 
 
-![A screenshot of the output of the code dictionary which is created in this step.](images/code-dictionary.PNG){:width="600px"}
+![A screenshot of the output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}
 
 **Debug:** There are no error messages but your code dictionary is not displaying on the screen:
-- make sure that `print(code)` is indented correctly within the `create_code` function
-- check that you have **called** the `create_code()` and the `main()` function correctly
+- Make sure that `print(code)` is indented correctly within the `create_code` function
+- Check that you have **called** the `create_code()` and the `main()` function correctly
 
-**Debug:** If you see a message about `code` not being defined:
-- make sure that you have initialised the `code` dictionary on line 8 
+**Debug:** If you see a message about `code` not being defined, make sure that you have initialised the `code` dictionary on line 8. 
 
 **Debug:** If you see a message about an indentation error:
-- check that you have indented all of your code correctly
-- look back at the sample code on this page to help you check
+- Check that you have indented all of your code correctly
+- Look back at the sample code on this page to help you check
 
 --- /task ---
 
-In the next step you will **encode** a message with the help of your `code` dictionary. 
+In the next step, you will **encode** a message with the help of your `code` dictionary. 
 
 --- save ---

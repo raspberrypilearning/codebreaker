@@ -2,15 +2,15 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Its time to encode a message from a text file.
+It's time to encode a message from a text file.
 </div>
 <div>
-![A screenshot of the output of the code displaying an encoded message. ](images/encoded-message.PNG){:width="400px"}
+![A screenshot of the output of the code displaying an encoded message.](images/encoded-message.PNG){:width="400px"}
 </div>
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-Loading the text from a file is more efficient than typing or pasting a large string into a program. There is less opportunity to 'break' your code when changing a single target filename, than to copy and paste large blocks of text each time.
+Loading the text from a file is more efficient than typing or pasting a large string into a program. There is less opportunity to 'break' your code when changing a single target file name, than when copy and pasting large blocks of text each time.
 </p>
 
 
@@ -65,7 +65,7 @@ You can now **add** your own secret message to the `input.txt` file.
 
 Find the `input.txt` tab in Trinket to access the contents of the text file. You will see this just above your code window. Delete the `replace with your message` text and enter your own secret message. 
 
-![Animation demonstrating how to find the input.txt tab at the top of the trinket window.](images/input.gif)
+![Animation demonstrating how to find the input.txt tab at the top of the Trinket window.](images/input.gif)
 
 <!-- Does this need any instructions for offline use?-->
 
@@ -73,9 +73,9 @@ Find the `input.txt` tab in Trinket to access the contents of the text file. You
 
 --- task ---
 
-**Test:** Run your code to see if it displays your encoded message after entering the letter **c** when prompted. 
+**Test:** Run your code to see if it displays your encoded message after entering the letter 'c' when prompted. 
 
-![A screenshot displaying the encoded secret message](images/input-text-test.PNG)
+![A screenshot displaying the encoded secret message.](images/input-text-test.PNG)
 
 **Debug:** Your encoded message doesn't look exactly like the message in the screenshot:
 - This is normal. This is the encoded message for the text `replace with your message`. Your message will be different.
@@ -96,19 +96,19 @@ The atbash cypher **encodes** a message using the reverse letters of the alphabe
 
 **Run** your code so that it displays your encoded message. **Select** the encoded message and copy it. Go back to `input.txt` and delete your message. Next, **paste** your new message into the empty file. 
 
-Remember that your code converts any text to lowercase so you will see your message in lowercase letters. 
+Remember that your code converts any text to lower case, so you will see your message in lower-case letters. 
 
 --- collapse ---
 ---
-title: Copying and pasting
+title: Copy and pasting
 ---
 
 You can copy text and paste a copy in another place.
 
  1. Select the text you want to copy by dragging your mouse over it while holding down the left button.
- 2. Copy the text by using your browser's menu — choose `Edit > Copy`. You can also use a keyboard shortcut — `Ctrl + C` on Windows or Linux, or `Cmd + C` on a Mac.
+ 2. Copy the text by using your browser's menu — choose **Edit** > **Copy**. You can also use a keyboard shortcut — <kbd>Ctrl</kbd>+<kbd>C</kbd> on Windows or Linux systems, or <kbd>Cmd</kbd>+<kbd>C</kbd> on a Mac.
  3. Move your text cursor (the flashing line that shows where you are typing) to where you want to place a copy of the text.
- 4. Paste the text by using your browser's menu — choose `Edit > Paste`. You can also use a keyboard shortcut — `Ctrl + V` on Windows or Linux, or `Cmd + V` on a Mac.
+ 4. Paste the text by using your browser's menu — choose **Edit** > **Paste**. You can also use a keyboard shortcut — <kbd>Ctrl</kbd>+<kbd>V</kbd> on Windows or Linux systems, or <kbd>Cmd</kbd>+<kbd>V</kbd> on a Mac.
 
 --- /collapse ---
 
@@ -118,7 +118,7 @@ You can copy text and paste a copy in another place.
 
 --- task ---
 
-**Test:** Run your code again and press **c** when prompted. It will display the **decoded** version of your original message. 
+**Test:** Run your code again and press 'c' when prompted. It will display the **decoded** version of your original message. 
 
 ![A screenshot of the decoded message being displayed as output.](images/decoded.PNG)
 

@@ -5,12 +5,12 @@
 Use a bar chart to analyse the frequency of letters in an encoded message. 
 </div>
 <div>
-![A bar chart showing the frequency of letters in the English language compared to the frequency of letters used in the encoded message.](images/frequency-analysis.PNG){:width="400px"}
+![A bar chart showing the frequency of letters in the English language compared with the frequency of letters used in the encoded message.](images/frequency-analysis.PNG){:width="400px"}
 </div>
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-In all languages, each letter in its alphabet has a 'personality' or set of traits when used in that language. One of the most obvious traits a letter has in any language is how often it appears.  **Frequency analysis** is the method of breaking codes by looking at how often letters are used in the language of the code, and comparing that to how often encoded letters show up in a message. In English, the letter **E** is the most commonly used letter (it shows up 12.8% of the time), followed by **T** (at 9.1%). The least often used letter is **Z**.
+In all languages, each letter in its alphabet has a 'personality' or set of traits when used in that language. One of the most obvious traits a letter has in any language is how often it appears. **Frequency analysis** is the method of breaking codes by looking at how often letters are used in the language of the code, and comparing that to how often encoded letters show up in a message. In English, the letter **E** is the most commonly used letter (it shows up 12.8% of the time), followed by **T** (at 9.1%). The least often used letter is **Z**.
 </p>
 --- task ---
 
@@ -156,10 +156,10 @@ line_highlights: 89-90
 ![A bar chart showing the frequency of letters in the English language compared to the frequency of letters used in the encoded message.](images/frequency-analysis.PNG)
 
 **Debug:** Your chart doesn't look exactly the same as the one displayed in the image above:
-- This is normal. Your chart will display the frequency data for the secret message that you have entered in `input.txt`
+- This is normal. Your chart will display the frequency data for the secret message that you have entered in `input.txt`.
 
 **Debug:** You see the following error message `NameError: name 'lang_freq' is not defined`:
-- Check that you added the line of code `lang_freq = english # Import the English frequency dictionary` **before** the `make_chart()` function call.
+- Check that you added the line of code `lang_freq = english` **before** the `make_chart()` function call.
 
 **Debug:** You see an `Indentation error` message:
 - Check that you have correctly indented all of your new code. Revisit the tasks above to check.
@@ -170,13 +170,13 @@ line_highlights: 89-90
 
 The chart that has been produced shows the frequency of letters in the English language, labelled as **Language**. You can see that the letter **E** is the most frequently used letter in the English language because it has the highest bar for all of the **language** values. 
 
-The frequency chart also lists the frequency of letters in your **encoded** message, labelled as **Target message**. To work out what **encoding** has been used for this message you can compare the bars showing the English language with the bars on the encoded message. The highest bar in the encoded message text will most likely be an **E**. The second highest letter will most likely be a **T** as this is the next most popular letter. 
+The frequency chart also lists the frequency of letters in your **encoded** message, labelled as **Target message**. To work out what **encoding** has been used for this message, you can compare the bars showing the English language with the bars on the encoded message. The highest bar in the encoded message text will most likely be an **E**. The second highest letter will most likely be a **T** as this is the next most popular letter. 
 
-Codebreakers can use the frequency of letters to work out the type of encoding that has been used on the message. They can use trial and error to **predict** what a letter might be representing using the chart as a guide. 
+Codebreakers can use the frequency of letters to work out the type of encoding that has been used on the message. They can use trial and error to **predict** what a letter might represent using the chart as a guide. 
 
 --- task ---
 
-Your secret message is quite small making it tricky to analyse using a frequency chart. Change your code so that it analyses the message in `longer.txt` instead. 
+Your secret message is quite small, which makes it tricky to analyse using a frequency chart. Change your code so that it analyses the message in `longer.txt` instead. 
 
 Go to line 86 and change `input.txt` to `longer.txt`.
 
