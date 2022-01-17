@@ -29,7 +29,7 @@ line_highlights: 17
  
 --- /task ---
 
-### Setup your atbash function
+### Set up your atbash function
 
 You will now add your new **function** that will encode some text using the **atbash** cypher.
 
@@ -58,7 +58,7 @@ Press <kbd>Enter</kbd>. You should see the next line indented.
 
 ### Convert text to lower case 
 
-First your function needs to convert the `text` to lower case. A new **variable** called `output` will then need to be created to hold the encoded message.
+First your function needs to convert the `text` to lower case. A new **variable** called `output` then needs to be created to hold the encoded message.
 
 --- task ---
 
@@ -83,7 +83,7 @@ def atbash(text):
 
 ### Encode your text
 
-The next part of your code will **encode** the `text` that has been **passed** into the function. A `for` loop will need to be used to go through each letter in the `text` and convert it to an encoded letter using the `code` dictionary. Finally, it will **return** the encoded message.   
+The next part of your code will **encode** the `text` that has been **passed** into the function. A `for` loop is used to go through each letter in the `text` and convert it to an encoded letter using the `code` dictionary. Finally, it will **return** the encoded message.   
 
 --- task ---
 
