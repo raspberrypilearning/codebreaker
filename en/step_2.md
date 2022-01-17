@@ -61,7 +61,7 @@ line_highlights: 11-12
 ---
 # Create the atbash code by reversing the alphabet
 def create_code():
-  backwards = list(reversed(alphabet)) # Reversing a list
+  backwards = list(reversed(alphabet)) # Reverses a list
 
 --- /code ---
 
