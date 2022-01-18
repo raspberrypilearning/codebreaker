@@ -90,7 +90,7 @@ Find the `input.txt` tab in Trinket to access the contents of the text file. You
 
 ### Decode the message
 
-The atbash cypher **encodes** a message using the reverse letters of the alphabet. This means that exactly the same code can be used to **decode** the message. You can test this by taking your encoded message, copy and pasting it into your `input.txt` file and running the code again. 
+The atbash cypher **encodes** a message using the reverse letters of the alphabet. This means that exactly the same code can be used to **decode** the message. You can test this by taking your encoded message, copying and pasting it into your `input.txt` file and running the code again. 
 
 --- task ---
 
@@ -100,7 +100,7 @@ Remember that your code converts any text to lower case, so you will see your me
 
 --- collapse ---
 ---
-title: Copy and pasting
+title: Copying and pasting
 ---
 
 You can copy text and paste a copy in another place.
