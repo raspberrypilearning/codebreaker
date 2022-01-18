@@ -16,22 +16,22 @@ Loading the text from a file is more efficient than typing or pasting a large st
 
 --- task ---
 
-Find the `# Fetch and return text from a file` comment on line 38 then define a `get_text()` function. This function has one parameter called `filename`. Use the `filename` to open the file and read it into the `text` variable, then **return** the `text` variable.
+Find the `# Fetch and return text from a file` comment then define a `get_text()` function. This function has one parameter called `filename`. Use the `filename` to open the file and read it into the `text` variable, then **return** the `text` variable.
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - get_text()
 line_numbers: true
 line_number_start: 40
 line_highlights: 41-45
 ---
 # Fetch and return text from a file
 def get_text(filename):
-    with open(filename) as f:
-      text = f.read().replace('\n','') # Need to strip the newline characters
-    
-    return text
+  with open(filename) as f:
+    text = f.read().replace('\n','') # Need to strip the newline characters
+
+  return text
 --- /code ---
 
 
@@ -39,12 +39,12 @@ def get_text(filename):
 
 --- task ---
 
-The `menu()` function needs to encode a secret message from a text file. Find line 55 and **replace** `'my secret message'` with the `get_text()` function call. Enter the name of the file `input.txt` as an **argument**.
+The `menu()` function needs to encode a secret message from a text file. **Replace** your secret message with the `get_text()` function call. Enter the name of the file `input.txt` as an **argument**.
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - menu()
 line_numbers: true
 line_number_start: 55
 line_highlights: 57

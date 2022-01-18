@@ -23,10 +23,10 @@ This project has an extra menu option to enter and encode your own short text:
 
 This project can complete frequency analysis in English, French, or Spanish:
 
-**Three language atbash encoder:** [See inside](https://trinket.io/python/c774dbcf4c){:target="_blank"}
+**Three language atbash encoder:** [See inside](https://trinket.io/python/8678db85c8){:target="_blank"}
 
 <div class="trinket">
-<iframe src="https://trinket.io/embed/python/c774dbcf4c?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/8678db85c8?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 --- task ---

@@ -56,7 +56,7 @@ Find the `# Create the atbash code by reversing the alphabet` comment then **def
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - create_code()
 line_numbers: true
 line_number_start: 10 
 line_highlights: 11-12
@@ -88,7 +88,7 @@ Within your `create_code` function, **populate** the `code` dictionary with data
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - create_code()
 line_numbers: true
 line_number_start: 11
 line_highlights: 14-15
@@ -111,7 +111,7 @@ Find the `# Start up` comment and **define** a `main()` function to call your `c
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - main()
 line_numbers: true
 line_number_start: 38
 line_highlights: 39-42
@@ -134,7 +134,7 @@ To test that your `code` dictionary has populated correctly, you can `print` the
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - create_code()
 line_numbers: true
 line_number_start: 11
 line_highlights: 17
@@ -161,7 +161,7 @@ def create_code():
 - Make sure that `print(code)` is indented correctly within the `create_code` function
 - Check that you have **called** the `create_code()` and the `main()` function correctly
 
-**Debug:** If you see a message about `code` not being defined, make sure that you have initialised the `code` dictionary on line 8. 
+**Debug:** If you see a message about `code` not being defined, make sure that you have initialised the `code` dictionary. 
 
 **Debug:** If you see a message about an indentation error:
 - Check that you have indented all of your code correctly
