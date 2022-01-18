@@ -241,7 +241,7 @@ line_highlights: 77-81
 
 --- task ---
 
-Save and run your code. Choose `f` at the prompt and you should see a readout of the letter frequency of your message in the console. The values you see from your message will be different from the values shown here:
+Save and run your code. Choose 'f' at the prompt and you should see a readout of the letter frequency of your message in the console. The values you see from your message will be different from the values shown here:
 
 ![Image showing the output of a frequency analysis function as percentages.](images/freq-analysis-output.jpg)
 
