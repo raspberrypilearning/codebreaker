@@ -14,12 +14,12 @@ In all languages, each letter in its alphabet has a 'personality' or set of trai
 </p>
 --- task ---
 
-The `print(message_freq)` line of code on line 81 is no longer needed. Add a `#` to the beginning of it so that Python ignores it when the code is run. 
+The `print(message_freq)` line of code is no longer needed. Add a `#` to the beginning of it so that Python ignores it when the code is run. 
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - menu()
 line_numbers: true
 line_number_start: 77
 line_highlights: 81
@@ -37,12 +37,12 @@ line_highlights: 81
 
 --- task ---
 
-Find the `# Make frequency chart` comment on line 40 and create a new function called `make_chart()`. This function needs two parameters called `text` and `language`. The frequency chart will be a **bar** chart and the **title** is `Frequency analysis`.
+Find the `# Make frequency chart` comment and create a new function called `make_chart()`. This function needs two parameters called `text` and `language`. The frequency chart will be a **bar** chart and the **title** is `Frequency analysis`.
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - make_chart()
 line_numbers: true
 line_number_start: 40
 line_highlights: 41-43
@@ -62,7 +62,7 @@ Create **x-axis** labels using the **keys** from the `freq` dictionary. The `fre
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - make_chart()
 line_numbers: true
 line_number_start: 40
 line_highlights: 44
@@ -83,7 +83,7 @@ Label the chart with the **frequency** of letters in the encoded message and the
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - make_chart()
 line_numbers: true
 line_number_start: 40
 line_highlights: 45-46
@@ -106,7 +106,7 @@ def make_chart(text, language):
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - make_chart()
 line_numbers: true
 line_number_start: 40
 line_highlights: 48
@@ -128,12 +128,12 @@ def make_chart(text, language):
 
 --- task ---
 
-Find your `elif` in the `menu()` function on line 84. Add a line of code that will **import** the `english` frequency dictionary from the `frequency.py` file. Add another line of code that will **call** the `make_chart` function to draw the chart. 
+Find your `elif` in the `menu()` function. Add a line of code that will **import** the `english` frequency dictionary from the `frequency.py` file. Add another line of code that will **call** the `make_chart` function to draw the chart. 
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - menu()
 line_numbers: true
 line_number_start: 84
 line_highlights: 89-90
@@ -170,7 +170,7 @@ line_highlights: 89-90
 
 The chart that has been produced shows the frequency of letters in the English language, labelled as **Language**. You can see that the letter **E** is the most frequently used letter in the English language because it has the highest bar for all of the **language** values. 
 
-The frequency chart also lists the frequency of letters in your **encoded** message, labelled as **Target message**. To work out what **encoding** has been used for this message, you can compare the bars showing the English language with the bars on the encoded message. The highest bar in the encoded message text will most likely be an **E**. The second highest letter will most likely be a **T** as this is the next most popular letter. 
+The frequency chart also lists the frequency of letters in your **encoded** message, labelled as **Target message**. This includes the spaces in your message, which can be seen in the last bar on the right. To work out what **encoding** has been used for this message, you can compare the bars showing the English language with the bars on the encoded message. The highest bar (ignoring the spaces) in the encoded message text will most likely be an **E**. The second highest letter will most likely be a **T** as this is the next most popular letter. 
 
 Codebreakers can use the frequency of letters to work out the type of encoding that has been used on the message. They can use trial and error to **predict** what a letter might represent using the chart as a guide. 
 
@@ -178,12 +178,12 @@ Codebreakers can use the frequency of letters to work out the type of encoding t
 
 Your secret message is quite small, which makes it tricky to analyse using a frequency chart. Change your code so that it analyses the message in `longer.txt` instead. 
 
-Go to line 86 and change `input.txt` to `longer.txt`.
+Change `input.txt` to `longer.txt`.
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - menu()
 line_numbers: true
 line_number_start: 84
 line_highlights: 86

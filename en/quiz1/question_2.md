@@ -43,7 +43,7 @@ d
 ```
   --- feedback ---
 
-  Not quite, the `for` loop will display what is **held** by the variable `word`. 
+  Not quite, `print(letter)` will display what is **held** by the variable `letter` at that point in the `for` loop. 
 
   --- /feedback ---
 
@@ -59,19 +59,7 @@ hello
 
   --- feedback ---
 
-  Not exactly, the code will print each letter in `word`. It will not print the whole word each time. 
-
-  --- /feedback ---
-
-- ( ) 
-
-```
-hello
-```
-
-  --- feedback ---
-
-  Almost, the code will print each letter of the word `hello` but not in this way.
+  Not exactly, the code will print each letter in `hello`. It will not print the whole word each time. 
 
   --- /feedback ---
 

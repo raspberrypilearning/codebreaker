@@ -16,7 +16,7 @@ In this step, you will create a function that can take your text, flip it and re
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - create_code()
 line_numbers: true
 line_number_start: 14
 line_highlights: 17
@@ -29,18 +29,18 @@ line_highlights: 17
  
 --- /task ---
 
-### Setup your atbash function
+### Set up your atbash function
 
 You will now add your new **function** that will encode some text using the **atbash** cypher.
 
 --- task ---
 
-Find the comment that says `# Encode/decode a piece of text — atbash is symmetrical` on line 26. Underneath the comment, define a function called `atbash`, with the **parameter** `text`. Parameters allow you to pass values into functions that can be used within that function.
+Find the comment that says `# Encode/decode a piece of text — atbash is symmetrical`. Underneath the comment, define a function called `atbash`, with the **parameter** `text`. Parameters allow you to pass values into functions that can be used within that function.
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - atbash()
 line_numbers: true
 line_number_start: 26 
 line_highlights: 27
@@ -58,7 +58,7 @@ Press <kbd>Enter</kbd>. You should see the next line indented.
 
 ### Convert text to lower case 
 
-First your function needs to convert the `text` to lower case. A new **variable** called `output` will then need to be created to hold the encoded message.
+First your function needs to convert the `text` to lower case. A new **variable** called `output` then needs to be created to hold the encoded message.
 
 --- task ---
 
@@ -67,7 +67,7 @@ First your function needs to convert the `text` to lower case. A new **variable*
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - atbash()
 line_numbers: true
 line_number_start: 27 
 line_highlights: 29-30
@@ -83,7 +83,7 @@ def atbash(text):
 
 ### Encode your text
 
-The next part of your code will **encode** the `text` that has been **passed** into the function. A `for` loop will need to be used to go through each letter in the `text` and convert it to an encoded letter using the `code` dictionary. Finally, it will **return** the encoded message.   
+The next part of your code will **encode** the `text` that has been **passed** into the function. A `for` loop is used to go through each letter in the `text` and convert it to an encoded letter using the `code` dictionary. Finally, it will **return** the encoded message.   
 
 --- task ---
 
@@ -92,7 +92,7 @@ Leave a blank line under the last code you entered (make sure you keep the inden
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - atbash()
 line_numbers: true
 line_number_start: 28
 line_highlights: 33-37
@@ -116,14 +116,14 @@ def atbash(text):
 
 --- task ---
 
-Now that you have a **function** that will **encode text**, you need to run it to make sure it works. Find your `main()` function on line 47 and add in a function call to run the `atbash()` function. 
+Now that you have a **function** that will **encode text**, you need to run it to make sure it works. Find your `main()` function and add in a function call to run the `atbash()` function. 
 
 The 'Test' string is **passed** into the function so that it can be encoded. 
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - main()
 line_numbers: true
 line_number_start: 48
 line_highlights: 51
@@ -156,7 +156,7 @@ def main():
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - main()
 line_numbers: true
 line_number_start: 48
 line_highlights: 51

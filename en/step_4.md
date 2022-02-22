@@ -11,12 +11,12 @@ Now you are going to create a menu system for your user to make choices about wh
 
 --- task ---
 
-**Find** the comment in your code that says `# Create a text-based menu system` on line 42 and begin by defining a function called `menu()`:
+**Find** the comment in your code that says `# Create a text-based menu system` and begin by defining a function called `menu()`:
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - menu()
 line_numbers: true
 line_number_start: 44
 line_highlights: 45
@@ -36,7 +36,7 @@ Create a new variable called `choice` and set the value to `None`:
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - menu()
 line_numbers: true
 line_number_start: 44
 line_highlights: 46
@@ -60,7 +60,7 @@ You can use a **while loop** to run a piece of code **while** a **condition** is
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - menu()
 line_numbers: true
 line_number_start: 45
 line_highlights: 48-49
@@ -86,7 +86,7 @@ Underneath the last line (making sure you still have an indent!), type:
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - menu()
 line_numbers: true
 line_number_start: 45
 line_highlights: 51-55
@@ -110,12 +110,12 @@ def menu():
 
 --- task ---
 
-On line 53, change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded:
+Change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded:
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - menu()
 line_numbers: true
 line_number_start: 45
 line_highlights: 53
@@ -139,12 +139,12 @@ def menu():
 
 --- task ---
 
-At the end of your `main()` function on line 59, type `menu()` to call the `menu` function when the program runs:
+At the end of your `main()` function, type `menu()` to call the `menu` function when the program runs:
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - main()
 line_numbers: true
 line_number_start: 58
 line_highlights: 62
