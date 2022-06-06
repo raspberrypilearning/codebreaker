@@ -1,26 +1,31 @@
+---
 title: Codebreaker
 hero_image: images/banner.png
-description: Analyse a frequency graph to crack the code, whilst learning about lists and functions
+description: Analyse a frequency graph to crack the code, whilst learning about lists
+  and functions
 version: 4
 listed: false
 copyedit: false
-last_tested: "2021-03-26"
+last_tested: '2021-03-26'
 steps:
-  - title: Introduction
-  - title: Encode the alphabet
-  - title: Encode a message
-    completion: engaged
-  - title: Create a menu
-  - title: Encode text from a file
-  - title: Create a frequency analyser
-  - title: Analyse the frequency
-    completion: internal
-  - title: Reflection
-    completion: external
-    knowledge_quiz:
-      path: quiz1
-      version: 1
-      questions: 3
-      passing_score: 3
-  - title: Upgrade your project
-  - title: What next?
+- title: Introduction
+- title: Encode the alphabet
+- title: Encode a message
+  completion:
+  - engaged
+- title: Create a menu
+- title: Encode text from a file
+- title: Create a frequency analyser
+- title: Analyse the frequency
+  completion:
+  - internal
+- title: Reflection
+  knowledge_quiz:
+    path: quiz1
+    version: 1
+    questions: 3
+    passing_score: 3
+  completion:
+  - external
+- title: Upgrade your project
+- title: What next?
