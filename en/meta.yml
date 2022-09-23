@@ -9,7 +9,7 @@ listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
-  - title: You will need
+  - title: You will make
   - title: Encode the alphabet
   - title: Encode a message
     completion:
