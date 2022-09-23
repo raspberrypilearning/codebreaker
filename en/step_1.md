@@ -21,7 +21,7 @@ Run the program twice to explore how it works:
 
 </div>
 <div class="trinket">
-<iframe src="https://trinket.io/embed/python/a867876e98?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/1ebc46d7ff?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
 --- /task ---

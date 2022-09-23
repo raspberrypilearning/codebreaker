@@ -67,8 +67,6 @@ Find the `input.txt` tab in Trinket to access the contents of the text file. You
 
 ![Animation demonstrating how to find the input.txt tab at the top of the Trinket window.](images/input.gif)
 
-<!-- Does this need any instructions for offline use?-->
-
 --- /task ---
 
 --- task ---

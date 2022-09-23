@@ -1,6 +1,6 @@
 ## What next?
 
-If you are following the [More Python](https://projects.raspberrypi.org/en/raspberrypi/python-2) pathway, you can move on to the [Encoded art](https://learning-admin.raspberrypi.org/en/projects/encoded-art/0) project. In this project, you will make amazing artwork using data!
+If you are following the [More Python](https://projects.raspberrypi.org/en/raspberrypi/python-2) pathway, you can move on to the [Encoded art](https://projects.raspberrypi.org/en/projects/encoded-art/0) project. In this project, you will make amazing artwork using data!
 
 --- print-only ---
 
