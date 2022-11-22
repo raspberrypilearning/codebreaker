@@ -1,0 +1,71 @@
+alphabet
+
+code
+
+abcdefghijklmnopqrstuvwxyz
+
+create_code
+
+backwards
+
+text
+
+output
+
+letter
+
+Test
+
+menu
+
+choice
+
+Please enter c to encode/decode text, or f to perform frequency analysis:
+
+Running your message through the cypher…
+
+my secret message
+
+message
+
+get_text
+
+frequency
+
+total_letters
+
+Analysing message…
+
+message_frequency
+
+make_chart
+
+Frequency analysis
+
+language
+
+Target message
+
+language_frequency
+
+add
+
+result
+
+one
+
+two
+
+word
+
+Hello
+
+english
+
+french
+
+spanish
+
+Which language is your message in? English French Spanish
+
+What text would you like to encode?
