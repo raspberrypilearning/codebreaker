@@ -22,8 +22,8 @@ Find the `# Fetch and return text from a file` comment then define a `get_text()
 language: python
 filename: main.py - get_text()
 line_numbers: true
-line_number_start: 40
-line_highlights: 41-45
+line_number_start: 37
+line_highlights: 38-42
 ---
 # Fetch and return text from a file
 def get_text(filename):
@@ -44,8 +44,8 @@ The `menu()` function needs to encode a secret message from a text file. **Repla
 language: python
 filename: main.py - menu()
 line_numbers: true
-line_number_start: 55
-line_highlights: 57
+line_number_start: 52
+line_highlights: 54
 ---
   if choice == 'c':
     print('Running your message through the cypher…')

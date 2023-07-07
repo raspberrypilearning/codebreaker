@@ -73,8 +73,8 @@ line_numbers: true
 line_number_start: 5 
 line_highlights: 6-7
 ---
-# Set up data structures 
-alphabet = list(' abcdefghijklmnopqrstuvwxyz ') #  List from a string
+# Set up data structures
+alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # List from a string
 code = {}
 
 --- /code ---
@@ -149,8 +149,8 @@ Find the `# Start up` comment and **define** a `main()` function to call your `c
 language: python
 filename: main.py - main()
 line_numbers: true
-line_number_start: 38
-line_highlights: 39-42
+line_number_start: 37
+line_highlights: 38-41
 ---
 # Start up
 def main():

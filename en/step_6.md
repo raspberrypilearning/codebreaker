@@ -24,8 +24,8 @@ Beneath the comment that reads `# Calculate the frequency of all letters in a pi
 language: python
 filename: main.py - frequency()
 line_numbers: true
-line_number_start: 19
-line_highlights: 20-21
+line_number_start: 18
+line_highlights: 19-20
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -43,7 +43,7 @@ Create a dictionary called `freq` and for every `letter` in the list `alphabet` 
 language: python
 filename: main.py - frequency()
 line_numbers: true
-line_number_start: 19
+line_number_start: 18
 line_highlights: 22-24
 ---
 # Calculate the frequency of all letters in a piece of text
@@ -68,8 +68,8 @@ Make sure you **keep the indentation** as shown in this code.
 language: python
 filename: main.py - frequency()
 line_numbers: true
-line_number_start: 19
-line_highlights: 27
+line_number_start: 18
+line_highlights: 26
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -95,8 +95,8 @@ Create a `for` loop to count every time each letter appears in the text. Leave a
 language: python
 filename: main.py - frequency()
 line_numbers: true
-line_number_start: 19
-line_highlights: 29-31
+line_number_start: 18
+line_highlights: 28-30
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -146,8 +146,8 @@ Create a `loop` that converts the number of times the letters appear into a perc
 language: python
 filename: main.py - frequency()
 line_numbers: true
-line_number_start: 19
-line_highlights: 33-34
+line_number_start: 18
+line_highlights: 32-33
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -178,8 +178,8 @@ def frequency(text):
 language: python
 filename: main.py - frequency()
 line_numbers: true
-line_number_start: 19
-line_highlights: 36
+line_number_start: 18
+line_highlights: 35
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):
@@ -211,15 +211,15 @@ Underneath your first `if` statement asking the user to select 'c', you need to 
 
 --- task ---
 
-Leave a blank line after the `if` statement and, on line 89, type:
+Leave a blank line after the `if` statement and, on line 72, type:
 
 --- code ---
 ---
 language: python
 filename: main.py - menu()
 line_numbers: true
-line_number_start: 67
-line_highlights: 76-80
+line_number_start: 63
+line_highlights: 72-76
 ---
   while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
     choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')

@@ -18,8 +18,8 @@ Now you are going to create a menu system for your user to make choices about wh
 language: python
 filename: main.py - menu()
 line_numbers: true
-line_number_start: 44
-line_highlights: 45
+line_number_start: 41
+line_highlights: 42
 ---
 # Create a text-based menu system
 def menu():
@@ -38,8 +38,8 @@ Create a new variable called `choice` and set the value to `''`:
 language: python
 filename: main.py - menu()
 line_numbers: true
-line_number_start: 44
-line_highlights: 46
+line_number_start: 41
+line_highlights: 43
 ---
 # Create a text-based menu system  
 def menu():
@@ -62,8 +62,8 @@ You can use a **while loop** to run a piece of code **while** a **condition** is
 language: python
 filename: main.py - menu()
 line_numbers: true
-line_number_start: 45
-line_highlights: 48-49
+line_number_start: 42
+line_highlights: 45-46
 ---
 def menu():
   choice = ''  # Start with a wrong answer for choice
@@ -87,8 +87,8 @@ Underneath the last line (making sure you still have an indent!), type:
 language: python
 filename: main.py - menu()
 line_numbers: true
-line_number_start: 45
-line_highlights: 51-55
+line_number_start: 42
+line_highlights: 48-52
 ---
 def menu():
   choice = ''  # Start with a wrong answer for choice
@@ -115,8 +115,8 @@ Change the string that says `'my secret message'` to anything you like. This str
 language: python
 filename: main.py - menu()
 line_numbers: true
-line_number_start: 45
-line_highlights: 53
+line_number_start: 42
+line_highlights: 50
 ---
 def menu():
   choice = ''  # Start with a wrong answer for choice.
@@ -143,8 +143,8 @@ At the end of your `main()` function, type `menu()` to call the `menu` function 
 language: python
 filename: main.py - main()
 line_numbers: true
-line_number_start: 58
-line_highlights: 62
+line_number_start: 54
+line_highlights: 58
 ---
 # Start up
 def main():

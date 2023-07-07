@@ -42,8 +42,8 @@ Find the comment that says `# Encode/decode a piece of text — atbash is symmet
 language: python
 filename: main.py - atbash()
 line_numbers: true
-line_number_start: 27 
-line_highlights: 28
+line_number_start: 26
+line_highlights: 27
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
@@ -69,12 +69,12 @@ Beneath the line of code where you have defined the `atbash()` function, type:
 language: python
 filename: main.py - atbash()
 line_numbers: true
-line_number_start: 27 
-line_highlights: 29-30
+line_number_start: 26
+line_highlights: 28-29
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
-  text = text.lower() # Converts text to lower case
+  text = text.lower()  # Converts text to lower case
   output = ''
 
 --- /code ---
@@ -94,12 +94,12 @@ Leave a blank line under the last code you entered (make sure you keep the inden
 language: python
 filename: main.py - atbash()
 line_numbers: true
-line_number_start: 27
-line_highlights: 32-36
+line_number_start: 26
+line_highlights: 31-35
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
-  text = text.lower() # Converts text to lower case
+  text = text.lower()  # Converts text to lower case
   output = ''
   
   for letter in text: 
@@ -125,8 +125,8 @@ The 'Test' string is **passed** into the function so that it can be encoded.
 language: python
 filename: main.py - main()
 line_numbers: true
-line_number_start: 48
-line_highlights: 51
+line_number_start: 45
+line_highlights: 48
 ---
 # Start up
 def main():
@@ -158,8 +158,8 @@ def main():
 language: python
 filename: main.py - main()
 line_numbers: true
-line_number_start: 48
-line_highlights: 51
+line_number_start: 45
+line_highlights: 48
 ---
 # Start up
 def main():
