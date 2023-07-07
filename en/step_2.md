@@ -5,15 +5,51 @@
 To start, you will create a dictionary for your encoded letters. 
 </div>
 <div>
-![A screenshot of the output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}
+![The output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}
 </div>
 </div>
 
 --- task ---
 
-Open the [Codebreaker starter project](https://trinket.io/python/0eb6b467c0){:target="_blank"}. Trinket will open in another browser tab. 
+Open the [Codebreaker starter project](https://editor.raspberrypi.org/en/projects/codebreaker-project-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
 
-If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
+If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
+
+If you are not using the code editor in your browser, you will need to download the project files and you may need to install `pygal` before you can import it.
+
+--- collapse ---
+---
+title: Installing pygal
+---
+
+### On Windows
+In the **Command Prompt** type the following and press the <kbd>Enter</kbd> key:
+
+```
+pip install pygal
+```
+
+Wait for the installation to complete and then continue with the project.
+
+### On a Mac
+In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
+
+```
+pip3 install pygal
+```
+
+Wait for the installation to complete and then continue with the project.
+
+### On Linux, including Raspberry Pi OS
+In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
+
+```
+pip install pygal
+```
+
+Wait for the installation to complete and then continue with the project.
+
+--- /collapse ---
 
 --- /task ---
 
@@ -152,10 +188,10 @@ def create_code():
 
 --- task ---
 
-**Test:** Run your code to see if the `code` dictionary displays correctly. You should see a pattern starting with `a` paired with `z` and `b` being paired with `y`.
+**Test:** Run your code to see if the `code` dictionary displays correctly. You should see a pattern starting with the letter `a` paired with `z` and the letter `b` being paired with `y`.
 
 
-![A screenshot of the output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}
+![The output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}
 
 **Debug:** There are no error messages but your code dictionary is not displaying on the screen:
 - Make sure that `print(code)` is indented correctly within the `create_code` function

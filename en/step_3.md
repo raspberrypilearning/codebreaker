@@ -5,7 +5,7 @@
 In this step, you will create a function that can take your text, flip it and reverse it with your atbash cypher list, and return it as an encoded message. 
 </div>
 <div>
-![A screenshot of the output of the code created in this step. An encoded version of a secret message is displayed.](images/test-encoded.PNG){:width="300px"}
+![The output of the code created in this step. An encoded version of a secret message is displayed.](images/test-encoded.PNG){:width="300px"}
 </div>
 </div>
 
@@ -42,8 +42,8 @@ Find the comment that says `# Encode/decode a piece of text — atbash is symmet
 language: python
 filename: main.py - atbash()
 line_numbers: true
-line_number_start: 26 
-line_highlights: 27
+line_number_start: 27 
+line_highlights: 28
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
@@ -62,7 +62,7 @@ First your function needs to convert the `text` to lower case. A new **variable*
 
 --- task ---
 
- Beneath the line of code where you have defined the `atbash()` function, type: 
+Beneath the line of code where you have defined the `atbash()` function, type: 
 
 --- code ---
 ---
@@ -94,8 +94,8 @@ Leave a blank line under the last code you entered (make sure you keep the inden
 language: python
 filename: main.py - atbash()
 line_numbers: true
-line_number_start: 28
-line_highlights: 33-37
+line_number_start: 27
+line_highlights: 32-36
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
@@ -141,7 +141,7 @@ def main():
 
 **Test:** Run your code to see if the test message displays correctly. You should see the console output `gvhg`.
 
-![A screenshot of the output of the encoded text that is created in this step.](images/test-encoded.PNG){:width="200px"}
+![The output of the encoded text that is created in this step.](images/test-encoded.PNG){:width="200px"}
 
 **Debug:** If you see a message about an indentation error:
 - Check that you have indented all of your code correctly
@@ -164,7 +164,7 @@ line_highlights: 51
 # Start up
 def main():
   create_code()
-  #print(atbash('Test'))
+  # print(atbash('Test'))
 
 --- /code ---
 
