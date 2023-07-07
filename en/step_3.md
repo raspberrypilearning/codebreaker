@@ -21,10 +21,10 @@ line_numbers: true
 line_number_start: 14
 line_highlights: 17
 ---
-  for i in range(len(alphabet)): # Gets length of a list
-    code[alphabet[i]] = backwards[i] # Populates the code dictionary with a letter of the alphabet and its encoded letter
+  for i in range(len(alphabet)):  # Gets length of a list
+    code[alphabet[i]] = backwards[i]  # Populates the code dictionary with a letter of the alphabet and its encoded letter
   
-#  print(code)
+# print(code)
 --- /code ---
  
 --- /task ---
@@ -104,9 +104,9 @@ def atbash(text):
   
   for letter in text: 
     if letter in code: 
-      output += code[letter] # Populates output with the encoded/decoded message using the dictionary
+      output += code[letter]  # Populates output with the encoded/decoded message using the dictionary
   
-  return output # Return the encoded/decoded message
+  return output  # Return the encoded/decoded message
 
 --- /code ---
 

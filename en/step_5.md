@@ -5,14 +5,13 @@
 It's time to encode a message from a text file.
 </div>
 <div>
-![A screenshot of the output of the code displaying an encoded message.](images/encoded-message.PNG){:width="400px"}
+![The output of the code displaying an encoded message.](images/encoded-message.PNG){:width="400px"}
 </div>
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
 Loading the text from a file is more efficient than typing or pasting a large string into a program. There is less opportunity to 'break' your code when changing a single target file name, than when copy and pasting large blocks of text each time.
 </p>
-
 
 --- task ---
 
@@ -29,11 +28,10 @@ line_highlights: 41-45
 # Fetch and return text from a file
 def get_text(filename):
   with open(filename) as f:
-    text = f.read().replace('\n','') # Need to strip the newline characters
+    text = f.read().replace('\n','')  # Need to strip the newline characters
 
   return text
 --- /code ---
-
 
 --- /task ---
 
@@ -51,11 +49,10 @@ line_highlights: 57
 ---
   if choice == 'c':
     print('Running your message through the cypher…')
-    message = get_text('input.txt') # Take input from a file 
+    message = get_text('input.txt')  # Take input from a file
     code = atbash(message)
     print(code)
 --- /code ---
-
 
 --- /task ---
 
@@ -63,9 +60,7 @@ You can now **add** your own secret message to the `input.txt` file.
 
 --- task ---
 
-Find the `input.txt` tab in Trinket to access the contents of the text file. You will see this just above your code window. Delete the `replace with your message` text and enter your own secret message. 
-
-![Animation demonstrating how to find the input.txt tab at the top of the Trinket window.](images/input.gif)
+Find the `input.txt` file in your code editor to access the contents of the text file. Delete the `replace with your message` text and enter your own secret message. 
 
 --- /task ---
 
@@ -79,7 +74,7 @@ Find the `input.txt` tab in Trinket to access the contents of the text file. You
 - This is normal. This is the encoded message for the text `replace with your message`. Your message will be different.
 
 **Debug:** You see an error message that says `TypeError: get_text() takes exactly 1 arguments`:
-- Check that you have entered `input.txt` inside the round brackets on line 64
+- Check that you have entered `input.txt` inside the round brackets on line 57
 
 **Debug:** You see an `Indentation error` message:
 - Check that you have correctly indented all of your new code. Revisit the tasks above to check. 
@@ -109,8 +104,6 @@ You can copy text and paste a copy in another place.
  4. Paste the text by using your browser's menu — choose **Edit** > **Paste**. You can also use a keyboard shortcut — <kbd>Ctrl</kbd>+<kbd>V</kbd> on Windows or Linux systems, or <kbd>Cmd</kbd>+<kbd>V</kbd> on a Mac.
 
 --- /collapse ---
-
-![Animation showing the encoded message being copy and pasted into the input.txt file.](images/decode-message.gif)
 
 --- /task ---
 
