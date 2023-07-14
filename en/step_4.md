@@ -43,7 +43,7 @@ line_highlights: 43
 ---
 # Create a text-based menu system  
 def menu():
-  choice = ''  # Start with a wrong answer for choice.
+    choice = ''  # Start with a wrong answer for choice.
 
 --- /code ---
 
@@ -66,10 +66,10 @@ line_number_start: 42
 line_highlights: 45-46
 ---
 def menu():
-  choice = ''  # Start with a wrong answer for choice
-  
-  while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
+    choice = ''  # Start with a wrong answer for choice
+
+    while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
+        choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
 --- /code ---
 
 --- /task ---
@@ -91,16 +91,16 @@ line_number_start: 42
 line_highlights: 48-52
 ---
 def menu():
-  choice = ''  # Start with a wrong answer for choice
+    choice = ''  # Start with a wrong answer for choice
 
-  while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
-  
-  if choice == 'c':
-    print('Running your message through the cypher…')
-    message = 'my secret message' 
-    code = atbash(message)
-    print(code)
+    while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
+        choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
+
+    if choice == 'c':
+        print('Running your message through the cypher…')
+        message = 'my secret message' 
+        code = atbash(message)
+        print(code)
 
 --- /code ---
 
@@ -119,16 +119,16 @@ line_number_start: 42
 line_highlights: 50
 ---
 def menu():
-  choice = ''  # Start with a wrong answer for choice.
-  
-  while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-    choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
-  
-  if choice == 'c':
-    print('Running your message through the cypher…')
-    message = 'my secret message'
-    code = atbash(message)
-    print(code)
+    choice = ''  # Start with a wrong answer for choice.
+
+    while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
+        choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
+
+    if choice == 'c':
+        print('Running your message through the cypher…')
+        message = 'my secret message'
+        code = atbash(message)
+        print(code)
 
 --- /code ---
 
@@ -148,9 +148,9 @@ line_highlights: 58
 ---
 # Start up
 def main():
-  create_code()
-  # print(atbash('Test'))
-  menu()
+    create_code()
+    # print(atbash('Test'))
+    menu()
 
 --- /code ---
 

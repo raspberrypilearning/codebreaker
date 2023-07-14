@@ -21,8 +21,8 @@ line_numbers: true
 line_number_start: 14
 line_highlights: 17
 ---
-  for i in range(len(alphabet)):  # Gets length of a list
-    code[alphabet[i]] = backwards[i]  # Populates the code dictionary with a letter of the alphabet and its encoded letter
+    for i in range(len(alphabet)):  # Gets length of a list
+        code[alphabet[i]] = backwards[i]  # Populates the code dictionary with a letter of the alphabet and its encoded letter
   
 # print(code)
 --- /code ---
@@ -74,8 +74,8 @@ line_highlights: 28-29
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
-  text = text.lower()  # Converts text to lower case
-  output = ''
+    text = text.lower()  # Converts text to lower case
+    output = ''
 
 --- /code ---
 
@@ -99,14 +99,14 @@ line_highlights: 31-35
 ---
 # Encode/decode a piece of text — atbash is symmetrical
 def atbash(text):
-  text = text.lower()  # Converts text to lower case
-  output = ''
-  
-  for letter in text: 
-    if letter in code: 
-      output += code[letter]  # Populates output with the encoded/decoded message using the dictionary
-  
-  return output  # Return the encoded/decoded message
+    text = text.lower()  # Converts text to lower case
+    output = ''
+
+    for letter in text: 
+        if letter in code: 
+            output += code[letter]  # Populates output with the encoded/decoded message using the dictionary
+
+    return output  # Return the encoded/decoded message
 
 --- /code ---
 
@@ -130,8 +130,8 @@ line_highlights: 48
 ---
 # Start up
 def main():
-  create_code()
-  print(atbash('Test'))
+    create_code()
+    print(atbash('Test'))
 
 --- /code ---
 
@@ -163,8 +163,8 @@ line_highlights: 48
 ---
 # Start up
 def main():
-  create_code()
-  # print(atbash('Test'))
+    create_code()
+    # print(atbash('Test'))
 
 --- /code ---
 

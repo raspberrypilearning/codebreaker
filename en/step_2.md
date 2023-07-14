@@ -99,7 +99,7 @@ line_highlights: 11-12
 ---
 # Create the atbash code by reversing the alphabet
 def create_code():
-  backwards = list(reversed(alphabet))  # Reverses a list
+    backwards = list(reversed(alphabet))  # Reverses a list
 
 --- /code ---
 
@@ -130,10 +130,10 @@ line_number_start: 11
 line_highlights: 14-15
 ---
 def create_code():
-  backwards = list(reversed(alphabet))  # Reverses a list
-  
-  for i in range(len(alphabet)):  # Gets the length of a list
-    code[alphabet[i]] = backwards[i]  # Populate the code dictionary with a letter of the alphabet and its encoded letter
+    backwards = list(reversed(alphabet))  # Reverses a list
+
+    for i in range(len(alphabet)):  # Gets the length of a list
+        code[alphabet[i]] = backwards[i]  # Populate the code dictionary with a letter of the alphabet and its encoded letter
 --- /code ---
 
 --- /task ---
@@ -154,7 +154,7 @@ line_highlights: 38-41
 ---
 # Start up
 def main():
-  create_code()
+    create_code()
 
 main()
 --- /code ---
@@ -176,12 +176,12 @@ line_number_start: 11
 line_highlights: 17
 ---
 def create_code():
-  backwards = list(reversed(alphabet))
-  
-  for i in range(len(alphabet)):  #  Gets length of a list
-    code[alphabet[i]] = backwards[i]  #  Populates the code dictionary with a letter of the alphabet and its encoded letter
-  
-  print(code)
+    backwards = list(reversed(alphabet))
+
+    for i in range(len(alphabet)):  #  Gets length of a list
+        code[alphabet[i]] = backwards[i]  #  Populates the code dictionary with a letter of the alphabet and its encoded letter
+
+    print(code)
 --- /code ---
 
 --- /task ---

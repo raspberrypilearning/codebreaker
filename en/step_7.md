@@ -24,11 +24,11 @@ line_numbers: true
 line_number_start: 72
 line_highlights: 76
 ---
-  elif choice == 'f':
-    print('Analysing message…')
-    message = get_text('input.txt')  # Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
-    message_freq = frequency(message)  # Get the frequency of the letters in the message, as %
-    # print(message_freq)
+    elif choice == 'f':
+        print('Analysing message…')
+        message = get_text('input.txt')  # Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
+        message_freq = frequency(message)  # Get the frequency of the letters in the message, as %
+        # print(message_freq)
 --- /code ---
 
 --- /task ---
@@ -51,7 +51,7 @@ line_highlights: 37-38
 ---
 # Make frequency chart
 def make_chart(text, language):
-  chart = Bar(width=800, height=400, title='Frequency analysis', x_labels = list(text.keys()))
+    chart = Bar(width=800, height=400, title='Frequency analysis', x_labels = list(text.keys()))
 --- /code ---
 
 --- /task ---
@@ -70,9 +70,9 @@ line_highlights: 39-40
 ---
 # Make frequency chart
 def make_chart(text, language):
-  chart = Bar(width=800, height=400, title='Frequency analysis', x_labels = list(text.keys()))
-  chart.add('Target message', list(text.values()))  # Label the frequency data for the encoded message
-  chart.add('Language', list(language.values()))  # Label the frequency data for the language
+    chart = Bar(width=800, height=400, title='Frequency analysis', x_labels = list(text.keys()))
+    chart.add('Target message', list(text.values()))  # Label the frequency data for the encoded message
+    chart.add('Language', list(language.values()))  # Label the frequency data for the language
 --- /code ---
 
 --- /task ---
@@ -91,11 +91,11 @@ line_highlights: 42
 ---
 # Make frequency chart
 def make_chart(text, language):
-  chart = Bar(width=800, height=400, title='Frequency analysis', x_labels = list(text.keys()))
-  chart.add('Target message', list(text.values()))  # Label the frequency data for the encoded message
-  chart.add('Language', list(language.values()))  # Label the frequency data for the language
-  
-  chart.render()
+    chart = Bar(width=800, height=400, title='Frequency analysis', x_labels = list(text.keys()))
+    chart.add('Target message', list(text.values()))  # Label the frequency data for the encoded message
+    chart.add('Language', list(language.values()))  # Label the frequency data for the language
+
+    chart.render()
 --- /code ---
 
 --- /task ---
@@ -114,13 +114,13 @@ line_numbers: true
 line_number_start: 75
 line_highlights: 80-81
 ---
-  elif choice == 'f':
-    print('Analysing message…')
-    message = get_text('input.txt')  # Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
-    message_freq = frequency(message)  # Get the frequency of the letters in the message, as %
-    # print(message_freq)
-    lang_freq = english  # Import the English frequency dictionary
-    make_chart(message_freq, lang_freq)  # Call the function to make a chart
+    elif choice == 'f':
+        print('Analysing message…')
+        message = get_text('input.txt')  # Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
+        message_freq = frequency(message)  # Get the frequency of the letters in the message, as %
+        # print(message_freq)
+        lang_freq = english  # Import the English frequency dictionary
+        make_chart(message_freq, lang_freq)  # Call the function to make a chart
 --- /code ---
 
 --- /task ---
@@ -164,10 +164,10 @@ line_numbers: true
 line_number_start: 75
 line_highlights: 77
 ---
-  elif choice == 'f':
-    print('Analysing message…')
-    message = get_text('longer.txt') 
-    message_freq = frequency(message)  # Get the frequency of the letters in the message, as %
+    elif choice == 'f':
+        print('Analysing message…')
+        message = get_text('longer.txt') 
+        message_freq = frequency(message)  # Get the frequency of the letters in the message, as %
 --- /code ---
 
 --- /task ---

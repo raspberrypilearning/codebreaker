@@ -27,8 +27,8 @@ line_highlights: 38-42
 ---
 # Fetch and return text from a file
 def get_text(filename):
-  with open(filename) as f:
-    text = f.read().replace('\n','')  # Need to strip the newline characters
+    with open(filename) as f:
+        text = f.read().replace('\n','')  # Need to strip the newline characters
 
   return text
 --- /code ---
@@ -47,11 +47,11 @@ line_numbers: true
 line_number_start: 52
 line_highlights: 54
 ---
-  if choice == 'c':
-    print('Running your message through the cypher…')
-    message = get_text('input.txt')  # Take input from a file
-    code = atbash(message)
-    print(code)
+    if choice == 'c':
+        print('Running your message through the cypher…')
+        message = get_text('input.txt')  # Take input from a file
+        code = atbash(message)
+        print(code)
 --- /code ---
 
 --- /task ---
