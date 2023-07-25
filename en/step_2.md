@@ -5,15 +5,51 @@
 To start, you will create a dictionary for your encoded letters. 
 </div>
 <div>
-![A screenshot of the output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}
+![The output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}
 </div>
 </div>
 
 --- task ---
 
-Open the [Codebreaker starter project](https://trinket.io/python/0eb6b467c0){:target="_blank"}. Trinket will open in another browser tab. 
+Open the [Codebreaker starter project](https://editor.raspberrypi.org/en/projects/codebreaker-project-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
 
-If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
+If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
+
+If you are not using the code editor in your browser, you will need to download the project files and you may need to install `pygal` before you can import it.
+
+--- collapse ---
+---
+title: Installing pygal
+---
+
+### On Windows
+In the **Command Prompt** type the following and press the <kbd>Enter</kbd> key:
+
+```
+pip install pygal
+```
+
+Wait for the installation to complete and then continue with the project.
+
+### On a Mac
+In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
+
+```
+pip3 install pygal
+```
+
+Wait for the installation to complete and then continue with the project.
+
+### On Linux, including Raspberry Pi OS
+In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
+
+```
+pip install pygal
+```
+
+Wait for the installation to complete and then continue with the project.
+
+--- /collapse ---
 
 --- /task ---
 
@@ -37,8 +73,8 @@ line_numbers: true
 line_number_start: 5 
 line_highlights: 6-7
 ---
-# Set up data structures 
-alphabet = list(' abcdefghijklmnopqrstuvwxyz ') # List from a string
+# Set up data structures
+alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # List from a string
 code = {}
 
 --- /code ---
@@ -63,7 +99,7 @@ line_highlights: 11-12
 ---
 # Create the atbash code by reversing the alphabet
 def create_code():
-  backwards = list(reversed(alphabet)) # Reverses a list
+    backwards = list(reversed(alphabet))  # Reverses a list
 
 --- /code ---
 
@@ -94,10 +130,10 @@ line_number_start: 11
 line_highlights: 14-15
 ---
 def create_code():
-  backwards = list(reversed(alphabet)) # Reverses a list
-  
-  for i in range(len(alphabet)): # Gets the length of a list
-    code[alphabet[i]] = backwards[i] # Populate the code dictionary with a letter of the alphabet and its encoded letter
+    backwards = list(reversed(alphabet))  # Reverses a list
+
+    for i in range(len(alphabet)):  # Gets the length of a list
+        code[alphabet[i]] = backwards[i]  # Populate the code dictionary with a letter of the alphabet and its encoded letter
 --- /code ---
 
 --- /task ---
@@ -113,12 +149,12 @@ Find the `# Start up` comment and **define** a `main()` function to call your `c
 language: python
 filename: main.py - main()
 line_numbers: true
-line_number_start: 38
-line_highlights: 39-42
+line_number_start: 37
+line_highlights: 38-41
 ---
 # Start up
 def main():
-  create_code()
+    create_code()
 
 main()
 --- /code ---
@@ -140,22 +176,22 @@ line_number_start: 11
 line_highlights: 17
 ---
 def create_code():
-  backwards = list(reversed(alphabet))
-  
-  for i in range(len(alphabet)): # Gets length of a list
-    code[alphabet[i]] = backwards[i] # Populates the code dictionary with a letter of the alphabet and its encoded letter
-  
-  print(code)
+    backwards = list(reversed(alphabet))
+
+    for i in range(len(alphabet)):  #  Gets length of a list
+        code[alphabet[i]] = backwards[i]  #  Populates the code dictionary with a letter of the alphabet and its encoded letter
+
+    print(code)
 --- /code ---
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code to see if the `code` dictionary displays correctly. You should see a pattern starting with `a` paired with `z` and `b` being paired with `y`.
+**Test:** Run your code to see if the `code` dictionary displays correctly. You should see a pattern starting with the letter `a` paired with `z` and the letter `b` being paired with `y`.
 
 
-![A screenshot of the output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}
+![The output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}
 
 **Debug:** There are no error messages but your code dictionary is not displaying on the screen:
 - Make sure that `print(code)` is indented correctly within the `create_code` function

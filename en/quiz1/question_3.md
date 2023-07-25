@@ -21,7 +21,7 @@ Not quite, Python needs to know **which** dictionary to select the keys from.
 
 - ( ) 
 
-chart.x_labels = text
+chart.x_labels = list(text)
 
   --- feedback ---
 
@@ -31,7 +31,7 @@ chart.x_labels = text
 
 - ( ) 
 
-chart.x_labels = keys.text()
+chart.x_labels = list(keys.text())
 
   --- feedback ---
 
@@ -41,7 +41,7 @@ chart.x_labels = keys.text()
 
 - (x) 
 
-chart.x_labels = text.keys()
+chart.x_labels = list(text.keys())
 
   --- feedback ---
 
