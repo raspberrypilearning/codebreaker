@@ -5,7 +5,7 @@
 It's time to encode a message from a text file.
 </div>
 <div>
-![The output of the code displaying an encoded message.](images/encoded-message.PNG){:width="400px"}
+![The output of the code displaying an encoded message.](images/input-text-test.PNG){:width="400px"}
 </div>
 </div>
 
@@ -30,7 +30,7 @@ def get_text(filename):
     with open(filename) as f:
         text = f.read().replace('\n','')  # Need to strip the newline characters
 
-  return text
+    return text
 --- /code ---
 
 --- /task ---
