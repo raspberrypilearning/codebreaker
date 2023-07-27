@@ -109,8 +109,8 @@ def frequency(text):
     total_letters = len(text)  # Count the letters in the message
 
     for letter in text:
-    if letter in freq:
-        freq[letter] += 1
+        if letter in freq:
+            freq[letter] += 1
 --- /code ---
 
 --- /task ---
