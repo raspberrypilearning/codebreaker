@@ -1,6 +1,6 @@
 ## What next?
 
-If you are following the [More Python](https://projects.raspberrypi.org/en/raspberrypi/python-2) pathway, you can move on to the [Encoded art](https://projects.raspberrypi.org/en/projects/encoded-art/0) project. In this project, you will make amazing artwork using data!
+If you are following the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) pathway, you can move on to the [Encoded art](https://projects.raspberrypi.org/en/projects/encoded-art/0) project. In this project, you will make amazing artwork using data!
 
 --- print-only ---
 
@@ -10,9 +10,8 @@ If you are following the [More Python](https://projects.raspberrypi.org/en/raspb
 
 --- no-print ---
 
-<div class="trinket">
-<iframe src="https://trinket.io/embed/python/ff931d5dd5?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-</div>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/lost-in-space" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
 
 --- /no-print ---
 
