@@ -1,0 +1,77 @@
+Set up data structures
+
+List from a string
+
+Create the atbash code by reversing the alphabet
+
+Reverses a list
+
+Gets the length of a list
+
+Populate the code dictionary with a letter of the alphabet and its encoded letter
+
+Start up
+
+Test
+
+Encode/decode a piece of text — atbash is symmetrical
+
+Converts text to lower case
+
+Populates output with the encoded/decoded message using the dictionary
+
+Return the encoded/decoded message
+
+Create a text-based menu system
+
+Start with a wrong answer for choice.
+
+Keep asking the user for the right answer
+
+Please enter c to encode/decode text, or f to perform frequency analysis: 
+
+Running your message through the cypher…
+
+my secret message
+
+Fetch and return text from a file
+
+Need to strip the newline characters
+
+Take input from a file
+
+Calculate the frequency of all letters in a piece of text
+
+Convert the message to lower case and make it a list
+
+Create a dictionary of every letter, with a count of 0
+
+Count the letters in the message
+
+Convert from counts to percentages
+
+Analysing message…
+
+Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
+
+Get the frequency of the letters in the message, as %
+
+Make frequency chart
+
+Frequency analysis
+
+Target message
+
+Language
+
+Label the chart with the dictionary keys (A-Z)
+
+Label the frequency data for the encoded message
+
+Label the frequency data for the language
+
+Import the English frequency dictionary
+
+Call the function to make a chart
+
+hello

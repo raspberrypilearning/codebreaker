@@ -1,0 +1,3 @@
+name: "Codebreaker: Custom Short Message Encoder"
+identifier: "short-message-encoder"
+type: 'python'
