@@ -12,6 +12,8 @@ Populate the code dictionary with a letter of the alphabet and its encoded lette
 
 Start up
 
+Test
+
 Encode/decode a piece of text — atbash is symmetrical
 
 Converts text to lower case
@@ -25,6 +27,12 @@ Create a text-based menu system
 Start with a wrong answer for choice.
 
 Keep asking the user for the right answer
+
+Please enter c to encode/decode text, or f to perform frequency analysis: 
+
+Running your message through the cypher…
+
+my secret message
 
 Fetch and return text from a file
 
@@ -40,15 +48,21 @@ Create a dictionary of every letter, with a count of 0
 
 Count the letters in the message
 
-Maybe it's punctuation? First use of in as a conditional clause
-
 Convert from counts to percentages
+
+Analysing message…
 
 Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
 
 Get the frequency of the letters in the message, as %
 
 Make frequency chart
+
+Frequency analysis
+
+Target message
+
+Language
 
 Label the chart with the dictionary keys (A-Z)
 
@@ -60,14 +74,4 @@ Import the English frequency dictionary
 
 Call the function to make a chart
 
-Lowercase the message and make it a list
-
-First explicit use of keys
-
-First explicit use of values
-
-Frequency distribution of letters in multiple languages
-
-Provided as part of the starter
-
-replace with your message
+hello
