@@ -5,7 +5,7 @@
 Now you are going to create a menu system for your user to make choices about what they would like to do. 
 </div>
 <div>
-![Thehe output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
+![The output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
 </div>
 </div>
 
