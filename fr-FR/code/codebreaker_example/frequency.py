@@ -1,7 +1,7 @@
-# Frequency distribution of letters in multiple languages
-# Provided as part of the starter
+# Distribution de fréquence des lettres en plusieurs langues
+# Fourni dans le cadre du démarrage
 
-english = {
+anglais = {
     'a': 8.20,
     'b': 1.50,
     'c': 2.80,
