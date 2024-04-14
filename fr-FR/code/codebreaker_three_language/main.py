@@ -1,18 +1,18 @@
 ##!/bin/python3
 from pygal import Bar
-from frequency import english, french, spanish
+from frequence import anglais, francais, espagnol
 
-# Set up data structures
-alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # List from a string
+# Mise en place des structures de données
+alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # Liste à partir d'une chaîne de caractères
 code = {}
 
-# Create the atbash code by reversing the alphabet
-def create_code():
-    backwards = list(reversed(alphabet))  # Reversing a list
+# Créer le code atbash en inversant l'alphabet
+def creer_code():
+    inverses = list(reversed(alphabet))  # Inverse une liste
 
-    for i in range(len(alphabet)):  # Getting length of a list
-        # Populate the code dictionary with a letter of the alphabet and its encoded letter
-        code[alphabet[i]] = backwards[i]
+    for i in range(len(alphabet)):  # Obtenir la longueur d'une liste
+        # Remplir le dictionnaire de codes avec une lettre de l'alphabet et sa lettre codée
+        code[alphabet[i]] = inverses[i]
 
     # print(code)
 
