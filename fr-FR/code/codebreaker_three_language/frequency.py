@@ -1,7 +1,7 @@
-# Frequency distribution of letters in multiple languages
-# Provided as part of the starter
+# Distribution de fréquence des lettres en plusieurs langues
+# Fourni dans le cadre du démarrage
 
-english = {
+anglais = {
     'a': 8.20,
     'b': 1.50,
     'c': 2.80,
@@ -30,7 +30,7 @@ english = {
     'z': 0.07
 }
 
-french = {
+francais = {
     'a': 8.16,
     'b': 0.93,
     'c': 3.15,
@@ -59,7 +59,7 @@ french = {
     'z': 0.21
 }
 
-spanish = {
+espagnol = {
     'a': 12.1,
     'b': 1.50,
     'c': 3.87,
