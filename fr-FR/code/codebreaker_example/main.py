@@ -1,98 +1,98 @@
 #!/bin/python3
 from pygal import Bar
-from frequency import english
+from frequence import anglais
 
-# Set up data structures
-alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # List from a string
+# Mise en place des structures de données
+alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # Liste à partir d'une chaîne de caractères
 code = {}
 
-# Create the atbash code by reversing the alphabet
-def create_code():
-    backwards = list(reversed(alphabet))  # Reverses a list
+# Créer le code atbash en inversant l'alphabet
+def creer_code():
+    inverses = list(reversed(alphabet))  # Inverse une liste
 
-    for i in range(len(alphabet)):  # Gets the length of a list
-        # Populate the code dictionary with a letter of the alphabet and its encoded letter
-        code[alphabet[i]] = backwards[i]
+    for i in range(len(alphabet)):  # Obtenir la longueur d'une liste
+        # Remplir le dictionnaire de codes avec une lettre de l'alphabet et sa lettre codée
+        code[alphabet[i]] = inverses[i]
 
     # print(code)
 
-# Calculate the frequency of all letters in a piece of text
-def frequency(text):
-    # Convert the message to lower case and make it a list
-    text = list(text.lower())
+# Calculer la fréquence de toutes les lettres d'un texte
+def frequence(texte):
+    # Convertir le message en minuscules et en faire une liste
+    texte = list(texte.lower())
 
-    freq = {}  # Create a dictionary of every letter, with a count of 0
-    for letter in alphabet:
-        freq[letter] = 0
+    freq = {} # Créer un dictionnaire pour chaque lettre, avec un compte de 0
+    for lettre in alphabet:
+        freq[lettre] = 0
 
-    total_letters = len(text)  # Count the letters in the message
+    total_lettres = len(texte)  # Compter les lettres du message
 
-    for letter in text:
-        if letter in freq:
-            freq[letter] += 1
+    for lettre in texte:
+        if lettre in freq:
+            freq[lettre] += 1
 
-    for letter in freq:
-        freq[letter] = freq[letter] / total_letters * \
-            100  # Convert from counts to percentages
+    for lettre in freq:
+        freq[lettre] = freq[lettre] / total_lettres * \
+            100 # Convertir les comptages en pourcentages
 
     return freq
 
-# Make frequency chart
-def make_chart(text, language):
-    chart = Bar(width=800, height=400, title='Frequency analysis',
-                x_labels=list(text.keys()))
-    # Label the frequency data for the encoded message
-    chart.add('Target message', list(text.values()))
-    # Label the frequency data for the language
-    chart.add('Language', list(language.values()))
+# Faire un diagramme de fréquence
+def faire_graphique(texte, langue):
+    graphique = Bar(width=800, height=400, title='Analyse fréquentielle',
+                x_labels=list(texte.keys()))
+    # Étiqueter les données de fréquence pour le message codé
+    chart.add('Message cible', list(texte.values()))
+    # Étiqueter les données de fréquence pour la langue
+    chart.add('Langue', list(langue.values()))
 
     chart.render()
 
-# Encode/decode a piece of text — atbash is symetrical
-def atbash(text):
-    text = text.lower()  #  Converts text to lower case
-    output = ''
+# Coder/décoder un morceau de texte - atbash est symétrique
+def atbash(texte):
+    texte = texte.lower()  #  Convertit le texte en minuscules
+    sortie = ''
 
-    for letter in text:
-        if letter in code:
-            # Populates output with the encoded/decoded message using the dictionary
-            output += code[letter]
+    for lettre in texte:
+        if lettre in code:
+            # Remplit la sortie avec le message codé/décodé en utilisant le dictionnaire
+            sortie += code[lettre]
 
-    return output  # Return the encoded/decoded message
+    return sortie  # Retourner le message codé/décodé
 
-# Fetch and return text from a file
-def get_text(filename):
+# Récupérer et renvoyer le texte d'un fichier
+def obtenir_texte(filename):
     with open(filename) as f:
-        text = f.read().replace('\n', '')  # Need to strip the newline characters
+        texte = f.read().replace('\n', '')  # Nécessité de supprimer les caractères de retour à la ligne
 
-    return text
+    return texte
 
-# Create a text-based menu system
+# Créer un système de menu basé sur du texte
 def menu():
-    choice = ''  # Start with a wrong answer for choice.
+    choix = ''  # Commence par une mauvaise réponse pour le choix.
 
-    while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-        choice = input(
-            'Please enter c to encode/decode text, or f to perform frequency analysis: ')
+    while choix != 'c' and choix != 'f':  # Continuer à demander à l'utilisateur la bonne réponse
+        choix = input(
+            'Saisis c pour coder/décoder du texte, ou f pour effectuer une analyse fréquentielle : ')
 
-    if choice == 'c':
-        print('Running your message through the cypher…')
-        message = get_text('longer.txt')  # Take input from a file
+    if choix == 'c':
+        print('Nous passons ton message dans le cryptogramme…')
+        message = obtenir_texte('longer.txt')  # Prendre l'entrée d'un fichier
         code = atbash(message)
         print(code)
 
-    elif choice == 'f':
-        print('Analysing message…')
-        message = get_text('longer.txt')
+    elif choix == 'f':
+        print('Analyse du message…')
+        message = obtenir_texte('longer.txt')
         message_freq = frequency(message)
         # print(message_freq)
-        lang_freq = english  # Import the English frequency dictionary
-        # Call the function to make a chart
-        make_chart(message_freq, lang_freq)
+        lang_freq = anglais  # Importation du dictionnaire de fréquence anglais
+        # Appeler la fonction pour faire un graphique
+        faire_graphique(message_freq, lang_freq)
 
-# Start up
+# Démarrage
 def main():
-    create_code()
+    creer_code()
     # print(atbash('Test'))
     menu()
 
