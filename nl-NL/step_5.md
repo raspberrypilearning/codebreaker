@@ -15,7 +15,7 @@ Het laden van de tekst uit een bestand is efficiënter dan het typen of plakken 
 
 --- task ---
 
-Zoek de `# Haal tekst op en retourneer deze uit een bestand` opmerking en definieer vervolgens een `haal_tekst()` functie. Deze functie heeft één parameter `bestandsnaam`. Gebruik de `bestandsnaam` om het bestand te openen en het in te lezen in de `tekst` variabele, en **stuur** dan de `tekst` variabele terug.
+Zoek de `# Haal tekst op en retourneer deze uit een bestand` opmerking en definieer vervolgens een `ophalen_tekst()` functie. Deze functie heeft één parameter `bestandsnaam`. Gebruik de `bestandsnaam` om het bestand te openen en het in te lezen in de `tekst` variabele, en **stuur** dan de `tekst` variabele terug.
 
 --- code ---
 ---
@@ -37,7 +37,7 @@ def ophalen_tekst(bestandsnaam):
 
 --- task ---
 
-De functie `menu()` moet een geheim bericht uit een tekstbestand coderen. **Vervang** je geheime bericht door de functieaanroep `haal_tekst()`. Voer de naam van het bestand `input.txt` in als een **argument**.
+De functie `menu()` moet een geheim bericht uit een tekstbestand coderen. **Vervang** je geheime bericht door de functieaanroep `ophalen_tekst()`. Voer de naam van het bestand `input.txt` in als een **argument**.
 
 --- code ---
 ---
@@ -73,7 +73,7 @@ Zoek het bestand `input.txt` in je code-editor om toegang te krijgen tot de inho
 **Foutoplossing:** Je gecodeerde bericht lijkt niet precies op het bericht in de schermafbeelding:
 - Dat is normaal. Dit is het gecodeerde bericht voor de tekst `vervang door jouw bericht`. Jouw bericht zal anders zijn.
 
-**Fouten opsporen:** Je ziet de foutmelding `TypeError: get_text() takes exactly 1 arguments`:
+**Fouten opsporen:** Je ziet de foutmelding `TypeError: ophalen_tekst() takes exactly 1 arguments`:
 - Controleer of je `input.txt` tussen de ronde haakjes op regel 57 hebt ingevoerd
 
 **Foutopsporing:** Je ziet een `indentation error` (inspring fout) bericht:

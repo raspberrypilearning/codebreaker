@@ -116,7 +116,7 @@ def atbash(tekst):
 
 --- task ---
 
-Nu je een **functie** hebt die **tekst**codeert, moet je deze uitvoeren om te controleren of deze werkt. Zoek de functie `main()` en voeg een functieaanroep toe om de functie `atbash()` uit te voeren.
+Nu je een **functie** hebt die **tekst** codeert, moet je deze uitvoeren om te controleren of deze werkt. Zoek de functie `main()` en voeg een functieaanroep toe om de functie `atbash()` uit te voeren.
 
 De tekenreeks 'Test' wordt **doorgegeven** aan de functie, zodat deze kan worden gecodeerd.
 
@@ -139,7 +139,7 @@ def main():
 
 --- task ---
 
-**Test:** Voer je code uit om te zien of het testbericht correct wordt weergegeven. Je zou de console-uitvoer `gvhg`moeten zien.
+**Test:** Voer je code uit om te zien of het testbericht correct wordt weergegeven. Je zou de console-uitvoer `gvhg` moeten zien.
 
 ![De uitvoer van de gecodeerde tekst die in deze stap wordt gemaakt.](images/test-encoded.PNG){:width="200px"}
 

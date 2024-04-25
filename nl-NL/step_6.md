@@ -10,14 +10,14 @@ In deze stap programmeer je een frequentie analyse om uit te vinden hoe vaak elk
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-Frequentie analyse meet hoe vaak iets voorkomt zodat je patronen kunt zoeken in die gegevens. Het is mogelijk om mono-alfabetische cyphers te decoderen (als je de taal kent waarin het bericht zich bevindt) door te kijken hoe vaak elke letter voorkomt en deze te matchen met de [meest gebruikte letters] (http://letterfrequency.org/letter-frequency- by-language/) in die taal. Dit zal later in meer detail worden uitgelegd.
+Frequentie analyse meet hoe vaak iets voorkomt zodat je patronen kunt zoeken in die gegevens. Het is mogelijk om mono-alfabetische cyphers te decoderen (als je de taal kent waarin het bericht zich bevindt) door te kijken hoe vaak elke letter voorkomt en deze te matchen met de [meest gebruikte letters](http://letterfrequency.org/letter-frequency- by-language/) in die taal. Dit zal later in meer detail worden uitgelegd.
 </p>
 
 Je moet nu een functie maken die je tekst kan omzetten naar één lettertype (om verwarring te voorkomen), die vervolgens het aantal keren telt dat elke letter in het bericht verschijnt, en dan omzetten dat getal in een percentage van het geheel omzet, zodat je het kunt vergelijken met de frequentie van letters in het Engels.
 
 --- task ---
 
-Onder de opmerking met de tekst `# Bereken de frequentie van alle letters in een stuk tekst`, definieer een functie met de naam `frequentie`en zorg dat er voor dat als eerste activiteit je bericht moet worden omgezet naar kleine letters en daarna een lijst moet worden gemaakt:
+Onder de opmerking met de tekst `# Bereken de frequentie van alle letters in een stuk tekst`, definieer een functie met de naam `frequentie` en zorg dat er voor dat als eerste activiteit je bericht moet worden omgezet naar kleine letters en daarna een lijst moet worden gemaakt:
 
 --- code ---
 ---

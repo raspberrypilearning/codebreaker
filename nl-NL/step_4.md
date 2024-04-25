@@ -55,7 +55,7 @@ Nu dat je `keuze` op een fout antwoord hebt ingesteld, ga je een **lus** maken d
 
 --- task ---
 
-Je kunt een **while lus** gebruiken om een stukje code uit te voeren **terwijl** een **voorwaarde** gelijk is aan **Waar**. In dit geval zal de lus doorgaan zolang de gebruiker **geen** `c` of `f`kiest. Voer de code in die de **voorwaarden** instelt voor een **while-lus** en vraag de gebruiker om invoer:
+Je kunt een **while lus** gebruiken om een stukje code uit te voeren **terwijl** een **voorwaarde** gelijk is aan **Waar**. In dit geval zal de lus doorgaan zolang de gebruiker **geen** `c` of `f` kiest. Voer de code in die de **voorwaarden** instelt voor een **while-lus** en vraag de gebruiker om invoer:
 
 --- code ---
 ---
@@ -74,9 +74,9 @@ def menu():
 
 --- /task ---
 
-Zodra de gebruiker een juist antwoord heeft gegeven, eindigt de lus. Maak vervolgens een `if` statement die je `atbash` functie uitvoert als de gebruiker `c`invoert.
+Zodra de gebruiker een juist antwoord heeft gegeven, eindigt de lus. Maak vervolgens een `if` statement die je `atbash` functie uitvoert als de gebruiker `c` invoert.
 
-Je beslist pas in een latere stap wat er gebeurt wanneer een gebruiker`f` invoert.
+Je beslist pas in een latere stap wat er gebeurt wanneer een gebruiker `f` invoert.
 
 --- task ---
 
@@ -168,7 +168,7 @@ def main():
 
 **Fouten opsporen:** Als je de foutmelding `c ziet is niet gedefinieerd` wanneer je de code uitvoert. Controleer of er apostrofen ('') rond je c in de voorwaarde `keuze ! = 'c'`.
 
-**Foutopsporing:** Als er niets gebeurt wanneer je op `c`drukt, controleer dan of je `bericht` correct hebt gespeld.
+**Foutopsporing:** Als er niets gebeurt wanneer je op `c` drukt, controleer dan of je `bericht` correct hebt gespeld.
 
 --- /task ---
 

@@ -10,7 +10,7 @@ Dans cette étape, tu coderas une fonction d'analyseur fréquentiel pour déterm
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-L'analyse fréquentielle mesure la fréquence d'apparition d'un élément afin que tu puisses rechercher des modèles dans ces données. Il est possible de décoder les codes monoalphabétiques (si tu connais la langue dans laquelle le message est rédigé) en examinant la fréquence d'apparition de chaque lettre et en la faisant correspondre aux [lettres les plus couramment utilisées] (http://letterfrequency.org/letter-frequency-by-language/) dans cette langue. Cela sera expliqué plus en détail par la suite.
+L'analyse fréquentielle mesure la fréquence d'apparition d'un élément afin que tu puisses rechercher des modèles dans ces données. Il est possible de décoder les codes monoalphabétiques (si tu connais la langue dans laquelle le message est rédigé) en examinant la fréquence d'apparition de chaque lettre et en la faisant correspondre aux [lettres les plus couramment utilisées](http://letterfrequency.org/letter-frequency-by-language/) dans cette langue. Cela sera expliqué plus en détail par la suite.
 </p>
 
 Tu dois maintenant créer une fonction qui prendra ton texte et le convertira en une seule casse (pour éviter toute confusion), comptera le nombre de fois où chaque lettre du message apparaît, puis convertira ce nombre en un pourcentage de l'ensemble afin que tu puisses le comparer à la fréquence des lettres en anglais.

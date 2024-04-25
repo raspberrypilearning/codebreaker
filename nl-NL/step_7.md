@@ -5,12 +5,12 @@
 Gebruik een staafdiagram om de frequentie van letters in een gecodeerd bericht te analyseren. 
 </div>
 <div>
-![Een staafdiagram dat de frequentie van letters in de Engelse taal laat zien, vergeleken met de frequentie van letters die in het gecodeerde bericht worden gebruikt.](images/frequency-analysis.PNG){:width="400px"}
+![Een staafdiagram dat de frequentie van letters in de Nederlandse taal laat zien, vergeleken met de frequentie van letters die in het gecodeerde bericht worden gebruikt.](images/frequency-analysis.PNG){:width="400px"}
 </div>
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-In alle talen heeft elke letter in het alfabet een 'persoonlijkheid' of een reeks eigenschappen wanneer deze in die taal wordt gebruikt. Een van de meest voor de hand liggende kenmerken van een letter, in welke taal dan ook, is hoe vaak hij voorkomt. **Frequentieanalyse** is de methode om codes te ontcijferen door te kijken hoe vaak letters worden gebruikt in de taal van de code, en dat te vergelijken met hoe vaak gecodeerde letters in een bericht voorkomen. In het Engels is de letter **e** de meest gebruikte letter (deze verschijnt 12,8% van de tijd), gevolgd door **t** (met 9,1%). De minst gebruikte letter is **z**.
+In alle talen heeft elke letter in het alfabet een 'persoonlijkheid' of een reeks eigenschappen wanneer deze in die taal wordt gebruikt. Een van de meest voor de hand liggende kenmerken van een letter, in welke taal dan ook, is hoe vaak hij voorkomt. **Frequentieanalyse** is de methode om codes te ontcijferen door te kijken hoe vaak letters worden gebruikt in de taal van de code, en dat te vergelijken met hoe vaak gecodeerde letters in een bericht voorkomen. In het Nederlands is de letter **e** de meest gebruikte letter (deze verschijnt 18,91% van de tijd), gevolgd door **n** (met 10,03%). De minst gebruikte letter is **q**.
 </p>
 --- task ---
 
@@ -136,7 +136,7 @@ line_highlights: 80-81
 - Dat is normaal. Je grafiek toont de frequentie gegevens voor het geheime bericht dat je hebt ingevoerd in `input.txt`.
 
 **Fouten opsporen:** Je ziet het volgende foutbericht `NameError: naam 'taal_freq' is not defined`:
-- Controleer of je de regel code `taal_freq = nederlandse` hebt toegevoegd **voor** het aanroepen van de functie `maak_grafiek()`.
+- Controleer of je de regel code `taal_freq = nederlands` hebt toegevoegd **voor** het aanroepen van de functie `maak_grafiek()`.
 
 **Foutopsporing:** Je ziet een `indentation error` (inspring fout) bericht:
 - Controleer of je al je nieuwe code correct hebt ingesprongen. Bekijk de bovenstaande taken nogmaals om dit te controleren.
