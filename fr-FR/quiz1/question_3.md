@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Question 3 sur 3
 ---
 
-A line of code is needed to create a **bar chart** using `pygal`. The code must select the x-axis labels from the **keys** used in the `text` **dictionary**. Which is the correct line of code that can be used for this purpose?
+Une ligne de code est nécessaire pour créer un **histogramme** en utilisant `pygal`. Le code doit sélectionner les étiquettes de l'axe des x à partir des **touches** utilisées dans le `texte` **dictionnaire**. Quelle ligne de code peut être utilisée à cet effet ?
 
 --- choices ---
 
@@ -15,37 +15,37 @@ chart.x_labels = keys()
 
   --- feedback ---
 
-Not quite, Python needs to know **which** dictionary to select the keys from.
+Pas tout à fait, Python a besoin de savoir **de quel** dictionnaire sélectionner les clés.
 
   --- /feedback ---
 
 - ( )
 
-chart.x_labels = list(text)
+chart.x_labels = list(texte)
 
   --- feedback ---
 
-  Not exactly, Python needs to know which part of the dictionary it should use to display as the labels.
+  Pas exactement, Python a besoin de savoir quelle partie du dictionnaire il doit utiliser pour afficher les étiquettes.
 
   --- /feedback ---
 
 - ( )
 
-chart.x_labels = list(keys.text())
+chart.x_labels = list(keys.texte())
 
   --- feedback ---
 
-  Almost, this line of code contains the right parts but they aren't in the correct order.
+  Presque, cette ligne de code contient les bonnes parties mais elles ne sont pas dans le bon ordre.
 
   --- /feedback ---
 
 - (x)
 
-chart.x_labels = list(text.keys())
+chart.x_labels = list(texte.keys())
 
   --- feedback ---
 
-Correct! This line of code will add the x-axis labels based on the **keys** held in the `text` dictionary.
+Correct ! Cette ligne de code ajoute les étiquettes de l'axe des x en fonction des **clés** contenues dans le dictionnaire `texte`.
 
   --- /feedback ---
 
