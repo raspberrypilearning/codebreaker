@@ -1,10 +1,10 @@
-## What next?
+## Wat nu?
 
-If you are following the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) pathway, you can move on to the [Encoded art](https://projects.raspberrypi.org/en/projects/encoded-art/0) project. In this project, you will make amazing artwork using data!
+Als je het [Meer Python](https://projects.raspberrypi.org/en/pathways/more-python) pad volgt, kun je verder gaan naar het [Gecodeerde kunst](https://projects.raspberrypi.org/en/projects/encoded-art/0) project. In dit project maak je geweldige kunstwerken met behulp van data!
 
 --- print-only ---
 
-![An image showing the Encoded art project output.](images/example-projects.png)
+![Een afbeelding die de uitvoer van het gecodeerde kunstproject laat zien.](images/example-projects.png)
 
 --- /print-only ---
 
@@ -15,4 +15,4 @@ If you are following the [More Python](https://projects.raspberrypi.org/en/pathw
 
 --- /no-print ---
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python&curriculum%5B%5D=%202).
+Als je meer plezier wilt hebben bij het verkennen van Python, dan kun je een van [deze projecten](https://projects.raspberrypi.org/en/projects?software%5B%5D=python&curriculum%5B%5D=%202)uitproberen.
