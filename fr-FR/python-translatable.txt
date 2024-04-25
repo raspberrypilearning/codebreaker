@@ -4,62 +4,62 @@ code
 
 abcdefghijklmnopqrstuvwxyz
 
-create_code
+creer_code
 
-backwards
+inverses
 
 main
 
 atbash
 
-text
+texte
 
-output
+sortie
 
-letter
+lettre
 
 menu
 
-choice
+choix
 
 message
 
-get_text
+obtenir_texte
 
 filename
 
-frequency
+frequence
 
 freq
 
-total_letters
+total_lettres
 
 message_freq
 
-make_chart
+faire_graphique
 
-language
+langue
 
-chart
+graphique
 
 lang_freq
 
 add
 
-result
+resultat
 
-one
+un
 
-two
+deux
 
-word
+mot
 
-hello
+bonjour
 
-english
+anglais
 
-french
+francais
 
-spanish
+espagnol
 
 what is an astro pi computer an astro pi computer is a raspberry pi computer equipped with sensors and housed in a special case raspberry pi is a very affordable creditcardsized barebones computer great for use in education mark ii hardwarethe astro pi mk ii computers are upgraded versions of the astro pi izzy and astro pi ed computers that were sent to the iss during tim peakes principia mission in  these computers feature the latest model of the raspberry pi computer an upgraded camera and an augmented sensor board this equipment will enable participants to do a wide range of experiments some of which were not previously possible such as experiments using elements of artificial intelligence advanced machine learning and higherresolution photography than ever before astro pi vis the astro pi vis computer allows teams investigating life on earth to do visiblelight earth observation photography astro pi ir the astro pi ir computer allows teams investigating life on earth to do nearinfrared earth observation photography and comes with a red optical filter to enable measurements of plant health to be made
