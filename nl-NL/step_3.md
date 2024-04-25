@@ -1,17 +1,17 @@
-## Encode a message
+## Codeer een bericht
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will create a function that can take your text, flip it and reverse it with your atbash cypher list, and return it as an encoded message. 
+In deze stap maak je een functie waarmee je je tekst kunt omdraaien en omkeren met je atbash-coderingslijst, en deze als een gecodeerd bericht kunt terugsturen. 
 </div>
 <div>
-![The output of the code created in this step. An encoded version of a secret message is displayed.](images/test-encoded.PNG){:width="300px"}
+![De uitvoer van de code die in deze stap is gemaakt. Er wordt een gecodeerde versie van een geheim bericht weergegeven.](images/test-encoded.PNG){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-**Comment out** the print statement used for testing on line 17 by placing a hashtag at the beginning of the line:
+Maak een **commentaar** van de afdrukverklaring die wordt gebruikt om te testen op lijn 17 door een hashtag aan het begin van de regel te plaatsen:
 
 --- code ---
 ---
@@ -27,13 +27,13 @@ line_highlights: 17
 
 --- /task ---
 
-### Set up your atbash function
+### Stel je atbash functie in
 
-You will now add your new **function** that will encode some text using the **atbash** cypher.
+Je voegt nu je nieuwe **functie** toe die wat tekst codeert met behulp van de **atbash** cypher.
 
 --- task ---
 
-Find the comment that says `# Encode/decode a piece of text — atbash is symmetrical`. Underneath the comment, define a function called `atbash`, with the **parameter** `text`. Parameters allow you to pass values into functions that can be used within that function.
+Zoek de opmerking met de tekst `# Codeer/decodeer een stuk tekst — atbash is symmetrisch`. Definieer onder de opmerking een functie met de naam `atbash`, met de **parameter** `tekst`. Met parameters kun je waardes doorgeven aan functies die binnen die functie gebruikt kunnen worden.
 
 --- code ---
 ---
@@ -45,19 +45,19 @@ def atbash(text):
 
 --- /code ---
 
-Press <kbd>Enter</kbd>. You should see the next line indented.
+Druk op <kbd>Enter</kbd>. Je zou de volgende regel ingesprongen moeten zien.
 
 --- /task ---
 
 [[[parameters]]]
 
-### Convert text to lower case
+### Tekst omzetten naar kleine letters
 
-First your function needs to convert the `text` to lower case. A new **variable** called `output` then needs to be created to hold the encoded message.
+Eerst moet je functie de `tekst` omzetten naar kleine letters. Een nieuwe **variabele** met de naam `uitvoer` moet dan worden aangemaakt om het gecodeerde bericht op te slaan.
 
 --- task ---
 
-Beneath the line of code where you have defined the `atbash()` function, type:
+Onder de coderegel waar je de functie `atbash()` hebt gedefinieerd, typ je:
 
 --- code ---
 ---
@@ -71,13 +71,13 @@ def atbash(text): text = text.lower()  # Converts text to lower case output = '
 
 --- /task ---
 
-### Encode your text
+### Codeer je tekst
 
-The next part of your code will **encode** the `text` that has been **passed** into the function. A `for` loop is used to go through each letter in the `text` and convert it to an encoded letter using the `code` dictionary. Finally, it will **return** the encoded message.
+Het volgende deel van je code **codeert** de `tekst` die **doorgegeven** is in de functie. Een `for` lus wordt gebruikt om elke letter in de `tekst` te bekijken en deze om te zetten naar een gecodeerde letter met behulp van de `code` dictionary. Ten slotte zal het het gecodeerde bericht **retourneren**.
 
 --- task ---
 
-Leave a blank line under the last code you entered (make sure you keep the indent), then type:
+Laat een lege regel open onder de laatste code die je hebt ingevoerd (zorg ervoor dat je de inspringing behoudt) en typ vervolgens:
 
 --- code ---
 ---
@@ -97,13 +97,13 @@ def atbash(text): text = text.lower()  # Converts text to lower case output = '
 
 --- /task ---
 
-### Test and debug
+### Testen en fouten opsporen
 
 --- task ---
 
-Now that you have a **function** that will **encode text**, you need to run it to make sure it works. Find your `main()` function and add in a function call to run the `atbash()` function.
+Nu je een **functie** hebt die **tekst**codeert, moet je deze uitvoeren om te controleren of deze werkt. Zoek de functie `main()` en voeg een functieaanroep toe om de functie `atbash()` uit te voeren.
 
-The 'Test' string is **passed** into the function so that it can be encoded.
+De tekenreeks 'Test' wordt **doorgegeven** aan de functie, zodat deze kan worden gecodeerd.
 
 --- code ---
 ---
@@ -119,19 +119,19 @@ def main(): create_code() print(atbash('Test'))
 
 --- task ---
 
-**Test:** Run your code to see if the test message displays correctly. You should see the console output `gvhg`.
+**Test:** Voer je code uit om te zien of het testbericht correct wordt weergegeven. Je zou de console-uitvoer `gvhg`moeten zien.
 
-![The output of the encoded text that is created in this step.](images/test-encoded.PNG){:width="200px"}
+![De uitvoer van de gecodeerde tekst die in deze stap wordt gemaakt.](images/test-encoded.PNG){:width="200px"}
 
-**Debug:** If you see a message about an indentation error:
-- Check that you have indented all of your code correctly
-- Look back at the sample code on this page to help you check
+**Fouten opsporen:** Als je een bericht ziet over een inspringfout:
+- Controleer of je al je code correct hebt ingesprongen
+- Kijk terug naar de voorbeeldcode op deze pagina om je te helpen het controleren
 
 --- /task ---
 
 --- task ---
 
-**Comment out** your `print(atbash('Test'))` line of code now that you have finished testing.
+Maak een **comment** van je `print(atbash('Test'))` regel code nu je klaar bent met testen.
 
 --- code ---
 ---
@@ -145,6 +145,6 @@ def main(): create_code() # print(atbash('Test'))
 
 --- /task ---
 
-In the next step you will **encode** a message with the help of your `code` dictionary.
+In de volgende stap zul je **een bericht** coderen met behulp van je `code` dictionary.
 
 --- save ---
