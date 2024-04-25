@@ -85,7 +85,7 @@ def menu():
         # Prend l'entrée du même fichier. Nous disposons d'un fichier 'longer.txt' ou d'un fichier similaire contenant un texte crypté dont nous savons qu'il se prête assez bien à l'analyse fréquentielle
         message = obtenir_texte('longer.txt')
         # Obtenir la fréquence des lettres dans le message, en %.
-        message_freq = frequency(message)
+        message_freq = frequence(message)
         # print(message_freq)
         langue = input(
             'Dans quelle langue ton message est-il rédigé ? \n1. Anglais \n2. Français \n3. Espagnol')

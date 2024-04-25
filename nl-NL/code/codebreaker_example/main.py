@@ -44,7 +44,7 @@ def maak_grafiek(tekst, taal):
     # Label de frequentiegegevens voor het gecodeerde bericht
     chart.add('Doelbericht', list(tekst.values()))
     # Label de frequentiegegevens voor de taal
-    chart.add('Taal', list(taal.waarden()))
+    chart.add('Taal', list(taal.values()))
 
     chart.render()
 

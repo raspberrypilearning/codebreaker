@@ -1,6 +1,6 @@
 #!/bin/python3
 from pygal import Bar
-from frequency import francias
+from frequency import francais
 
 # Mise en place des structures de données
 
