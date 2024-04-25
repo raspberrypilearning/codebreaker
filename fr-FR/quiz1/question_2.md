@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Question 2 sur 3
 ---
 
-A `for` loop is created to display the letters in a word.
+Une boucle `for` est créée pour afficher les lettres dans un mot.
 
 ```python
 word = "hello"
@@ -14,7 +14,7 @@ for letter in word:
     print(letter)
 ```
 
-What will be the output of this code when it is run?
+Quelle sera la sortie de ce code quand il sera exécuté ?
 
 --- choices ---
 
@@ -30,20 +30,19 @@ o
 
   --- feedback ---
 
-  Correct! Each letter of the word `hello` will be displayed on a new line.
+  Correct ! Chaque lettre du mot `bonjour` sera affichée sur une nouvelle ligne.
 
   --- /feedback ---
 
 - ( )
 ```
-w
+m
 o
-r
-d
+t
 ```
   --- feedback ---
 
-  Not quite, `print(letter)` will display what is **held** by the variable `letter` at that point in the `for` loop.
+  Pas tout à fait, `print(lettre)` affichera ce qui est **contenu** par la variable `lettre` à ce stade de la boucle `for`.
 
   --- /feedback ---
 
@@ -59,7 +58,7 @@ hello
 
   --- feedback ---
 
-  Not exactly, the code will print each letter in `hello`. It will not print the whole word each time.
+  Pas exactement, le code affichera chaque lettre en `bonjour`. Il n'imprimera pas le mot entier à chaque fois.
 
   --- /feedback ---
 
