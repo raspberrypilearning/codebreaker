@@ -1,17 +1,17 @@
-## Create a menu
+## Maak een menu
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now you are going to create a menu system for your user to make choices about what they would like to do. 
+Nu ga je een menusysteem maken voor je gebruiker om keuzes te maken over wat ze willen doen. 
 </div>
 <div>
-![The output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
+![De uitvoer van de code die in deze stap is gemaakt. Er wordt een gecodeerde versie van een geheim bericht weergegeven.](images/encode-a-message.PNG){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-**Find** the comment in your code that says `# Create a text-based menu system` and begin by defining a function called `menu()`:
+**Zoek** de opmerking `# Maak een op tekst gebaseerd menusysteem` in je code en maak een functie `menu()`:
 
 --- code ---
 ---
@@ -23,11 +23,11 @@ def menu(): --- /code ---
 
 --- /task ---
 
-Your menu needs a **loop** that continually asks the user what they would like to do until they have entered a valid choice. To get this started, you will create a **variable** called `choice` and set it to `''`. This will allow the **while** loop to run its first loop.
+Je menu heeft een **lus** nodig die de gebruiker voortdurend vraagt wat hij wil doen, totdat hij een geldige keuze heeft ingevoerd. Om dit te beginnen, maak een **variabele** `keuze` en stel deze in op `''`. Hierdoor kan de lus **while** zijn eerste lus uitvoeren.
 
 --- task ---
 
-Create a new variable called `choice` and set the value to `''`:
+Maak een nieuwe variabele met de naam `keuze` en stel de waarde in op `''`:
 
 --- code ---
 ---
@@ -41,13 +41,13 @@ def menu(): choice = ''  # Start with a wrong answer for choice.
 
 --- /task ---
 
-### Use a `while` loop to get user input
+### Gebruik een `while` lus om gebruikersinvoer te krijgen
 
-Now that you have set `choice` to a wrong answer, you want to create a **loop** that will only break if an `input` that matches a right answer is given. You want a **while loop** that runs as long as your answer **DOES NOT** match one you have defined.
+Nu dat je `keuze` op een fout antwoord hebt ingesteld, ga je een **lus** maken die alleen wordt onderbroken als de `invoer` een juist antwoord is. Je wilt een **while-lus** die loopt zolang je antwoord **NIET** overeenkomt met het antwoord dat je hebt gedefinieerd.
 
 --- task ---
 
-You can use a **while loop** to run a piece of code **while** a **condition** is **True**. In this instance, as long as the user **does not** choose `c` or `f`, the loop will continue to run. Enter the code that will set the **conditions** for a **while loop** and prompt the user for input:
+Je kunt een **while lus** gebruiken om een stukje code uit te voeren **terwijl** een **voorwaarde** gelijk is aan **Waar**. In dit geval zal de lus doorgaan zolang de gebruiker **geen** `c` of `f`kiest. Voer de code in die de **voorwaarden** instelt voor een **while-lus** en vraag de gebruiker om invoer:
 
 --- code ---
 ---
@@ -62,13 +62,13 @@ def menu(): choice = ''  # Start with a wrong answer for choice
 
 --- /task ---
 
-Once the user has given a correct answer, the loop will end. Next create an `if` statement that will run your `atbash` function if the user enters `c`.
+Zodra de gebruiker een juist antwoord heeft gegeven, eindigt de lus. Maak vervolgens een `if` statement die je `atbash` functie uitvoert als de gebruiker `c`invoert.
 
-You will decide what happens when a user enters `f` in a later step.
+Je beslist pas in een latere stap wat er gebeurt wanneer een gebruiker`f` invoert.
 
 --- task ---
 
-Underneath the last line (making sure you still have an indent!), type:
+Typ onder de laatste regel (zorg ervoor dat er nog steeds een inspringing is!):
 
 --- code ---
 ---
@@ -92,7 +92,7 @@ def menu(): choice = ''  # Start with a wrong answer for choice
 
 --- task ---
 
-Change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded.
+Verander de string met de tekst `'mijn geheime bericht'` in wat je maar wilt. Deze string is het bericht dat zal worden gecodeerd en gedecodeerd.
 
 --- code ---
 ---
@@ -116,7 +116,7 @@ def menu(): choice = ''  # Start with a wrong answer for choice.
 
 --- task ---
 
-At the end of your `main()` function, type `menu()` to call the `menu` function when the program runs:
+Aan het einde van de functie `main()` typ je `menu()` om de functie `menu` aan te roepen het programma loopt:
 
 --- code ---
 ---
@@ -132,20 +132,20 @@ def main(): create_code() # print(atbash('Test')) menu()
 
 --- task ---
 
-**Test:** Run your code. Type `c` and press <kbd>Enter</kbd> to encode your message string!
+**Test:** Voer je code uit. Typ `c` en druk op <kbd>Enter</kbd> om je berichtenreeks te coderen!
 
-![The output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
+![De uitvoer van de code die in deze stap is gemaakt. Er wordt een gecodeerde versie van een geheim bericht weergegeven.](images/encode-a-message.PNG){:width="400px"}
 
-**Debug:** If you see a message about an indentation error:
-- Check that you have indented all of your code correctly
-- Look back at the sample code on this page to help you check
+**Fouten opsporen:** Als je een bericht ziet over een inspringfout:
+- Controleer of je al je code correct hebt ingesprongen
+- Kijk terug naar de voorbeeldcode op deze pagina om je te helpen het controleren
 
-**Debug:** If you see the error message `c is not defined` when you run your code, check that you have used apostrophes ('') around your c in the condition `choice != 'c'`.
+**Fouten opsporen:** Als je de foutmelding `c ziet is niet gedefinieerd` wanneer je de code uitvoert. Controleer of er apostrofen ('') rond je c in de voorwaarde `keuze ! = 'c'`.
 
-**Debug:** If nothing happens when you press `c`, check that you have correctly spelled `message`.
+**Foutopsporing:** Als er niets gebeurt wanneer je op `c`drukt, controleer dan of je `bericht` correct hebt gespeld.
 
 --- /task ---
 
-In the next step you will use your `atbash()` function to encode the contents of a text file.
+In de volgende stap gebruik je de functie `atbash()` om de inhoud van een tekstbestand te coderen.
 
 --- save ---
