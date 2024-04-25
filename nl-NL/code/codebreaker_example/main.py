@@ -1,98 +1,98 @@
 #!/bin/python3
 from pygal import Bar
-from frequency import english
+from frequency import engels
 
-# Set up data structures
-alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # List from a string
+# Datastructuren opzetten
+alfabet = list(' abcdefghijklmnopqrstuvwxyz ') # Lijst uit een string
 code = {}
 
-# Create the atbash code by reversing the alphabet
-def create_code():
-    backwards = list(reversed(alphabet))  # Reverses a list
+# Maak de atbash-code door het alfabet om te draaien
+def maak_code():
+    andersom = list(reversed(alfabet)) # Draait een lijst om
 
-    for i in range(len(alphabet)):  # Gets the length of a list
-        # Populate the code dictionary with a letter of the alphabet and its encoded letter
-        code[alphabet[i]] = backwards[i]
+    for i in range(len(alfabet)): # Haalt de lengte van een lijst op
+        # Vul de code dictionary in met een letter van het alfabet en de bijbehorende gecodeerde letter
+        code[alfabet[i]] = andersom[i]
 
     # print(code)
 
-# Calculate the frequency of all letters in a piece of text
-def frequency(text):
-    # Convert the message to lower case and make it a list
-    text = list(text.lower())
+# Bereken de frequentie van alle letters in een stuk tekst
+def frequentie(tekst):
+    # Converteer het bericht naar kleine letters en maak er een lijst van
+    tekst = list(tekst.lower())
 
-    freq = {}  # Create a dictionary of every letter, with a count of 0
-    for letter in alphabet:
+    freq = {} # Maak een dictionary van elke letter, met een telling van 0
+    for letter in alfabet:
         freq[letter] = 0
 
-    total_letters = len(text)  # Count the letters in the message
+    totaal_letters = len(tekst) #Tel de letters in het bericht
 
-    for letter in text:
+    for letter in tekst:
         if letter in freq:
             freq[letter] += 1
 
     for letter in freq:
-        freq[letter] = freq[letter] / total_letters * \
-            100  # Convert from counts to percentages
+        freq[letter] = freq[letter] / totaal_letters * \
+            100 # Converteren van aantallen naar percentages
 
     return freq
 
-# Make frequency chart
-def make_chart(text, language):
-    chart = Bar(width=800, height=400, title='Frequency analysis',
-                x_labels=list(text.keys()))
-    # Label the frequency data for the encoded message
-    chart.add('Target message', list(text.values()))
-    # Label the frequency data for the language
-    chart.add('Language', list(language.values()))
+# Maak frequentie grafiek
+def maak_grafiek(tekst, taal):
+    chart = Bar(width=800, height=400, title='Frequentie analyse',
+                x_labels=list(tekst.sleutels()))
+    # Label de frequentiegegevens voor het gecodeerde bericht
+    chart.add('Doelbericht', list(tekst.values()))
+    # Label de frequentiegegevens voor de taal
+    chart.add('Taal', list(taal.waarden()))
 
     chart.render()
 
-# Encode/decode a piece of text — atbash is symetrical
-def atbash(text):
-    text = text.lower()  #  Converts text to lower case
+# Codeer/decodeer een stuk tekst — atbash is symmetrisch
+def atbash(tekst):
+    tekst = tekst.lower() # Converteert tekst naar kleine letters
     output = ''
 
-    for letter in text:
+    for letter in tekst:
         if letter in code:
-            # Populates output with the encoded/decoded message using the dictionary
+            # Vult de uitvoer in met het gecodeerde/gedecodeerde bericht met behulp van de dictionary
             output += code[letter]
 
-    return output  # Return the encoded/decoded message
+    return output # Retourneert het gecodeerde/gedecodeerde bericht
 
-# Fetch and return text from a file
+# Tekst uit een bestand ophalen en retourneren
 def get_text(filename):
     with open(filename) as f:
-        text = f.read().replace('\n', '')  # Need to strip the newline characters
+        text = f.read().replace('\n', '') # De tekens voor de nieuwe regel moeten worden verwijderd
 
     return text
 
-# Create a text-based menu system
+# Maak een tekst-gebaseerd menu systeem
 def menu():
-    choice = ''  # Start with a wrong answer for choice.
+    keuze = '' # Begin met een verkeerd antwoord voor keuze.
 
-    while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-        choice = input(
-            'Please enter c to encode/decode text, or f to perform frequency analysis: ')
+    while keuze != 'c' and keuze != 'f': # Blijf aan de gebruiker het juiste antwoord vragen
+        keuze = input(
+            'Voer c in om tekst te coderen/decoderen, of f om frequentieanalyse uit te voeren: ')
 
-    if choice == 'c':
-        print('Running your message through the cypher…')
-        message = get_text('longer.txt')  # Take input from a file
-        code = atbash(message)
+    if keuze == 'c':
+        print('Je bericht door de code halen…')
+        bericht = get_text('longer.txt') # Neem input van een bestand
+        code = atbash(bericht)
         print(code)
 
-    elif choice == 'f':
-        print('Analysing message…')
-        message = get_text('longer.txt')
-        message_freq = frequency(message)
-        # print(message_freq)
-        lang_freq = english  # Import the English frequency dictionary
-        # Call the function to make a chart
-        make_chart(message_freq, lang_freq)
+    elif keuze == 'f':
+        print('Bericht analyseren…')
+        bericht = get_text('longer.txt')
+        bericht_freq = frequency(bericht)
+        # print(bericht_freq)
+        taal_freq = engels # Importeer het Engelse frequentiewoordenboek
+        # Roep de functie aan om een grafiek te maken
+        maak_grafiek(bericht_freq, taal_freq)
 
-# Start up
+# Opstart
 def main():
-    create_code()
+    maak_code()
     # print(atbash('Test'))
     menu()
 
