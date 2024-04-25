@@ -1,20 +1,20 @@
-## Analyse the frequency
+## Analyseer de frequentie
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Use a bar chart to analyse the frequency of letters in an encoded message. 
+Gebruik een staafdiagram om de frequentie van letters in een gecodeerd bericht te analyseren. 
 </div>
 <div>
-![A bar chart showing the frequency of letters in the English language compared with the frequency of letters used in the encoded message.](images/frequency-analysis.PNG){:width="400px"}
+![Een staafdiagram dat de frequentie van letters in de Engelse taal laat zien, vergeleken met de frequentie van letters die in het gecodeerde bericht worden gebruikt.](images/frequency-analysis.PNG){:width="400px"}
 </div>
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-In all languages, each letter in its alphabet has a 'personality' or set of traits when used in that language. One of the most obvious traits a letter has in any language is how often it appears. **Frequency analysis** is the method of breaking codes by looking at how often letters are used in the language of the code, and comparing that to how often encoded letters show up in a message. In English, the letter **e** is the most commonly used letter (it shows up 12.8% of the time), followed by **t** (at 9.1%). The least often used letter is **z**.
+In alle talen heeft elke letter in het alfabet een 'persoonlijkheid' of een reeks eigenschappen wanneer deze in die taal wordt gebruikt. Een van de meest voor de hand liggende kenmerken van een letter, in welke taal dan ook, is hoe vaak hij voorkomt. **Frequentieanalyse** is de methode om codes te ontcijferen door te kijken hoe vaak letters worden gebruikt in de taal van de code, en dat te vergelijken met hoe vaak gecodeerde letters in een bericht voorkomen. In het Engels is de letter **e** de meest gebruikte letter (deze verschijnt 12,8% van de tijd), gevolgd door **t** (met 9,1%). De minst gebruikte letter is **z**.
 </p>
 --- task ---
 
-The `print(message_freq)` line of code is no longer needed. Add a `#` to the beginning of it so that Python ignores it when the code is run.
+De coderegel `print(message_freq)` is niet langer nodig. Voeg een `#` toe aan het begin ervan, zodat Python dit negeert wanneer de code wordt uitgevoerd.
 
 --- code ---
 ---
@@ -31,13 +31,13 @@ line_highlights: 76
 
 --- /task ---
 
-### Make the frequency chart function
+### Maak de frequentie grafiek functie
 
 --- task ---
 
-Find the `# Make frequency chart` comment and create a new function called `make_chart()`. This function needs two parameters called `text` and `language`. The frequency chart will be a **bar** chart with the **title** `Frequency analysis` and with **x-axis** labels using the **keys** from the `freq` dictionary.
+Zoek de `# Maak frequentie grafiek` opmerking en maak een nieuwe functie genaamd `maak_grafiek()`. Deze functie heeft twee parameters nodig, genaamd `tekst` en `taal`. Het frequentiediagram zal een **staaf** diagram zijn met de **titel** `Frequentie analyse` en met **x-as** labels met behulp van de **sleutels** uit de `freq` dictionary.
 
-The `freq` dictionary values will be passed into the function when it is called later in the code, via the `text` parameter.
+De `freq` dictionary waarden worden doorgegeven aan de functie wanneer deze later in de code wordt aangeroepen, via de `tekst` parameter.
 
 --- code ---
 ---
@@ -51,7 +51,7 @@ def make_chart(text, language): chart = Bar(width=800, height=400, title='Freque
 
 --- task ---
 
-Label the chart with the **frequency** of letters in the encoded message and the known letter frequency of the **language** the message is in. This data has been **passed into** the **function** via the `text` and `language` parameters.
+Label de grafiek met de **frequentie** van letters in het gecodeerde bericht en de letterfrequentie van de **taal** van het bericht. Deze gegevens zijn **aan** de **functie** doorgegeven via de `tekst` en `taal` parameters.
 
 --- code ---
 ---
@@ -65,7 +65,7 @@ def make_chart(text, language): chart = Bar(width=800, height=400, title='Freque
 
 --- task ---
 
-**Render** the chart so that it will display when the function is called.
+**Geef** de grafiek zo weer dat deze wordt getoond wanneer de functie wordt aangeroepen.
 
 --- code ---
 ---
@@ -80,11 +80,11 @@ def make_chart(text, language): chart = Bar(width=800, height=400, title='Freque
 
 --- /task ---
 
-### Call the frequency chart function
+### Roep de frequentie grafiek functie aan
 
 --- task ---
 
-Find your `elif` in the `menu()` function. Add a line of code that will **import** the `english` frequency dictionary from the `frequency.py` file. Add another line of code that will **call** the `make_chart` function to draw the chart.
+Vind je `elif` in de `menu()` functie. Voeg een regel code toe die het **Engelse** frequentiewoordenboek `importeert` uit het `frequency.py` bestand. Voeg nog een regel code toe die **** de functie `maak_grafiek` aanroept om het diagram te tekenen.
 
 --- code ---
 ---
@@ -105,34 +105,34 @@ line_highlights: 80-81
 
 --- task ---
 
-**Test:** Run your code to display the frequency analysis bar chart.
+**Test:** Voer je code uit om de frequentie analyse staafdiagram weer te geven.
 
-![A bar chart showing the frequency of letters in the English language compared to the frequency of letters used in the encoded message.](images/frequency-analysis.PNG)
+![Een staafdiagram dat de frequentie van letters in de Engelse taal weergeeft, vergeleken met de frequentie van letters die in het gecodeerde bericht worden gebruikt.](images/frequency-analysis.PNG)
 
-**Debug:** Your chart doesn't look exactly the same as the one displayed in the image above:
-- This is normal. Your chart will display the frequency data for the secret message that you have entered in `input.txt`.
+**Foutopsporing:** je grafiek ziet er niet precies hetzelfde uit als de grafiek die wordt weergegeven in de afbeelding hierboven:
+- Dat is normaal. Je grafiek toont de frequentie gegevens voor het geheime bericht dat je hebt ingevoerd in `input.txt`.
 
-**Debug:** You see the following error message `NameError: name 'lang_freq' is not defined`:
-- Check that you added the line of code `lang_freq = english` **before** the `make_chart()` function call.
+**Fouten opsporen:** Je ziet het volgende foutbericht `NameError: naam 'taal_freq' is not defined`:
+- Controleer of je de regel code `taal_freq = english` hebt toegevoegd **voor** het aanroepen van de functie `maak_grafiek()`.
 
-**Debug:** You see an `Indentation error` message:
-- Check that you have correctly indented all of your new code. Revisit the tasks above to check.
+**Foutopsporing:** Je ziet een `indentation error` (inspring fout) bericht:
+- Controleer of je al je nieuwe code correct hebt ingesprongen. Bekijk de bovenstaande taken nogmaals om dit te controleren.
 
 --- /task ---
 
-### Analyse the frequency chart
+### Analyseer de frequentie grafiek
 
-The chart that has been produced shows the frequency of letters in the English language, labelled as **Language**. You can see that the letter **e** is the most frequently used letter in the English language because it has the highest bar for all of the **language** values.
+Het diagram dat is gemaakt toont de frequentie van letters in de Engelse taal, aangeduid als **Taal**. Je kunt zien dat de letter **e** de meest gebruikte letter in de Engelse taal is, omdat deze de hoogste balk heeft voor alle **taal** waarden.
 
-The frequency chart also lists the frequency of letters in your **encoded** message, labelled as **Target message**. This includes the spaces in your message, which can be seen in the last bar on the right. To work out what **encoding** has been used for this message, you can compare the bars showing the English language with the bars on the encoded message. The highest bar (ignoring the spaces) in the encoded message text will most likely be an **e**. The second highest letter will most likely be a **t** as this is the next most popular letter.
+In de frequentiekaart staat ook de frequentie van letters in je **gecodeerde** bericht, gelabeld als **doel bericht**. Hieronder vallen ook de spaties in je bericht, die te zien zijn in de laatste balk aan de rechterkant. Om uit te zoeken wat **codering** is gebruikt voor dit bericht, kun je de balken van het gecodeerde bericht vergelijken met de Engelse taal. De hoogste balk (waarbij je de spaties niet meerekent) in de gecodeerde berichttekst zal hoogstwaarschijnlijk een **e**zijn. De op één na hoogste letter zal hoogstwaarschijnlijk een **t** zijn, aangezien dit de volgende meest populaire letter is.
 
-Codebreakers can use the frequency of letters to work out the type of encoding that has been used on the message. They can use trial and error to **predict** what a letter might represent using the chart as a guide.
+Codekrakers kunnen de frequentie van letters gebruiken om het type codering te achterhalen dat voor het bericht is gebruikt. Ze kunnen met vallen en opstaan **voorspellen** wat een letter zou kunnen vertegenwoordigen, waarbij ze het diagram als leidraad gebruiken.
 
 --- task ---
 
-Your secret message is quite small, which makes it tricky to analyse using a frequency chart. Change your code so that it analyses the message in `longer.txt` instead.
+Je geheime bericht is vrij klein, waardoor het lastig wordt om het te analyseren met behulp van een frequentiegrafiek. Wijzig je code zodat in plaats daarvan het bericht analyseert in `longer.txt`.
 
-Change `input.txt` to `longer.txt`.
+Wijzig `input.txt` in `longer.txt`.
 
 --- code ---
 ---
@@ -150,9 +150,9 @@ line_highlights: 77
 
 --- task ---
 
-**Analyse** the frequency chart by looking at the **Language** values and the **Target message** values. Notice how the highest bar for **Language** is **e** and the highest bar for **Target message** is **v**. This is because with the **Atbash** cypher, the letter **e** is encoded with the letter **v**.
+**Analyseer** het frequentiediagram door te kijken naar de **Taal** waarden en de **Doel bericht** waarden. Merk op hoe de hoogste balk voor **taal** **e** en de hoogste balk voor **Doelbericht** **v** is. Dit komt omdat met de **Atbash** code, de letter **e** gecodeerd is met de letter **v**.
 
-![A bar chart showing the frequency of letters in the English language compared to the frequency of letters used in the encoded message in longer.txt.](images/longer-analysis.PNG)
+![Een staafdiagram dat de frequentie van letters in de Engelse taal weergeeft, vergeleken met de frequentie van letters die in het gecodeerde bericht in longer.txt worden gebruikt.](images/longer-analysis.PNG)
 
 --- /task ---
 
