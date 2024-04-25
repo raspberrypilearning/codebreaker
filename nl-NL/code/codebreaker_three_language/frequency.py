@@ -1,7 +1,7 @@
-# Frequency distribution of letters in multiple languages
-# Provided as part of the starter
+# Frequentieverdeling van letters in meerdere talen
+# Geleverd als onderdeel van de starter
 
-english = {
+engels = {
     'a': 8.20,
     'b': 1.50,
     'c': 2.80,
@@ -30,7 +30,7 @@ english = {
     'z': 0.07
 }
 
-french = {
+frans = {
     'a': 8.16,
     'b': 0.93,
     'c': 3.15,
@@ -59,7 +59,7 @@ french = {
     'z': 0.21
 }
 
-spanish = {
+spaans = {
     'a': 12.1,
     'b': 1.50,
     'c': 3.87,
