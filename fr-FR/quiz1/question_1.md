@@ -1,17 +1,17 @@
-## Quick quiz
+## Questionnaire rapide
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Réponds aux trois questions. Il y a des indices pour te guider vers la bonne réponse.
 
-When you have answered each question, click on **Check my answer**.
+Lorsque tu as répondu à chaque question, clique sur **Vérifier ma réponse**.
 
-Have fun!
+Amuse-toi bien !
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Question 1 sur 3
 ---
-A **function** called `add()` has been created to perform a calculation on two numbers and **return** the result. What will be displayed as the output on the screen when this code is run?
+Une **fonction** appelée `add()` a été créée pour effectuer un calcul sur deux nombres et **retourner** le résultat. Que sera affiché en sortie à l'écran lorsque ce code sera exécuté ?
 
 ```python
 
@@ -32,17 +32,17 @@ print(add(5, 10))
 
   --- feedback ---
 
-This is the **function call**. This calls the `add()` function and passes the numbers `5` and `10` as arguments. These numbers are then used by the function.
+Ceci est **l'appel de la fonction**. Cela appelle la fonction `add()` et passe les nombres `5` et `10` en tant qu'arguments. Ces nombres sont ensuite utilisés par la fonction.
 
   --- /feedback ---
 
 - ( )
 
-`one + two`
+`un + deux`
 
   --- feedback ---
 
-  Not quite, the function will **return** the result of adding the values held in the variables `one` and `two` together.
+  Pas tout à fait, la fonction **retournera** le résultat de l'ajout des valeurs contenues dans les variables `un` et `deux` ensemble.
 
   --- /feedback ---
 
@@ -52,17 +52,17 @@ This is the **function call**. This calls the `add()` function and passes the nu
 
   --- feedback ---
 
-  Correct! The values `5` and `10` are passed into the function. They are then added together and held in the variable `result`. This is then **returned** and displayed as output using the `print()` function.
+  Correct ! Les valeurs `5` et `10` sont passées dans la fonction. Elles sont ensuite ajoutées ensemble et conservées dans la variable `resultat`. Ceci est alors **retourné** et affiché en sortie en utilisant la fonction `print()`.
 
   --- /feedback ---
 
 - ( )
 
-`result`
+`resultat`
 
   --- feedback ---
 
-  Almost, the output will display the value **held** by the `result` variable.
+  Presque, la sortie affichera la valeur **conservée** par la variable `resultat`.
 
   --- /feedback ---
 
