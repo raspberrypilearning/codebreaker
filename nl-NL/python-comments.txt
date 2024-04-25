@@ -1,77 +1,77 @@
-Set up data structures
+Gegevensstructuren instellen
 
-List from a string
+Lijst uit een string
 
-Create the atbash code by reversing the alphabet
+Maak de atbash-code door het alfabet om te draaien
 
-Reverses a list
+Draait een lijst om
 
-Gets the length of a list
+Haalt de lengte van een lijst op
 
-Populate the code dictionary with a letter of the alphabet and its encoded letter
+Vul het code-woordenboek in met een letter van het alfabet en de bijbehorende gecodeerde letter
 
-Start up
+Opstart
 
 Test
 
-Encode/decode a piece of text — atbash is symmetrical
+Codeer/decodeer een stuk tekst — atbash is symmetrisch
 
-Converts text to lower case
+Zet tekst om naar kleine letters
 
-Populates output with the encoded/decoded message using the dictionary
+Vult de uitvoer in met het gecodeerde/gedecodeerde bericht met behulp van het woordenboek
 
-Return the encoded/decoded message
+Retourneer het gecodeerde/gedecodeerde bericht
 
-Create a text-based menu system
+Maak een tekst-gebaseerd menu systeem
 
-Start with a wrong answer for choice.
+Begin met een verkeerd antwoord voor keuze.
 
-Keep asking the user for the right answer
+Blijf de gebruiker om het juiste antwoord vragen
 
-Please enter c to encode/decode text, or f to perform frequency analysis: 
+Voer c in om tekst te coderen/decoderen, of f om frequentieanalyse uit te voeren: 
 
-Running your message through the cypher…
+Voer je bericht uit via de cypher…
 
-my secret message
+mijn geheime bericht
 
-Fetch and return text from a file
+Tekst uit een bestand ophalen en retourneren
 
-Need to strip the newline characters
+Noodzaak om de newline-tekens te verwijderen
 
-Take input from a file
+Neem invoer uit een bestand
 
-Calculate the frequency of all letters in a piece of text
+Bereken de frequentie van alle letters in een stuk tekst
 
-Convert the message to lower case and make it a list
+Zet het bericht om naar kleine letters en maak het een lijst
 
-Create a dictionary of every letter, with a count of 0
+Maak een woordenboek van elke letter, met een telling van 0
 
-Count the letters in the message
+Tel de letters in het bericht
 
-Convert from counts to percentages
+Converteren van aantallen naar percentages
 
-Analysing message…
+Bericht analyseren…
 
-Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
+Neem invoer uit hetzelfde bestand. We hebben een 'longer.txt' of iets dergelijks met cijfertekst waarvan we weten dat deze redelijk goed presteert voor frequentieanalyse
 
-Get the frequency of the letters in the message, as %
+Haal de frequentie van de letters in het bericht op, als %
 
-Make frequency chart
+Frequentiegrafiek maken
 
-Frequency analysis
+Frequentie analyse
 
-Target message
+Doelbericht
 
-Language
+Taal
 
-Label the chart with the dictionary keys (A-Z)
+Label de grafiek met de woordenboek sleutels (A-Z)
 
-Label the frequency data for the encoded message
+Label de frequentiegegevens voor het gecodeerde bericht
 
-Label the frequency data for the language
+Label de frequentiegegevens voor de taal
 
-Import the English frequency dictionary
+Het Engelse frequentiewoordenboek importeren
 
-Call the function to make a chart
+Roep de functie aan om een grafiek te maken
 
-hello
+hallo
