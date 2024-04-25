@@ -1,36 +1,36 @@
 ---
-title: Codebreaker
+title: Déchiffreur de code
 hero_image: images/banner.png
 description:
-  - Analyse a frequency graph to crack the code, whilst learning about lists
-  - and functions
-meta_title: Python coding projects for kids and teens | Code breaker
-meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to crack a code whilst learning about lists and functions.
+  - Analyser un graphique de fréquence pour déchiffrer le code, tout en apprenant les listes
+  - et les fonctions
+meta_title: Projets de codage Python pour enfants et adolescents | Déchiffreur de code
+meta_description: Apprends le langage Python avec les projets de codage de la Raspberry Pi Foundation pour les enfants et les adolescents. Utilise Python pour déchiffrer un code tout en te familiarisant avec les listes et les fonctions.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: You will make
+    title: Ce que tu vas faire
   - 
-    title: Encode the alphabet
+    title: Coder l'alphabet
   - 
-    title: Encode a message
+    title: Coder un message
     completion:
       - engaged
   - 
-    title: Create a menu
+    title: Créer un menu
   - 
-    title: Encode text from a file
+    title: Coder du texte à partir d'un fichier
   - 
-    title: Create a frequency analyser
+    title: Créer un analyseur fréquentiel
   - 
-    title: Analyse the frequency
+    title: Analyser la fréquence
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Questionnaire rapide
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -39,6 +39,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Améliorer ton projet
   - 
-    title: What next?
+    title: Et ensuite ?
