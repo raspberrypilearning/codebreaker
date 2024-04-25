@@ -1,7 +1,7 @@
-# Frequency distribution of letters in multiple languages
-# Provided as part of the starter
+# Frequentieverdeling van letters in meerdere talen
+# Geleverd als onderdeel van de starter
 
-english = {
+engels = {
     'a': 8.20,
     'b': 1.50,
     'c': 2.80,
