@@ -1,117 +1,117 @@
-## Encode the alphabet
+## Coder l'alphabet
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-To start, you will create a dictionary for your encoded letters. 
+Pour commencer, tu vas créer un dictionnaire pour tes lettres codées. 
 </div>
 <div>
-![The output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}
+![La sortie du dictionnaire de codes créé à cette étape.](images/code-dictionary.PNG){:width="600px"}
 </div>
 </div>
 
 --- task ---
 
-Open the [Codebreaker starter project](https://editor.raspberrypi.org/en/projects/codebreaker-project-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
+Ouvre le [projet de démarrage Déchiffreur de code](https://editor.raspberrypi.org/en/projects/codebreaker-project-starter){:target="_blank"}. Le Code Editor Raspberry Pi s'ouvre dans un autre onglet du navigateur.
 
-If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
+Si tu as un compte Raspberry Pi, tu peux cliquer sur **Save** pour enregistrer une copie du code de démarrage dans ta bibliothèque.
 
-If you are not using the code editor in your browser, you will need to download the project files and you may need to install `pygal` before you can import it.
+Si tu n'utilises pas le Code Editor dans ton navigateur, tu devras télécharger les fichiers du projet et tu devras peut-être installer `pygal` avant de pouvoir l'importer.
 
 --- collapse ---
 ---
-title: Installing pygal
+title: Installer pygal
 ---
 
-### On Windows
-In the **Command Prompt** type the following and press the <kbd>Enter</kbd> key:
+### Sur Windows
+Dans **l'invite de commande**, tape ce qui suit et appuie sur la touche <kbd>Entrée</kbd> :
 
 ```
 pip install pygal
 ```
 
-Wait for the installation to complete and then continue with the project.
+Attends que l'installation se termine, puis poursuis le projet.
 
-### On a Mac
-In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
+### Sur Mac
+Dans le **Terminal**, tape ce qui suit et appuie sur la touche <kbd>Entrée</kbd> :
 
 ```
 pip3 install pygal
 ```
 
-Wait for the installation to complete and then continue with the project.
+Attends que l'installation se termine, puis poursuis le projet.
 
-### On Linux, including Raspberry Pi OS
-In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
+### Sur Linux, y compris Raspberry Pi OS
+Dans le **Terminal**, tape ce qui suit et appuie sur la touche <kbd>Entrée</kbd> :
 
 ```
 pip install pygal
 ```
 
-Wait for the installation to complete and then continue with the project.
+Attends que l'installation se termine, puis poursuis le projet.
 
 --- /collapse ---
 
 --- /task ---
 
-### Set up the alphabet list and the code dictionary
+### Définir la liste alphabétique et le dictionnaire des codes
 
-The codebreaker program starts with two data structures. The first data structure is a **list** of all the letters in the alphabet and the second is a `code` **dictionary**. To save typing time, you can create a list from a string by using the `list()` function.
+Le programme Déchiffreur de code commence par deux structures de données. La première structure de données est une **liste** de toutes les lettres de l'alphabet et la seconde est un `code` **dictionnaire**. Pour gagner du temps de saisie, tu peux créer une liste à partir d'une chaîne en utilisant la fonction `list()`.
 
 [[[list-function]]]
 
 --- task ---
 
-Find the `# Set up data structures` comment in the program, then use the `list()` function to create a **list** of letters from the `alphabet`. Next, **initialise** the `code` **dictionary** so that you can populate it in a later step.
+Trouve le commentaire `# Configurer les structures de données` du programme, puis utilise la fonction `list()` pour créer une **liste** de lettres à partir de l'`alphabet`. Ensuite, **initialise** le `code` **dictionnaire** afin que tu puisses le remplir dans une étape ultérieure.
 
-The `alphabet` list contains spaces at the beginning and end to preserve the spaces in the message. Strong encryption would not do this, as it makes the message easier to decode. The spaces have been kept in for this project to make the messages easier to read.
+La liste `alphabet` contient des espaces au début et à la fin pour préserver les espaces dans le message. Un cryptage fort n'aurait pas cet effet, car il rend le message plus facile à décoder. Les espaces ont été conservés pour ce projet afin de faciliter la lecture des messages.
 
 --- code ---
 ---
 language: python filename: main.py line_numbers: true line_number_start: 5
 line_highlights: 6-7
 ---
-# Set up data structures
+# Mise en place des structures de données
 alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # List from a string code = {}
 
 --- /code ---
 
 --- /task ---
 
-### Create a new list that reverses the alphabet
+### Créer une nouvelle liste qui inverse l'alphabet
 
-You need to create a new list that holds the alphabet, but backwards. You can use the `list()` function again to help with this. You can also use the `reversed()` function to reverse an existing list.
+Tu dois créer une nouvelle liste qui contient l'alphabet, mais à l'envers. Tu peux à nouveau utiliser la fonction `list()` pour t'aider dans cette tâche. Tu peux aussi utiliser la fonction `reversed()` pour inverser une liste existante.
 
 --- task ---
 
-Find the `# Create the atbash code by reversing the alphabet` comment then **define** a new function called `create_code`. Next, create a **list** that holds the **reverse** of the `alphabet` list.
+Trouve le commentaire `# Crée le code atbash en inversant l'alphabet` puis **définis** une nouvelle fonction appelée `creer_code`. Ensuite, crée une **liste** qui contient l'**inverse** de la liste `alphabet`.
 
 --- code ---
 ---
 language: python filename: main.py - create_code() line_numbers: true line_number_start: 10
 line_highlights: 11-12
 ---
-# Create the atbash code by reversing the alphabet
+# Créer le code atbash en inversant l'alphabet
 def create_code(): backwards = list(reversed(alphabet))  # Reverses a list
 
 --- /code ---
 
 --- /task ---
 
-### Encode the alphabet
+### Coder l'alphabet
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-Encoding is when you convert data from one form to another. In an atbash cypher for example, the letter 'e' would be **encoded** as a 'v'. 
+Le codage consiste à convertir des données d'une forme à une autre. Dans un cryptogramme atbash par exemple, la lettre "e" serait **codée** comme un "v". 
 </p>
 
-You now have two lists. One contains the alphabet written forwards, the other with the alphabet backwards. You are now going to use these two lists to populate a dictionary. The **key** will store the alphabet written forwards and the **paired value** will store the alphabet backwards.
+Tu as maintenant deux listes. L'une contient l'alphabet écrit à l'endroit, l'autre l'alphabet à l'envers. Tu vas maintenant utiliser ces deux listes pour remplir un dictionnaire. La **clé** mémorise l'alphabet écrit à l'endroit et la **valeur appariée** mémorise l'alphabet à l'envers.
 
-The code dictionary is really important because you can use it to match each letter from your message using the **key**, with its encoded **paired value**.
+Le dictionnaire de codes est vraiment important car tu peux l'utiliser pour faire correspondre chaque lettre de ton message à l'aide de la **clé**, avec sa **valeur appariée** codée.
 
 --- task ---
 
-Within your `create_code` function, **populate** the `code` dictionary with data from the two **lists**. Use a `for` loop to get the length of the `alphabet` list and populate the **dictionary** with the data.
+Dans ta fonction `creer_code`, **remplis** le dictionnaire `code` avec les données des deux **listes**. Utilise une boucle `for` pour obtenir la longueur de la liste `alphabet` et remplir le **dictionnaire** avec les données.
 
-`len()` is a function that you can use to find out the length of an **object**, such as a list. It is used here to iterate a `for` loop, as many times as there are characters in the `alphabet` list — its length.
+`len()` est une fonction que tu peux utiliser pour connaître la longueur d'un **objet**, comme une liste. Elle est utilisée ici pour itérer une boucle `for`, autant de fois qu'il y a de caractères dans la liste `alphabet` - sa longueur.
 
 --- code ---
 ---
@@ -126,11 +126,11 @@ def create_code(): backwards = list(reversed(alphabet))  # Reverses a list
 
 --- /task ---
 
-Creating a `main()` function is useful to **call** all of the required functions when your program first starts.
+La création d'une fonction `main()` est utile pour **appeler** toutes les fonctions nécessaires au premier démarrage de ton programme.
 
 --- task ---
 
-Find the `# Start up` comment and **define** a `main()` function to call your `code()` function. Next, call the `main()` function in the main body of your code.
+Trouve le commentaire `# Démarrage` et **définis** une fonction `main()` pour appeler ta fonction `code()`. Appelle ensuite la fonction `main()` dans le corps de ton code.
 
 --- code ---
 ---
@@ -144,11 +144,11 @@ main() --- /code ---
 
 --- /task ---
 
-### Test and debug
+### Test et débogage
 
 --- task ---
 
-To test that your `code` dictionary has populated correctly, you can `print` the dictionary in full. Under your `for` loop in the `create_code` function, add a `print` function to display the contents.
+Pour tester que ton dictionnaire `code` s'est correctement rempli, tu peux `imprimer` le dictionnaire dans son intégralité. Sous ta boucle `for` dans la fonction `creer_code`, ajoute une fonction `print` pour afficher le contenu.
 
 --- code ---
 ---
@@ -167,23 +167,23 @@ def create_code(): backwards = list(reversed(alphabet))
 
 --- task ---
 
-**Test:** Run your code to see if the `code` dictionary displays correctly. You should see a pattern starting with the letter `a` paired with `z` and the letter `b` being paired with `y`.
+**Test :** exécute ton code pour voir si le dictionnaire `code` s'affiche correctement. Tu devrais voir un motif commençant par la lettre `a` combinée à `z` et la lettre `b` combinée à `y`.
 
 
-![The output of the code dictionary that is created in this step.](images/code-dictionary.PNG){:width="600px"}
+![La sortie du dictionnaire de codes créé dans cette étape.](images/code-dictionary.PNG){:width="600px"}
 
-**Debug:** There are no error messages but your code dictionary is not displaying on the screen:
-- Make sure that `print(code)` is indented correctly within the `create_code` function
-- Check that you have **called** the `create_code()` and the `main()` function correctly
+**Débogage :** il n'y a pas de message d'erreur mais ton dictionnaire de code ne s'affiche pas à l'écran :
+- Assure-toi que `print(code)` est indenté correctement au sein de la fonction `creer_code`
+- Vérifie que tu as **appelé** correctement la fonction `creer_code()` et la fonction `main()`
 
-**Debug:** If you see a message about `code` not being defined, make sure that you have initialised the `code` dictionary.
+**Débogage :** si tu vois un message indiquant que `code` n'est pas défini, assure-toi d'avoir initialisé le dictionnaire `code`.
 
-**Debug:** If you see a message about an indentation error:
-- Check that you have indented all of your code correctly
-- Look back at the sample code on this page to help you check
+**Débogage :** si tu vois un message concernant une erreur d'indentation :
+- Vérifie que tu as correctement indenté tout ton code
+- Reporte-toi à l'exemple de code de cette page pour t'aider à vérifier
 
 --- /task ---
 
-In the next step, you will **encode** a message with the help of your `code` dictionary.
+Dans l'étape suivante, tu vas **coder** un message à l'aide de ton dictionnaire `code` .
 
 --- save ---
