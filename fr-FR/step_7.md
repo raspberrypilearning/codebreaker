@@ -1,20 +1,20 @@
-## Analyse the frequency
+## Analyser la fréquence
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Use a bar chart to analyse the frequency of letters in an encoded message. 
+Utilise un diagramme à barres pour analyser la fréquence des lettres dans un message codé. 
 </div>
 <div>
-![A bar chart showing the frequency of letters in the English language compared with the frequency of letters used in the encoded message.](images/frequency-analysis.PNG){:width="400px"}
+![Un diagramme à barres montrant la fréquence des lettres de la langue anglaise comparée à la fréquence des lettres utilisées dans le message codé.](images/frequency-analysis.PNG){:width="400px"}
 </div>
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-In all languages, each letter in its alphabet has a 'personality' or set of traits when used in that language. One of the most obvious traits a letter has in any language is how often it appears. **Frequency analysis** is the method of breaking codes by looking at how often letters are used in the language of the code, and comparing that to how often encoded letters show up in a message. In English, the letter **e** is the most commonly used letter (it shows up 12.8% of the time), followed by **t** (at 9.1%). The least often used letter is **z**.
+Dans toutes les langues, chaque lettre de l'alphabet a une « personnalité » ou un ensemble de traits lorsqu'elle est utilisée dans cette langue. L'un des traits les plus évidents qu'une lettre possède dans n'importe quelle langue est sa fréquence d'apparition. **L'analyse fréquentielle** est la méthode qui permet de casser les codes en examinant la fréquence d'utilisation des lettres dans la langue du code et en la comparant à la fréquence d'apparition des lettres codées dans un message. En anglais, la lettre **e** est la plus utilisée (elle apparaît 12,8 % du temps), suivie de **t** (à 9,1 %). La lettre la moins souvent utilisée est **z**.
 </p>
 --- task ---
 
-The `print(message_freq)` line of code is no longer needed. Add a `#` to the beginning of it so that Python ignores it when the code is run.
+La ligne de code `print(message_freq)` n'est plus nécessaire. Ajoute un `#` au début de celui-ci pour que Python l'ignore lors de l'exécution du code.
 
 --- code ---
 ---
@@ -31,13 +31,13 @@ line_highlights: 76
 
 --- /task ---
 
-### Make the frequency chart function
+### Faire fonctionner le diagramme de fréquence
 
 --- task ---
 
-Find the `# Make frequency chart` comment and create a new function called `make_chart()`. This function needs two parameters called `text` and `language`. The frequency chart will be a **bar** chart with the **title** `Frequency analysis` and with **x-axis** labels using the **keys** from the `freq` dictionary.
+Trouve le commentaire `# Faire un graphique de fréquence` et crée une nouvelle fonction appelée `faire_graphique()`. Cette fonction a besoin de deux paramètres appelés `texte` et `langue`. Le graphique de fréquence sera un diagramme à **barres** avec le **titre** `Analyse fréquentielle` et avec des étiquettes **axe des x** utilisant les **clés** du dictionnaire `freq`.
 
-The `freq` dictionary values will be passed into the function when it is called later in the code, via the `text` parameter.
+Les valeurs du dictionnaire `freq` seront transmises à la fonction lorsqu'elle sera appelée plus loin dans le code, via le paramètre `texte`.
 
 --- code ---
 ---
@@ -51,7 +51,7 @@ def make_chart(text, language): chart = Bar(width=800, height=400, title='Freque
 
 --- task ---
 
-Label the chart with the **frequency** of letters in the encoded message and the known letter frequency of the **language** the message is in. This data has been **passed into** the **function** via the `text` and `language` parameters.
+Étiquette le graphique avec la **fréquence** des lettres dans le message codé et la fréquence connue des lettres de la **langue** dans laquelle le message est rédigé. Ces données ont été **passées dans** la **fonction** via les paramètres `texte` et `langue`.
 
 --- code ---
 ---
@@ -65,7 +65,7 @@ def make_chart(text, language): chart = Bar(width=800, height=400, title='Freque
 
 --- task ---
 
-**Render** the chart so that it will display when the function is called.
+**Fais un rendu** du graphique pour qu'il s'affiche lorsque la fonction est appelée.
 
 --- code ---
 ---
@@ -80,11 +80,11 @@ def make_chart(text, language): chart = Bar(width=800, height=400, title='Freque
 
 --- /task ---
 
-### Call the frequency chart function
+### Appelle la fonction de diagramme de fréquence
 
 --- task ---
 
-Find your `elif` in the `menu()` function. Add a line of code that will **import** the `english` frequency dictionary from the `frequency.py` file. Add another line of code that will **call** the `make_chart` function to draw the chart.
+Trouve ton `elif` dans la fonction `menu()`. Ajoute une ligne de code qui va **importer** le dictionnaire de fréquence `anglais` depuis le fichier `frequency.py`. Ajoute une autre ligne de code qui **appellera** la fonction `faire_graphique` pour dessiner le graphique.
 
 --- code ---
 ---
@@ -105,34 +105,34 @@ line_highlights: 80-81
 
 --- task ---
 
-**Test:** Run your code to display the frequency analysis bar chart.
+**Test :** exécute ton code pour afficher le diagramme à barres d'analyse fréquentielle.
 
-![A bar chart showing the frequency of letters in the English language compared to the frequency of letters used in the encoded message.](images/frequency-analysis.PNG)
+![Un diagramme à barres montrant la fréquence des lettres de la langue anglaise par rapport à la fréquence des lettres utilisées dans le message codé.](images/frequency-analysis.PNG)
 
-**Debug:** Your chart doesn't look exactly the same as the one displayed in the image above:
-- This is normal. Your chart will display the frequency data for the secret message that you have entered in `input.txt`.
+**Débogage :** ton graphique ne ressemble pas exactement à celui affiché dans l'image ci-dessus :
+- C'est normal. Ton graphique affichera les données de fréquence pour le message secret que tu as saisi dans `input.txt`.
 
-**Debug:** You see the following error message `NameError: name 'lang_freq' is not defined`:
-- Check that you added the line of code `lang_freq = english` **before** the `make_chart()` function call.
+**Débogage :** tu vois le message d'erreur suivant `NameError: name 'lang_freq' is not defined` :
+- Vérifie que tu as ajouté la ligne de code `lang_freq = anglais` **avant** l'appel à la fonction `faire_graphique()`.
 
-**Debug:** You see an `Indentation error` message:
-- Check that you have correctly indented all of your new code. Revisit the tasks above to check.
+**Débogage :** tu vois apparaître un message `Indentation error` :
+- Vérifie que tu as correctement indenté tout ton nouveau code. Revois les tâches ci-dessus pour vérifier.
 
 --- /task ---
 
-### Analyse the frequency chart
+### Analyser le diagramme de fréquence
 
-The chart that has been produced shows the frequency of letters in the English language, labelled as **Language**. You can see that the letter **e** is the most frequently used letter in the English language because it has the highest bar for all of the **language** values.
+Le graphique réalisé montre la fréquence des lettres de la langue anglaise, étiquetée **Langue**. Tu peux voir que la lettre **e** est la lettre la plus utilisée dans la langue anglaise parce qu'elle a la barre la plus élevée pour toutes les valeurs de **langue**.
 
-The frequency chart also lists the frequency of letters in your **encoded** message, labelled as **Target message**. This includes the spaces in your message, which can be seen in the last bar on the right. To work out what **encoding** has been used for this message, you can compare the bars showing the English language with the bars on the encoded message. The highest bar (ignoring the spaces) in the encoded message text will most likely be an **e**. The second highest letter will most likely be a **t** as this is the next most popular letter.
+Le diagramme de fréquence répertorie également la fréquence des lettres dans ton message **codé**, étiqueté comme **Message cible**. Cela inclut les espaces de ton message, qui sont visibles dans la dernière barre à droite. Pour savoir quel **codage** a été utilisé pour ce message, tu peux comparer les barres affichant la langue anglaise avec les barres du message codé. La barre la plus haute (en ignorant les espaces) dans le texte du message codé sera très probablement un **e**. La deuxième lettre la plus élevée sera probablement un **t** car c'est la lettre suivante la plus populaire.
 
-Codebreakers can use the frequency of letters to work out the type of encoding that has been used on the message. They can use trial and error to **predict** what a letter might represent using the chart as a guide.
+Les déchiffreurs de code peuvent utiliser la fréquence des lettres pour déterminer le type de codage utilisé pour le message. Ils peuvent utiliser l'essai et l'erreur pour **prédire** ce qu'une lettre peut représenter en utilisant le graphique comme guide.
 
 --- task ---
 
-Your secret message is quite small, which makes it tricky to analyse using a frequency chart. Change your code so that it analyses the message in `longer.txt` instead.
+Ton message secret est assez petit, ce qui le rend délicat à analyser à l'aide d'un diagramme de fréquence. Modifie ton code pour qu'il analyse le message dans `longer.txt` à la place.
 
-Change `input.txt` to `longer.txt`.
+Remplace `input.txt` par `longer.txt`.
 
 --- code ---
 ---
@@ -150,9 +150,9 @@ line_highlights: 77
 
 --- task ---
 
-**Analyse** the frequency chart by looking at the **Language** values and the **Target message** values. Notice how the highest bar for **Language** is **e** and the highest bar for **Target message** is **v**. This is because with the **Atbash** cypher, the letter **e** is encoded with the letter **v**.
+**Analyse** le graphique de fréquence en examinant les valeurs **Langue** et les valeurs **Message cible**. Remarque que la barre la plus haute pour **Langue** est **e** et que la barre la plus haute pour **Message cible** est **v**. C'est parce qu'avec le cryptage **Atbash**, la lettre **e** est codée avec la lettre **v**.
 
-![A bar chart showing the frequency of letters in the English language compared to the frequency of letters used in the encoded message in longer.txt.](images/longer-analysis.PNG)
+![Un diagramme à barres montrant la fréquence des lettres de la langue anglaise par rapport à la fréquence des lettres utilisées dans le message codé de longer.txt.](images/longer-analysis.PNG)
 
 --- /task ---
 
