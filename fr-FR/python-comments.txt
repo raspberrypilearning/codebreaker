@@ -1,77 +1,77 @@
-Set up data structures
+Mise en place des structures de données
 
-List from a string
+Liste à partir d'une chaîne de caractères
 
-Create the atbash code by reversing the alphabet
+Créer le code atbash en inversant l'alphabet
 
-Reverses a list
+Inverser une liste
 
-Gets the length of a list
+Obtenir la longueur d'une liste
 
-Populate the code dictionary with a letter of the alphabet and its encoded letter
+Remplir le dictionnaire de codes avec une lettre de l'alphabet et sa lettre codée
 
-Start up
+Démarrage
 
 Test
 
-Encode/decode a piece of text — atbash is symmetrical
+Coder/décoder un morceau de texte - atbash est symétrique
 
-Converts text to lower case
+Convertit le texte en minuscules
 
-Populates output with the encoded/decoded message using the dictionary
+Remplit la sortie avec le message codé/décodé en utilisant le dictionnaire
 
-Return the encoded/decoded message
+Renvoyer le message codé/décodé
 
-Create a text-based menu system
+Créer un système de menu basé sur du texte
 
-Start with a wrong answer for choice.
+Commencer par une mauvaise réponse pour le choix.
 
-Keep asking the user for the right answer
+Continuer à demander à l'utilisateur la bonne réponse
 
-Please enter c to encode/decode text, or f to perform frequency analysis: 
+Saisis c pour coder/décoder du texte, ou f pour effectuer une analyse fréquentielle : 
 
-Running your message through the cypher…
+Nous passons ton message dans le cryptogramme…
 
-my secret message
+mon message secret
 
-Fetch and return text from a file
+Récupérer et renvoyer le texte d'un fichier
 
-Need to strip the newline characters
+Nécessité de supprimer les caractères de retour à la ligne
 
-Take input from a file
+Prendre des données dans un fichier
 
-Calculate the frequency of all letters in a piece of text
+Calculer la fréquence de toutes les lettres d'un texte
 
-Convert the message to lower case and make it a list
+Convertir le message en minuscules et en faire une liste
 
-Create a dictionary of every letter, with a count of 0
+Créer un dictionnaire pour chaque lettre, avec un compte de 0
 
-Count the letters in the message
+Compter les lettres dans le message
 
-Convert from counts to percentages
+Convertir les comptages en pourcentages
 
-Analysing message…
+Analyse du message…
 
-Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
+Prend l'entrée du même fichier. Nous disposons d'un fichier 'longer.txt' ou d'un fichier similaire contenant un texte crypté dont nous savons qu'il se prête assez bien à l'analyse fréquentielle
 
-Get the frequency of the letters in the message, as %
+Obtenir la fréquence des lettres dans le message, en %
 
-Make frequency chart
+Créer un diagramme de fréquence
 
-Frequency analysis
+Analyse fréquentielle
 
-Target message
+Message cible
 
-Language
+Langue
 
-Label the chart with the dictionary keys (A-Z)
+Étiqueter le graphique avec les clés du dictionnaire (A-Z)
 
-Label the frequency data for the encoded message
+Étiqueter les données de fréquence pour le message codé
 
-Label the frequency data for the language
+Étiqueter les données de fréquence pour la langue
 
-Import the English frequency dictionary
+Importer le dictionnaire de fréquence en anglais
 
-Call the function to make a chart
+Appeler la fonction pour faire un graphique
 
-hello
+bonjour
