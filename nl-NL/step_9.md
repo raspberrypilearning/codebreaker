@@ -1,65 +1,65 @@
-## Upgrade your project
+## Verbeter je project
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, discover ways to upgrade your project!
+In deze stap ontdek je manieren om je project te upgraden!
 
 </div>
 <div>
-![A boy and a girl sit at a computer, working together on a programming project.](images/partner-work.PNG){:width="300px"}
+![Een jongen en een meisje zitten achter een computer en werken samen aan een programmeerproject.](images/partner-work.PNG){:width="300px"}
 </div>
 </div>
 
-### Get inspiration
-Have a look at these example projects to spark some ideas of your own!
+### Doe inspiratie op
+Bekijk deze voorbeeldprojecten eens om zelf op ideeën te komen!
 
-This project has an extra menu option to enter and encode your own short text:
+Dit project heeft een extra menuoptie om je eigen korte tekst in te voeren en te coderen:
 
-**Custom short message encoder:**
+**Aangepaste encoder voor korte berichten:**
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/short-message-encoder" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-You can find the Custom short message encoder project [here](https://editor.raspberrypi.org/en/projects/short-message-encoder){:target="_blank"}
+Je kunt het aangepaste codeerproject voor korte berichten [hier vinden](https://editor.raspberrypi.org/en/projects/short-message-encoder){:target="_blank"}
 
-This project can complete frequency analysis in English, French, or Spanish:
+Dit project kan frequentie analyses voltooien in Engels, Frans of Spaans:
 
-**Three language atbash encoder:**
+**Atbash-encoder in drie talen:**
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/three-language-encoder" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-You can find the Three language atbash encoder project [here](https://editor.raspberrypi.org/en/projects/three-language-encoder){:target="_blank"}
+Je kunt het drietalige atbash-encoderproject [hier vinden](https://editor.raspberrypi.org/en/projects/three-language-encoder){:target="_blank"}
 
 --- task ---
 
-Change the starting letter of the alphabet to create a different cypher. You can do this by changing the original `alphabet` list.
+Verander de startletter van het alfabet om een andere cypher te maken. Je kunt dit doen door de originele `alfabet` lijst te wijzigen.
 
 --- /task ---
 
 --- task ---
 
-Add another language to your frequency analysis. You will need to investigate the frequency of letters used and place them into a dictionary in the `frequency.py` program.
+Voeg een andere taal toe aan je frequentie analyse. Je moet de gebruikte frequentie onderzoeken en ze in een dictionary plaatsen in het `frequency.py` programma.
 
 --- /task ---
 
 --- task ---
 
-Add another menu item to allow users to change the language.
+Voeg nog een menu-item toe zodat gebruikers de taal kunnen wijzigen.
 
 --- /task ---
 
 --- task ---
 
-If possible, swap your cyphertext with a partner and see if they can crack your code using their frequency analyser.
+Wissel indien mogelijk jouw codetekst uit met een andere ninja en kijk of zij jouw code kunnen kraken met behulp van hun frequentie analyser.
 
 --- /task ---
 
 --- collapse ---
 
 ---
-title: Completed project
+title: Voltooid project
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/en/projects/codebreaker-project-example).
+Hier kun je het [voltooide project bekijken](https://editor.raspberrypi.org/en/projects/codebreaker-project-example).
 
 --- /collapse ---
 
