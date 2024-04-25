@@ -1,17 +1,17 @@
-## Encode a message
+## Coder un message
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will create a function that can take your text, flip it and reverse it with your atbash cypher list, and return it as an encoded message. 
+Dans cette étape, tu vas créer une fonction qui peut prendre ton texte, le retourner et l'inverser avec ta liste de cryptage atbash, et le renvoyer sous forme de message codé. 
 </div>
 <div>
-![The output of the code created in this step. An encoded version of a secret message is displayed.](images/test-encoded.PNG){:width="300px"}
+![La sortie du code créé à cette étape. Une version codée d'un message secret s'affiche.](images/test-encoded.PNG){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-**Comment out** the print statement used for testing on line 17 by placing a hashtag at the beginning of the line:
+**Commente** l'instruction print utilisée pour le test à la ligne 17 en plaçant un hashtag au début de la ligne :
 
 --- code ---
 ---
@@ -27,13 +27,13 @@ line_highlights: 17
 
 --- /task ---
 
-### Set up your atbash function
+### Configurer ta fonction atbash
 
-You will now add your new **function** that will encode some text using the **atbash** cypher.
+Tu vas maintenant ajouter ta nouvelle **fonction** qui va coder un peu de texte à l'aide du cryptage **atbash**.
 
 --- task ---
 
-Find the comment that says `# Encode/decode a piece of text — atbash is symmetrical`. Underneath the comment, define a function called `atbash`, with the **parameter** `text`. Parameters allow you to pass values into functions that can be used within that function.
+Trouve le commentaire qui dit `# Coder/décoder un morceau de texte - atbash est symétrique`. Sous le commentaire, définis une fonction appelée `atbash`, avec le **paramètre** `texte`. Les paramètres te permettent de passer des valeurs dans les fonctions qui peuvent être utilisées à l'intérieur de cette fonction.
 
 --- code ---
 ---
@@ -45,19 +45,19 @@ def atbash(text):
 
 --- /code ---
 
-Press <kbd>Enter</kbd>. You should see the next line indented.
+Appuie sur <kbd>Entrée</kbd>. Tu devrais voir la ligne suivante indentée.
 
 --- /task ---
 
 [[[parameters]]]
 
-### Convert text to lower case
+### Convertir le texte en minuscules
 
-First your function needs to convert the `text` to lower case. A new **variable** called `output` then needs to be created to hold the encoded message.
+Tout d'abord, ta fonction doit convertir le `texte` en minuscules. Une nouvelle **variable** appelée `sortie` doit alors être créée pour contenir le message codé.
 
 --- task ---
 
-Beneath the line of code where you have defined the `atbash()` function, type:
+Sous la ligne de code où tu as défini la fonction `atbash()`, tape :
 
 --- code ---
 ---
@@ -71,13 +71,13 @@ def atbash(text): text = text.lower()  # Converts text to lower case output = '
 
 --- /task ---
 
-### Encode your text
+### Code ton texte
 
-The next part of your code will **encode** the `text` that has been **passed** into the function. A `for` loop is used to go through each letter in the `text` and convert it to an encoded letter using the `code` dictionary. Finally, it will **return** the encoded message.
+La partie suivante de ton code va **coder** le `texte` qui a été **passé** dans la fonction. Une boucle `for` est utilisée pour parcourir chaque lettre du `texte` et la convertir en lettre codée à l'aide du dictionnaire `code`. Enfin, il **retournera** le message codé.
 
 --- task ---
 
-Leave a blank line under the last code you entered (make sure you keep the indent), then type:
+Laisse une ligne vide sous le dernier code que tu as saisi (assure-toi de garder l'indentation), puis tape :
 
 --- code ---
 ---
@@ -97,13 +97,13 @@ def atbash(text): text = text.lower()  # Converts text to lower case output = '
 
 --- /task ---
 
-### Test and debug
+### Test et débogage
 
 --- task ---
 
-Now that you have a **function** that will **encode text**, you need to run it to make sure it works. Find your `main()` function and add in a function call to run the `atbash()` function.
+Maintenant que tu as une **fonction** qui va **coder du texte**, tu dois l'exécuter pour t'assurer qu'elle fonctionne. Trouve ta fonction `main()` et ajoute un appel de fonction pour exécuter la fonction `atbash()`.
 
-The 'Test' string is **passed** into the function so that it can be encoded.
+La chaîne 'Test' est **passée** dans la fonction afin qu'elle puisse être codée.
 
 --- code ---
 ---
@@ -119,19 +119,19 @@ def main(): create_code() print(atbash('Test'))
 
 --- task ---
 
-**Test:** Run your code to see if the test message displays correctly. You should see the console output `gvhg`.
+**Test :** exécute ton code pour voir si le message de test s'affiche correctement. Tu devrais voir la sortie de la console `gvhg`.
 
-![The output of the encoded text that is created in this step.](images/test-encoded.PNG){:width="200px"}
+![La sortie du texte codé créé à cette étape.](images/test-encoded.PNG){:width="200px"}
 
-**Debug:** If you see a message about an indentation error:
-- Check that you have indented all of your code correctly
-- Look back at the sample code on this page to help you check
+**Débogage :** si tu vois un message concernant une erreur d'indentation :
+- Vérifie que tu as correctement indenté tout ton code
+- Reporte-toi à l'exemple de code de cette page pour t'aider à vérifier
 
 --- /task ---
 
 --- task ---
 
-**Comment out** your `print(atbash('Test'))` line of code now that you have finished testing.
+**Commente** ta ligne de code `print(atbash('Test'))` maintenant que tu as terminé les tests.
 
 --- code ---
 ---
@@ -145,6 +145,6 @@ def main(): create_code() # print(atbash('Test'))
 
 --- /task ---
 
-In the next step you will **encode** a message with the help of your `code` dictionary.
+Dans l'étape suivante, tu vas **coder** un message à l'aide de ton dictionnaire `code` .
 
 --- save ---
