@@ -1,44 +1,44 @@
 ---
-title: Codebreaker
+title: Codekraker
 hero_image: images/banner.png
 description:
-  - Analyse a frequency graph to crack the code, whilst learning about lists
-  - and functions
-meta_title: Python coding projects for kids and teens | Code breaker
-meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to crack a code whilst learning about lists and functions.
+  - Analyseer een frequentiegrafiek om de code te kraken en leer tegelijkertijd meer over lijsten
+  - en functies
+meta_title: Python programmeer projecten voor kinderen en tieners | Codekraker
+meta_description: Leer Python met de programmeer projecten van de Raspberry Pi Foundation voor kinderen en tieners. Gebruik Python om een code te kraken terwijl je leert over lijsten en functies.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: You will make
+    title: Wat ga je maken
   - 
-    title: Encode the alphabet
+    title: Codeer het alfabet
   - 
-    title: Encode a message
+    title: Codeer een bericht
     completion:
-      - engaged
+      - betrokken
   - 
-    title: Create a menu
+    title: Maak een menu
   - 
-    title: Encode text from a file
+    title: Codeer tekst uit een bestand
   - 
-    title: Create a frequency analyser
+    title: Maak een frequentie analyser
   - 
-    title: Analyse the frequency
+    title: Analyseer de frequentie
     completion:
-      - internal
+      - intern
   - 
-    title: Quick quiz
+    title: Snelle quiz
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
     completion:
-      - external
+      - extern
   - 
-    title: Upgrade your project
+    title: Verbeter je project
   - 
-    title: What next?
+    title: Wat kun je verder nog doen?
