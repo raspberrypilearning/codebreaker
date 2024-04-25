@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Vraag 2 van 3
 ---
 
-A `for` loop is created to display the letters in a word.
+Er wordt een `for` lus gemaakt om de letters in een woord weer te geven.
 
 ```python
 word = "hello"
@@ -14,7 +14,7 @@ for letter in word:
     print(letter)
 ```
 
-What will be the output of this code when it is run?
+Wat zal de uitvoer zijn van deze code wanneer deze wordt uitgevoerd?
 
 --- choices ---
 
@@ -22,7 +22,7 @@ What will be the output of this code when it is run?
 
 ```
 h
-e
+a
 l
 l
 o
@@ -30,7 +30,7 @@ o
 
   --- feedback ---
 
-  Correct! Each letter of the word `hello` will be displayed on a new line.
+  Juist! Elke letter van het woord `hallo` wordt op een nieuwe regel weergegeven.
 
   --- /feedback ---
 
@@ -38,12 +38,13 @@ o
 ```
 w
 o
+o
 r
 d
 ```
   --- feedback ---
 
-  Not quite, `print(letter)` will display what is **held** by the variable `letter` at that point in the `for` loop.
+  Niet helemaal, `print(letter)` geeft weer wat wordt **vastgehouden** door de variabele `letter` op dat punt in de `for` lus.
 
   --- /feedback ---
 
@@ -59,7 +60,7 @@ hello
 
   --- feedback ---
 
-  Not exactly, the code will print each letter in `hello`. It will not print the whole word each time.
+  Niet precies, de code drukt elke letter af in `hallo`. Het zal niet elke keer het hele woord afdrukken.
 
   --- /feedback ---
 
