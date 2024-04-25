@@ -1,0 +1,77 @@
+Gegevensstructuren instellen
+
+Lijst uit een string
+
+Maak de atbash-code door het alfabet om te draaien
+
+Draait een lijst om
+
+Haalt de lengte van een lijst op
+
+Vul het code-woordenboek in met een letter van het alfabet en de bijbehorende gecodeerde letter
+
+Opstart
+
+Test
+
+Codeer/decodeer een stuk tekst — atbash is symmetrisch
+
+Zet tekst om naar kleine letters
+
+Vult de uitvoer in met het gecodeerde/gedecodeerde bericht met behulp van het woordenboek
+
+Retourneer het gecodeerde/gedecodeerde bericht
+
+Maak een tekst-gebaseerd menu systeem
+
+Begin met een verkeerd antwoord voor keuze.
+
+Blijf de gebruiker om het juiste antwoord vragen
+
+Voer c in om tekst te coderen/decoderen, of f om frequentieanalyse uit te voeren: 
+
+Voer je bericht uit via de cypher…
+
+mijn geheime bericht
+
+Tekst uit een bestand ophalen en retourneren
+
+Noodzaak om de newline-tekens te verwijderen
+
+Neem invoer uit een bestand
+
+Bereken de frequentie van alle letters in een stuk tekst
+
+Zet het bericht om naar kleine letters en maak het een lijst
+
+Maak een woordenboek van elke letter, met een telling van 0
+
+Tel de letters in het bericht
+
+Converteren van aantallen naar percentages
+
+Bericht analyseren…
+
+Neem invoer uit hetzelfde bestand. We hebben een 'longer.txt' of iets dergelijks met cijfertekst waarvan we weten dat deze redelijk goed presteert voor frequentieanalyse
+
+Haal de frequentie van de letters in het bericht op, als %
+
+Frequentiegrafiek maken
+
+Frequentie analyse
+
+Doelbericht
+
+Taal
+
+Label de grafiek met de woordenboek sleutels (A-Z)
+
+Label de frequentiegegevens voor het gecodeerde bericht
+
+Label de frequentiegegevens voor de taal
+
+Het Engelse frequentiewoordenboek importeren
+
+Roep de functie aan om een grafiek te maken
+
+hallo
