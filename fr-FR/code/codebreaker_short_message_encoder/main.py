@@ -86,7 +86,7 @@ def menu():
         # Obtenir la fréquence des lettres dans le message, en %.
         message_freq = frequence(message)
         # print(message_freq)
-        lang_freq = anglais  # Importation du dictionnaire de fréquence anglais
+        lang_freq = francais  # Importation du dictionnaire de fréquence anglais
         # Appeler la fonction pour faire un graphique
         faire_graphique(message_freq, lang_freq)
 

@@ -40,8 +40,8 @@ def maak_grafiek(tekst, taal):
     grafiek = Bar(width=800, title='Frequentie analyse',
                 x_labels=list(tekst.keys()))
     # Eerste expliciete gebruik van waarden
-    grafiek.add('Doel bericht', list(tekst.waarden()))
-    grafiek.add('Taal', list(taal.waarden()))
+    grafiek.add('Doel bericht', list(tekst.values()))
+    grafiek.add('Taal', list(taal.values()))
 
     grafiek.render()
 
@@ -70,7 +70,7 @@ def ophalen_tekst(bestandsnaam):
 def menu():
     keuze = '' # Begin met een verkeerd antwoord voor keuze.
 
-    while keuze != 'c' and keuze != 'f': # Blijf aan de gebruiker het juiste antwoord vragen
+    while keuze != 'c' and keuze != 'f' and keuze != 'm': # Blijf aan de gebruiker het juiste antwoord vragen
         keuze = input(
             'Voer c in om een tekst bestand te coderen/decoderen, f om frequentie analyse uit te voeren in drie talen, of m om je eigen bericht in te voeren om:')
 
