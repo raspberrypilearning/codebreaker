@@ -1,30 +1,30 @@
 <div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Participe à notre enquête</a> pour nous aider à améliorer notre Code Editor !
 </div>
 
-## You will make
+## Ce que tu vas faire
 
-Analyse a graph to crack the code, whilst learning about lists and functions.
+Analyse un graphique pour déchiffrer le code, tout en apprenant ce que sont les listes et les fonctions.
 
-You will:
-+ Define a function that takes parameters and returns a value
-+ Use `while` and `for` loops to repeat tasks
-+ Create a chart to display frequency data
+Tu vas :
++ Définir une fonction qui prend des paramètres et renvoie une valeur
++ Utiliser les boucles `while` et `for` pour répéter les tâches
++ Créer un graphique pour afficher les données de fréquence
 
 --- no-print ---
 
-### Play ▶️
+### Joue ▶️
 
 --- task ---
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
-This program can **encode** or **decode** a secret message from an attached `.txt` file, or it can **analyse the frequency** of letters in a message. This data will be displayed in a frequency graph, which shows how often each letter appears in the secret message.
+Ce programme peut **coder** ou **décoder** un message secret à partir d'un fichier `.txt` joint, ou il peut **analyser la fréquence** des lettres dans un message. Ces données seront affichées dans un graphique de fréquence, qui indique la fréquence d'apparition de chaque lettre dans le message secret.
 
-Run the program twice to explore how it works: 
-+ First, choose 'c' to decode a message stored in an attached `.txt` file 
-+ Then, run the program a second time and choose 'f' at the prompt; this will display a letter frequency graph for the message.
+Exécute le programme deux fois pour découvrir comment il fonctionne : 
++ Choisis d'abord 'c' pour décoder un message stocké dans un fichier `.txt` joint 
++ Ensuite, exécute le programme une deuxième fois et choisis 'f' à l'invite ; ceci affichera un graphique de fréquence de lettres pour le message.
 
 </div>
 
@@ -38,6 +38,6 @@ Run the program twice to explore how it works:
 --- /no-print ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The <span style="color: #0faeb0">Atbash</span> cypher is one of the world's oldest known cyphers (a cypher is a secret or disguised way of writing). Originally developed in the <span style="color: #0faeb0">Hebrew</span> language, it takes the alphabet and matches it to its reverse order to create a secret message. The name derives from the first, last, second, and second-last Hebrew letters: <span style="color: #0faeb0">Aleph, Taw, Bet,</span> and <span style="color: #0faeb0">Shin.</span></p>
+Le cryptogramme <span style="color: #0faeb0">Atbash</span> est l'un des plus anciens cryptogrammes connus au monde (un cryptogramme est une méthode d'écriture secrète ou déguisée). Développé à l'origine dans la langue <span style="color: #0faeb0">hébraïque</span>, il prend l'alphabet et le fait correspondre à son ordre inverse pour créer un message secret. Le nom dérive de la première, de la dernière, de la deuxième et de l'avant-dernière lettre hébraïque : <span style="color: #0faeb0">Aleph, Taw, Bet,</span> et <span style="color: #0faeb0">Shin.</span></p>
 
 --- print-only --- ![Completed project.](images/frequency-analysis.PNG) --- /print-only ---
