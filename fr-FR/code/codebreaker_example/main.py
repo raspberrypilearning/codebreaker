@@ -42,11 +42,11 @@ def faire_graphique(texte, langue):
     graphique = Bar(width=800, height=400, title='Analyse fréquentielle',
                 x_labels=list(texte.keys()))
     # Étiqueter les données de fréquence pour le message codé
-    chart.add('Message cible', list(texte.values()))
+    graphique.add('Message cible', list(texte.values()))
     # Étiqueter les données de fréquence pour la langue
-    chart.add('Langue', list(langue.values()))
+    graphique.add('Langue', list(langue.values()))
 
-    chart.render()
+    graphique.render()
 
 # Coder/décoder un morceau de texte - atbash est symétrique
 def atbash(texte):
