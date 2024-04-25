@@ -1,21 +1,21 @@
-## Encode text from a file
+## Codeer tekst uit een bestand
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-It's time to encode a message from a text file.
+Het is tijd om een bericht uit een tekstbestand te coderen.
 </div>
 <div>
-![The output of the code displaying an encoded message.](images/input-text-test.PNG){:width="400px"}
+![De uitvoer van de code die een gecodeerd bericht weergeeft.](images/input-text-test.PNG){:width="400px"}
 </div>
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-Loading the text from a file is more efficient than typing or pasting a large string into a program. There is less opportunity to 'break' your code when changing a single target file name, than when copy and pasting large blocks of text each time.
+Het laden van de tekst uit een bestand is efficiënter dan het typen of plakken van een grote reeks in een programma. Er is minder kans om je code te 'breken' bij het wijzigen van de naam van een enkel doelbestand, dan wanneer je telkens grote blokken tekst kopieert en plakt.
 </p>
 
 --- task ---
 
-Find the `# Fetch and return text from a file` comment then define a `get_text()` function. This function has one parameter called `filename`. Use the `filename` to open the file and read it into the `text` variable, then **return** the `text` variable.
+Zoek de `# Haal tekst op en retourneer deze uit een bestand` opmerking en definieer vervolgens een `haal_tekst()` functie. Deze functie heeft één parameter `bestandsnaam`. Gebruik de `bestandsnaam` om het bestand te openen en het in te lezen in de `tekst` variabele, en **stuur** dan de `tekst` variabele terug.
 
 --- code ---
 ---
@@ -32,7 +32,7 @@ def get_text(filename): with open(filename) as f: text = f.read().replace('\n','
 
 --- task ---
 
-The `menu()` function needs to encode a secret message from a text file. **Replace** your secret message with the `get_text()` function call. Enter the name of the file `input.txt` as an **argument**.
+De functie `menu()` moet een geheim bericht uit een tekstbestand coderen. **Vervang** je geheime bericht door de functieaanroep `haal_tekst()`. Voer de naam van het bestand `input.txt` in als een **argument**.
 
 --- code ---
 ---
@@ -49,52 +49,52 @@ line_highlights: 54
 
 --- /task ---
 
-You can now **add** your own secret message to the `input.txt` file.
+Je kunt nu je eigen geheime bericht **toevoegen** aan het `input.txt` bestand.
 
 --- task ---
 
-Find the `input.txt` file in your code editor to access the contents of the text file. Delete the `replace with your message` text and enter your own secret message.
+Zoek het bestand `input.txt` in je code-editor om toegang te krijgen tot de inhoud van het tekstbestand. Verwijder de `vervang door jouw bericht` tekst en voer je eigen geheime bericht in.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code to see if it displays your encoded message after entering the letter 'c' when prompted.
+**Test:** Voer je code uit om te zien of je gecodeerde bericht wordt weergegeven nadat je de letter 'c' hebt ingevoerd wanneer je erom vraagt.
 
-![A screenshot displaying the encoded secret message.](images/input-text-test.PNG)
+![Een screenshot met het gecodeerde geheime bericht.](images/input-text-test.PNG)
 
-**Debug:** Your encoded message doesn't look exactly like the message in the screenshot:
-- This is normal. This is the encoded message for the text `replace with your message`. Your message will be different.
+**Foutoplossing:** Je gecodeerde bericht lijkt niet precies op het bericht in de schermafbeelding:
+- Dat is normaal. Dit is het gecodeerde bericht voor de tekst `vervang door jouw bericht`. Jouw bericht zal anders zijn.
 
-**Debug:** You see an error message that says `TypeError: get_text() takes exactly 1 arguments`:
-- Check that you have entered `input.txt` inside the round brackets on line 57
+**Fouten opsporen:** Je ziet de foutmelding `TypeError: get_text() takes exactly 1 arguments`:
+- Controleer of je `input.txt` tussen de ronde haakjes op regel 57 hebt ingevoerd
 
-**Debug:** You see an `Indentation error` message:
-- Check that you have correctly indented all of your new code. Revisit the tasks above to check.
+**Foutopsporing:** Je ziet een `indentation error` (inspring fout) bericht:
+- Controleer of je al je nieuwe code correct hebt ingesprongen. Bekijk de bovenstaande taken nogmaals om dit te controleren.
 
 --- /task ---
 
-### Decode the message
+### Ontcijfer het bericht
 
-The atbash cypher **encodes** a message using the reverse letters of the alphabet. This means that exactly the same code can be used to **decode** the message. You can test this by taking your encoded message, copying and pasting it into your `input.txt` file and running the code again.
+De atbash-codering **codeert** een bericht met behulp van de omgekeerde letters van het alfabet. Dit betekent dat exact dezelfde code kan worden gebruikt om het bericht te **decoderen**. Je kunt dit testen door je gecodeerde bericht te kopiëren en in je `input.txt` bestand te kopiëren en de code opnieuw uit te voeren.
 
 --- task ---
 
-**Run** your code so that it displays your encoded message. **Select** the encoded message and copy it. Go back to `input.txt` and delete your message. Next, **paste** your new message into the empty file.
+**Voer** je code uit zodat die je gecodeerde bericht toont. **Selecteer** het gecodeerde bericht en kopieer het. Ga terug naar `input.txt` en verwijder je bericht. Vervolgens **plak** je nieuwe bericht in het lege bestand.
 
-Remember that your code converts any text to lower case, so you will see your message in lower-case letters.
+Vergeet niet dat je code elke tekst converteert naar kleine letters, dus je ziet je bericht in kleine letters.
 
 --- collapse ---
 ---
-title: Copying and pasting
+title: Kopiëren en plakken
 ---
 
-You can copy text and paste a copy in another place.
+Je kunt tekst kopiëren en een kopie op een andere plaats plakken.
 
- 1. Select the text you want to copy by dragging your mouse over it while holding down the left button.
- 2. Copy the text by using your browser's menu — choose **Edit** > **Copy**. You can also use a keyboard shortcut — <kbd>Ctrl</kbd>+<kbd>C</kbd> on Windows or Linux systems, or <kbd>Cmd</kbd>+<kbd>C</kbd> on a Mac.
- 3. Move your text cursor (the flashing line that shows where you are typing) to where you want to place a copy of the text.
- 4. Paste the text by using your browser's menu — choose **Edit** > **Paste**. You can also use a keyboard shortcut — <kbd>Ctrl</kbd>+<kbd>V</kbd> on Windows or Linux systems, or <kbd>Cmd</kbd>+<kbd>V</kbd> on a Mac.
+ 1. Selecteer de tekst die je wilt kopiëren door de muis erover te slepen terwijl je de linkerknop ingedrukt houdt.
+ 2. Kopieer de tekst via het menu van je browser - kies **Bewerken** > **Kopieer**. Je kunt ook een sneltoets gebruiken - <kbd>Ctrl</kbd>+<kbd>C</kbd> op Windows of Linux, of <kbd>Cmd</kbd>+<kbd>C</kbd> op een Mac.
+ 3. Verplaats je tekstcursor (de knipperende regel die laat zien waar je typt) naar waar je een kopie van de tekst wilt plaatsen.
+ 4. Kopieer de tekst via het menu van je browser - kies **Bewerken** > **Plakken**. Je kunt ook een sneltoets gebruiken - <kbd>Ctrl</kbd>+<kbd>V</kbd> op Windows of Linux, of <kbd>Cmd</kbd>+<kbd>V</kbd> op een Mac.
 
 --- /collapse ---
 
@@ -102,15 +102,15 @@ You can copy text and paste a copy in another place.
 
 --- task ---
 
-**Test:** Run your code again and press 'c' when prompted. It will display the **decoded** version of your original message.
+**Test:** Voer je code opnieuw uit en druk op 'c' wanneer daarom wordt gevraagd. Het toont de **gedecodeerde** versie van je oorspronkelijke bericht.
 
-![A screenshot of the decoded message being displayed as output.](images/decoded.PNG)
+![Een screenshot van het gedecodeerde bericht dat als uitvoer wordt weergegeven.](images/decoded.PNG)
 
-**Debug:** It still displays the encoded message:
-- Make sure that you have copy and pasted the **encoded** message into `input.txt`
+**Fouten opsporen:** Het gecodeerde bericht wordt nog steeds weergegeven:
+- Zorg ervoor dat je het **gecodeerde** bericht hebt gekopieerd en geplakt in `input.txt`
 
 --- /task ---
 
-In the next step you will write the code to **analyse the frequency** of letters in your text file.
+In de volgende stap schrijf je de code om **de frequentie** van letters in je tekstbestand te analyseren.
 
 --- save ---
