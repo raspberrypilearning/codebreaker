@@ -1,0 +1,33 @@
+---
+title: Codekraker
+hero_image: images/banner.png
+description:
+  - Analyseer een frequentiegrafiek om de code te kraken en leer tegelijkertijd meer over lijsten en functies
+meta_title: Python programmeer projecten voor kinderen en tieners | Codekraker
+meta_description: Leer Python met de programmeer projecten van de Raspberry Pi Foundation voor kinderen en tieners. Gebruik Python om een code te kraken terwijl je leert over lijsten en functies.
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-03-26"
+steps:
+  - title: Wat ga je maken
+  - title: Codeer het alfabet
+  - title: Codeer een bericht
+    completion:
+      - engaged
+  - title: Maak een menu
+  - title: Codeer tekst uit een bestand
+  - title: Maak een frequentie analyser
+  - title: Analyseer de frequentie
+    completion:
+      - internal
+  - title: Snelle quiz
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Verbeter je project
+  - title: Wat kun je verder nog doen?

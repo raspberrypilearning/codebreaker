@@ -1,0 +1,3 @@
+name: "Déchiffreur de code : codeur de messages courts personnalisé"
+identifier: "short-message-encoder"
+type: 'python'
