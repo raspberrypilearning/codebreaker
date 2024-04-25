@@ -1,23 +1,23 @@
-## Create a frequency analyser
+## Créer un analyseur fréquentiel
 
 <div style="display: flex; flex-wrap: wrap;">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will code a frequency analyser function to work out how often each letter of the alphabet appears in your text. 
+Dans cette étape, tu coderas une fonction d'analyseur fréquentiel pour déterminer combien de fois chaque lettre de l'alphabet apparaît dans ton texte. 
 </div>
 <div>
-![The output of a frequency analysis function as percentages.](images/freq-analysis-text-output.PNG)
+![La sortie d'une fonction d'analyse fréquentielle sous forme de pourcentages.](images/freq-analysis-text-output.PNG)
 </div>
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-Frequency analysis measures how often something appears so you can look for patterns in that data. It is possible to decode monoalphabetic cyphers (if you know the language the message is in) by looking at how often each letter appears and matching it to the [most commonly used letters](http://letterfrequency.org/letter-frequency-by-language/) in that language. This will be explained in further detail later.
+L'analyse fréquentielle mesure la fréquence d'apparition d'un élément afin que tu puisses rechercher des modèles dans ces données. Il est possible de décoder les codes monoalphabétiques (si tu connais la langue dans laquelle le message est rédigé) en examinant la fréquence d'apparition de chaque lettre et en la faisant correspondre aux [lettres les plus couramment utilisées] (http://letterfrequency.org/letter-frequency-by-language/) dans cette langue. Cela sera expliqué plus en détail par la suite.
 </p>
 
-You now need to create a function that will take your text and convert it all to one case (to avoid confusion), count the number of times each letter in the message appears, then convert that number into a percentage of the whole so you can compare it to the frequency of letters in English.
+Tu dois maintenant créer une fonction qui prendra ton texte et le convertira en une seule casse (pour éviter toute confusion), comptera le nombre de fois où chaque lettre du message apparaît, puis convertira ce nombre en un pourcentage de l'ensemble afin que tu puisses le comparer à la fréquence des lettres en anglais.
 
 --- task ---
 
-Beneath the comment that reads `# Calculate the frequency of all letters in a piece of text`, define a function called `frequency`, and have the first thing it does be to convert your message to lower case and make it a list:
+Sous le commentaire qui dit `# Calcule la fréquence de toutes les lettres dans un morceau de texte`, définis une fonction appelée `frequence`, et fais en sorte que la première chose qu'elle fasse soit de convertir ton message en minuscules et d'en faire une liste :
 
 --- code ---
 ---
@@ -31,7 +31,7 @@ def frequency(text): text = list(text.lower())  # Convert the message to lower c
 
 --- task ---
 
-Create a dictionary called `freq` and for every `letter` in the list `alphabet` assign a value of `0`. Make sure you **keep the indentation** and type:
+Crée un dictionnaire appelé `freq` et pour chaque `lettre` de la liste `alphabet` attribue une valeur de `0`. Assure-toi de **garder l'indentation** et de taper :
 
 --- code ---
 ---
@@ -50,9 +50,9 @@ def frequency(text): text = list(text.lower())  # Convert the message to lower c
 
 --- task ---
 
-The next thing you need your function to do is to count the all letters in the message. Create a variable called `total_letters` and assign the length of the text to that variable.
+La prochaine chose que tu dois faire avec ta fonction est de compter toutes les lettres du message. Crée une variable appelée `total_lettres` et affecte la longueur du texte à cette variable.
 
-Make sure you **keep the indentation** as shown in this code.
+Assure-toi de **garder l'indentation** comme indiqué dans ce code.
 
 --- code ---
 ---
@@ -71,11 +71,11 @@ def frequency(text): text = list(text.lower())  # Convert the message to lower c
 
 --- /task ---
 
-Once you know how long the message is, you can begin counting the letters in it to determine how often they appear.
+Une fois que tu connais la longueur du message, tu peux commencer à compter les lettres qu'il contient pour déterminer leur fréquence d'apparition.
 
 --- task ---
 
-Create a `for` loop to count every time each letter appears in the text. Leave a blank line at the end of your script, make sure you keep the indentation, and add:
+Crée une boucle `for` pour compter chaque fois que chaque lettre apparaît dans le texte. Laisse une ligne blanche à la fin de ton script, assure-toi de conserver l'indentation, et ajoute :
 
 --- code ---
 ---
@@ -100,7 +100,7 @@ def frequency(text): text = list(text.lower())  # Convert the message to lower c
 
 --- collapse ---
 ---
-title: Count the letters
+title: Compter les lettres
 ---
 
 --- code ---
@@ -114,13 +114,13 @@ line_highlights:
             freq[letter] += 1
 --- /code ---
 
-This section of code looks at each of the letters in your message `text`, and if the letter appears in your frequency list, it adds `1` to that letter's value. The more times a letter appears, the higher that value will be. Once you know how often each letter appears, you can then convert from this count to a percentage of the whole message (since you know its length). Any characters that are not in the dictionary — such as punctuation — will be ignored, and won't appear in the message.
+Cette section du code examine chacune des lettres de ton message `texte`, et si la lettre apparaît dans ta liste de fréquences, elle ajoute `1` à la valeur de cette lettre. Plus une lettre apparaît souvent, plus cette valeur sera élevée. Une fois que tu sais combien de fois chaque lettre apparaît, tu peux alors convertir ce décompte en un pourcentage de l'ensemble du message (puisque tu connais sa longueur). Tous les caractères qui ne figurent pas dans le dictionnaire - comme la ponctuation - seront ignorés et n'apparaîtront pas dans le message.
 
 --- /collapse ---
 
 --- task ---
 
-Create a `loop` that converts the number of times the letters appear into a percentage of the whole message.
+Crée une `boucle` qui convertit le nombre de fois où les lettres apparaissent en un pourcentage du message entier.
 
 --- code ---
 ---
@@ -148,7 +148,7 @@ def frequency(text): text = list(text.lower())  # Convert the message to lower c
 
 --- task ---
 
-**Return** the frequency dictionary so it can be used elsewhere in your code. Leave a blank line and type:
+**Renvoie** le dictionnaire des fréquences pour qu'il puisse être utilisé ailleurs dans ton code. Laisse une ligne vierge et tape :
 
 --- code ---
 ---
@@ -176,15 +176,15 @@ def frequency(text): text = list(text.lower())  # Convert the message to lower c
 
 --- /task ---
 
-### Extend the menu to include 'f'
+### Élargir le menu pour inclure 'f'
 
-Now that you have a function that can calculate the frequency of letters in your message, you need to link it to your user menu. Right now, the user can only choose the letter 'c' to encode or decode a message. If they type the letter 'f', nothing happens. You are now going to add the option 'f' to analyse the letter frequency of your message by calling your new function.
+Maintenant que tu as une fonction capable de calculer la fréquence des lettres dans ton message, tu dois la relier à ton menu utilisateur. Pour l'instant, l'utilisateur ne peut choisir que la lettre 'c' pour coder ou décoder un message. S'ils tapent la lettre 'f', rien ne se passe. Tu vas maintenant ajouter l'option 'f' pour analyser la fréquence des lettres de ton message en appelant ta nouvelle fonction.
 
-Underneath your first `if` statement asking the user to select 'c', you need to add an `elif` statement so the user can choose the option to analyse and print the letter frequency by pressing 'f'.
+Sous ta première instruction `if` demandant à l'utilisateur de sélectionner 'c', tu dois ajouter une instruction `elif` pour que l'utilisateur puisse choisir l'option d'analyse et d'impression de la fréquence des lettres en appuyant sur 'f'.
 
 --- task ---
 
-Leave a blank line after the `if` statement and, on line 72, type:
+Laisse une ligne vide après l'instruction `if` et, à la ligne 72, tape :
 
 --- code ---
 ---
@@ -212,12 +212,12 @@ line_highlights: 72-76
 
 --- task ---
 
-Save and run your code. Choose 'f' at the prompt and you should see a readout of the letter frequency of your message in the console. The values you see from your message will be different from the values shown here:
+Enregistre et exécute ton code. Choisis 'f' à l'invite et tu verras apparaître dans la console la fréquence des lettres de ton message. Les valeurs que tu verras dans ton message seront différentes des valeurs indiquées ici :
 
-![Image showing the output of a frequency analysis function as percentages.](images/freq-analysis-text-output.PNG)
+![Image montrant la sortie d'une fonction d'analyse fréquentielle sous forme de pourcentages.](images/freq-analysis-text-output.PNG)
 
 --- /task ---
 
-In the next step, you will display the frequency analysis data in a cool looking chart!
+Dans l'étape suivante, tu afficheras les données de l'analyse fréquentielle sous la forme d'un graphique sympa !
 
 --- save ---
