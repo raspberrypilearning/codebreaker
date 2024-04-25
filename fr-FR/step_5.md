@@ -1,21 +1,21 @@
-## Encode text from a file
+## Coder du texte à partir d'un fichier
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-It's time to encode a message from a text file.
+Il est temps de coder un message à partir d'un fichier texte.
 </div>
 <div>
-![The output of the code displaying an encoded message.](images/input-text-test.PNG){:width="400px"}
+![La sortie du code affichant un message codé.](images/input-text-test.PNG){:width="400px"}
 </div>
 </div>
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-Loading the text from a file is more efficient than typing or pasting a large string into a program. There is less opportunity to 'break' your code when changing a single target file name, than when copy and pasting large blocks of text each time.
+Le chargement du texte à partir d'un fichier est plus efficace que la saisie ou le collage d'une grande chaîne dans un programme. Il y a moins de possibilités de « casser » ton code en changeant le nom d'un seul fichier cible qu'en copiant et collant de grands blocs de texte à chaque fois.
 </p>
 
 --- task ---
 
-Find the `# Fetch and return text from a file` comment then define a `get_text()` function. This function has one parameter called `filename`. Use the `filename` to open the file and read it into the `text` variable, then **return** the `text` variable.
+Trouve le commentaire `# Récupérer et renvoyer le texte d'un fichier` puis définis une fonction `obtenir_texte()`. Cette fonction a un paramètre appelé `filename`. Utilise le `nom de fichier` pour ouvrir le fichier et le lire dans la variable `texte`, puis **retourne** la variable `texte`.
 
 --- code ---
 ---
@@ -32,7 +32,7 @@ def get_text(filename): with open(filename) as f: text = f.read().replace('\n','
 
 --- task ---
 
-The `menu()` function needs to encode a secret message from a text file. **Replace** your secret message with the `get_text()` function call. Enter the name of the file `input.txt` as an **argument**.
+La fonction `menu()` doit coder un message secret à partir d'un fichier texte. **Remplace** ton message secret avec l'appel de la fonction `obtenir_texte()`. Saisis le nom du fichier `input.txt` comme **argument**.
 
 --- code ---
 ---
@@ -49,52 +49,52 @@ line_highlights: 54
 
 --- /task ---
 
-You can now **add** your own secret message to the `input.txt` file.
+Tu peux maintenant **ajouter** ton propre message secret au fichier `input.txt`.
 
 --- task ---
 
-Find the `input.txt` file in your code editor to access the contents of the text file. Delete the `replace with your message` text and enter your own secret message.
+Trouve le fichier `input.txt` dans ton Code Editor pour accéder au contenu du fichier texte. Supprime le texte `remplace par ton message` et saisis ton propre message secret.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code to see if it displays your encoded message after entering the letter 'c' when prompted.
+**Test :** exécute ton code pour voir s'il affiche ton message codé après avoir saisi la lettre 'c' à l'invite.
 
-![A screenshot displaying the encoded secret message.](images/input-text-test.PNG)
+![Une capture d'écran montrant le message secret codé.](images/input-text-test.PNG)
 
-**Debug:** Your encoded message doesn't look exactly like the message in the screenshot:
-- This is normal. This is the encoded message for the text `replace with your message`. Your message will be different.
+**Débogage :** ton message codé ne ressemble pas exactement au message dans la capture d'écran :
+- C'est normal. Il s'agit du message codé pour le texte `remplace par ton message`. Ton message sera différent.
 
-**Debug:** You see an error message that says `TypeError: get_text() takes exactly 1 arguments`:
-- Check that you have entered `input.txt` inside the round brackets on line 57
+**Débogage :** tu vois un message d'erreur qui dit `TypeError: obtenir_texte() takes exactly 1 arguments` :
+- Vérifie que tu as bien saisi `input.txt` entre parenthèses à la ligne 57
 
-**Debug:** You see an `Indentation error` message:
-- Check that you have correctly indented all of your new code. Revisit the tasks above to check.
+**Débogage :** tu vois apparaître un message `Indentation error` :
+- Vérifie que tu as correctement indenté tout ton nouveau code. Revois les tâches ci-dessus pour vérifier.
 
 --- /task ---
 
-### Decode the message
+### Décoder le message
 
-The atbash cypher **encodes** a message using the reverse letters of the alphabet. This means that exactly the same code can be used to **decode** the message. You can test this by taking your encoded message, copying and pasting it into your `input.txt` file and running the code again.
+Le cryptogramme atbash **code** un message en utilisant les lettres inversées de l'alphabet. Cela signifie qu'exactement le même code peut être utilisé pour **décoder** le message. Tu peux tester cela en prenant ton message codé, en le copiant et en le collant dans ton fichier `input.txt` et en exécutant à nouveau le code.
 
 --- task ---
 
-**Run** your code so that it displays your encoded message. **Select** the encoded message and copy it. Go back to `input.txt` and delete your message. Next, **paste** your new message into the empty file.
+**Exécute** ton code pour qu'il affiche ton message codé. **Sélectionne** le message codé et copie-le. Retourne à `input.txt` et supprime ton message. Ensuite, **colle** ton nouveau message dans le fichier vide.
 
-Remember that your code converts any text to lower case, so you will see your message in lower-case letters.
+N'oublie pas que ton code convertit tout texte en minuscules, tu verras donc ton message en lettres minuscules.
 
 --- collapse ---
 ---
-title: Copying and pasting
+title: Copier et coller
 ---
 
-You can copy text and paste a copy in another place.
+Tu peux copier du texte et coller une copie à un autre endroit.
 
- 1. Select the text you want to copy by dragging your mouse over it while holding down the left button.
- 2. Copy the text by using your browser's menu — choose **Edit** > **Copy**. You can also use a keyboard shortcut — <kbd>Ctrl</kbd>+<kbd>C</kbd> on Windows or Linux systems, or <kbd>Cmd</kbd>+<kbd>C</kbd> on a Mac.
- 3. Move your text cursor (the flashing line that shows where you are typing) to where you want to place a copy of the text.
- 4. Paste the text by using your browser's menu — choose **Edit** > **Paste**. You can also use a keyboard shortcut — <kbd>Ctrl</kbd>+<kbd>V</kbd> on Windows or Linux systems, or <kbd>Cmd</kbd>+<kbd>V</kbd> on a Mac.
+ 1. Sélectionne le texte que tu veux copier en faisant glisser ta souris dessus tout en maintenant le bouton gauche enfoncé.
+ 2. Copie le texte en utilisant le menu de ton navigateur - choisis **Editer** > **Copier**. Tu peux aussi utiliser un raccourci clavier - <kbd>Ctrl</kbd>+<kbd>C</kbd> sous Windows ou Linux, ou <kbd>Cmd</kbd>+<kbd>C</kbd> sur Mac.
+ 3. Déplace ton curseur de texte (la ligne clignotante qui indique l'endroit où tu es en train de taper) à l'endroit où tu veux placer une copie du texte.
+ 4. Colle le texte en utilisant le menu de ton navigateur - choisis **Editer** > **Coller**. Tu peux aussi utiliser un raccourci clavier - <kbd>Ctrl</kbd>+<kbd>V</kbd> sous Windows ou Linux, ou <kbd>Cmd</kbd>+<kbd>V</kbd> sur Mac.
 
 --- /collapse ---
 
@@ -102,15 +102,15 @@ You can copy text and paste a copy in another place.
 
 --- task ---
 
-**Test:** Run your code again and press 'c' when prompted. It will display the **decoded** version of your original message.
+**Test :** exécute à nouveau ton code et appuie sur 'c' lorsque tu y es invité. Il affichera la version **décodée** de ton message original.
 
-![A screenshot of the decoded message being displayed as output.](images/decoded.PNG)
+![Une capture d'écran du message décodé affiché en sortie.](images/decoded.PNG)
 
-**Debug:** It still displays the encoded message:
-- Make sure that you have copy and pasted the **encoded** message into `input.txt`
+**Débogage :** il affiche toujours le message codé :
+- Assure-toi d'avoir copié et collé le message **codé** dans `input.txt`
 
 --- /task ---
 
-In the next step you will write the code to **analyse the frequency** of letters in your text file.
+Dans l'étape suivante, tu écriras le code pour **analyser la fréquence** des lettres dans ton fichier texte.
 
 --- save ---
