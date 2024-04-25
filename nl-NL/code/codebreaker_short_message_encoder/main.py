@@ -1,103 +1,103 @@
 #!/bin/python3
 from pygal import Bar
-from frequency import english
+from frequency import engels
 
-# Set up data structures
-alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # List from a string
+# Datastructuren opzetten
+alfabet = list(' abcdefghijklmnopqrstuvwxyz ') # Lijst uit een string
 code = {}
 
-# Create the atbash code by reversing the alphabet
-def create_code():
-    backwards = list(reversed(alphabet))  # Reversing a list
+# Maak de atbash-code door het alfabet om te draaien
+def maak_code():
+    andersom = list(reversed(alfabet)) # Draait een lijst om
 
-    for i in range(len(alphabet)):  # Getting length of a list
-        # Populate the code dictionary with a letter of the alphabet and its encoded letter
-        code[alphabet[i]] = backwards[i]
+    for i in range(len(alfabet)): # Haalt de lengte van een lijst op
+        # Vul de code dictionary in met een letter van het alfabet en de bijbehorende gecodeerde letter
+        code[alfabet[i]] = andersom[i]
 
     # print(code)
 
-# Calculate the frequency of all letters in a piece of text
-def frequency(text):
-    text = list(text.lower())  # Lowercase the message and make it a list
+# Bereken de frequentie van alle letters in een stuk tekst
+def frequentie(tekst):
+    tekst = list(tekst.lower()) # Zet het bericht om in kleine letters en maak er een lijst van
 
-    freq = {}  # Create a dict of every letter, with a count of 0
-    for letter in alphabet:
+    frequentie = {} # Maak een dictionary van elke letter, met een aantal van 0
+    for letter in alfabet:
         freq[letter] = 0
 
-    total_letters = len(text)  # Count the letters in the message
+    totaal_letters = len(tekst) #Tel de letters in het bericht
 
-    for letter in text:
+    for letter in tekst:
         if letter in freq:
             freq[letter] += 1
 
-    for letter in freq:  # Convert from counts to percentages
-        freq[letter] = freq[letter] / total_letters * 100
+    voor letter in freq: # Converteren van tellingen naar percentages
+        freq[letter] = freq[letter] / totaal_letters * 100
 
     return freq
 
-# Make frequency chart
-def make_chart(text, language):
-    chart = Bar(width=800, title='Frequency analysis',
-                x_labels=list(text.keys()))
-    # First explicit use of values
-    chart.add('Target message', list(text.values()))
-    chart.add('Language', list(language.values()))
+# Maak frequentie grafiek
+def maak_grafiek(tekst, taal):
+    chart = Bar(width=800, title='Frequentie analyse',
+                x_labels=list(tekst.sleutels()))
+    # Eerste expliciete gebruik van waarden
+    chart.add('Doelbericht', list(tekst.waarden()))
+    chart.add('Taal', list(taal.waarden()))
 
     chart.render()
 
-# Encode/decode a piece of text — atbash is symetrical
-def atbash(text):
-    text = text.lower()  #  Converting text to lowercase
+# Codeer/decodeer een stuk tekst — atbash is symmetrisch
+def atbash(tekst):
+    tekst = tekst.lower() # Converteert tekst naar kleine letters
     output = ''
 
-    for letter in text:
+    for letter in tekst:
         if letter in code:
-            # Populate output with the encoded/decoded message using the dictionary
+            # Vult de uitvoer in met het gecodeerde/gedecodeerde bericht met behulp van de dictionary
             output += code[letter]
 
-    return output  # Return the encoded/decoded message
+    return output # Retourneert het gecodeerde/gedecodeerde bericht
 
 
-# Fetch and return text from a file
+# Tekst uit een bestand ophalen en retourneren
 def get_text(filename):
     with open(filename) as f:
-        text = f.read().replace('\n', '')  # Need to strip the newline characters
+        text = f.read().replace('\n', '') # De tekens voor de nieuwe regel moeten worden verwijderd
 
     return text
 
-# Create a text-based menu system
+# Maak een tekst-gebaseerd menu systeem
 def menu():
-    choice = ''  # Start with a wrong answer for choice.
+    keuze = '' # Begin met een verkeerd antwoord voor keuze.
 
-    while choice != 'c' and choice != 'f' and choice != 'm':  # Keep asking the user for the right answer
-        choice = input(
-            'Please enter c to encode/decode a text file, f to perform frequency analysis, or m to enter your own message to encode:')
+    while keuze != 'c' and keuze != 'f': # Blijf aan de gebruiker het juiste antwoord vragen
+        keuze = input(
+            'Voer c in om een tekstbestand te coderen/decoderen, f om frequentieanalyse uit te voeren, of m om je eigen bericht in te voeren om te coderen:')
 
-    if choice == 'c':
-        print('Running your message through the cypher…')
-        message = get_text('longer.txt')  # Take input from a file
-        code = atbash(message)
+    if keuze == 'c':
+        print('Je bericht door de code halen…')
+        bericht = get_text('longer.txt') # Neem input van een bestand
+        code = atbash(bericht)
         print(code)
 
-    elif choice == 'f':
-        print('Analysing message…')
-        # Take input from the same file. We have a 'longer.txt' or similar containing cyphertext we know to perform reasonably well for frequency analysis
-        message = get_text('longer.txt')
-        # Get the frequency of the letters in the message, as %
-        message_freq = frequency(message)
-        # print(message_freq)
-        lang_freq = english  # Import the English frequency dictionary
-        # Call the function to make a chart
-        make_chart(message_freq, lang_freq)
+    elif keuze == 'f':
+        print('Bericht analyseren…')
+        # Neem invoer uit hetzelfde bestand. We hebben een 'longer.txt' met een tekst waarvan we weten dat deze redelijk goed presteert voor frequentieanalyse
+        bericht = get_text('longer.txt')
+        # Haal de frequentie van de letters in het bericht op, als %
+        bericht_freq = frequency(bericht)
+        # print(bericht_freq)
+        taal_freq = engels # Importeer het Engelse frequentiewoordenboek
+        # Roep de functie aan om een grafiek te maken
+        maak_grafiek(bericht_freq, taal_freq)
 
-    elif choice == 'm':
-        message = input('What text would you like to encode?')
-        code = atbash(message)
+    elif keuze == 'm':
+        bericht = input('Welke tekst wil je coderen?')
+        code = atbash(bericht)
         print(code)
 
-# Start up
+# Opstart
 def main():
-    create_code()
+    maak_code()
     menu()
 
 
