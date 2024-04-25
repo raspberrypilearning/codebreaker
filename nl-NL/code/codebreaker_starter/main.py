@@ -1,26 +1,26 @@
 #!/bin/python3
 from pygal import Bar
-from frequency import english
+from frequency import engels
 
-# Set up data structures
-
-
-# Create the atbash code by reversing the alphabet
+# Datastructuren opzetten
 
 
-# Calculate the frequency of all letters in a piece of text
+# Maak de atbash-code door het alfabet om te draaien
 
 
-# Make frequency chart
+# Bereken de frequentie van alle letters in een stuk tekst
 
 
-# Encode/decode a piece of text — atbash is symetrical
+# Frequentiegrafiek maken
 
 
-# Fetch and return text from a file
+# Codeer/decodeer een stuk tekst — atbash is symmetrisch
 
 
-# Create a text-based menu system
+# Tekst uit een bestand ophalen en retourneren
 
 
-# Start up
+# Maak een tekst-gebaseerd menu systeem
+
+
+# Opstart
