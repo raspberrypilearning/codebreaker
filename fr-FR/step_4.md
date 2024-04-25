@@ -1,17 +1,17 @@
-## Create a menu
+## Créer un menu
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now you are going to create a menu system for your user to make choices about what they would like to do. 
+Tu vas maintenant créer un système de menu pour que ton utilisateur puisse faire des choix sur ce qu'il veut faire. 
 </div>
 <div>
-![The output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
+![La sortie du code créé à cette étape. Une version codée d'un message secret s'affiche.](images/encode-a-message.PNG){:width="400px"}
 </div>
 </div>
 
 --- task ---
 
-**Find** the comment in your code that says `# Create a text-based menu system` and begin by defining a function called `menu()`:
+**Trouve** le commentaire de ton code qui dit `# Créer un système de menu basé sur du texte` et commence par définir une fonction appelée `menu()` :
 
 --- code ---
 ---
@@ -23,11 +23,11 @@ def menu(): --- /code ---
 
 --- /task ---
 
-Your menu needs a **loop** that continually asks the user what they would like to do until they have entered a valid choice. To get this started, you will create a **variable** called `choice` and set it to `''`. This will allow the **while** loop to run its first loop.
+Ton menu a besoin d'une **boucle** qui demande continuellement à l'utilisateur ce qu'il souhaite faire jusqu'à ce qu'il ait saisi un choix valide. Pour commencer, tu vas créer une **variable** appelée `choix` et lui donner la valeur `''`. Cela permettra à la boucle **while** d'exécuter sa première boucle.
 
 --- task ---
 
-Create a new variable called `choice` and set the value to `''`:
+Crée une nouvelle variable appelée `choix` et définis la valeur à `''` :
 
 --- code ---
 ---
@@ -41,13 +41,13 @@ def menu(): choice = ''  # Start with a wrong answer for choice.
 
 --- /task ---
 
-### Use a `while` loop to get user input
+### Utiliser une boucle `while` pour obtenir les données de l'utilisateur
 
-Now that you have set `choice` to a wrong answer, you want to create a **loop** that will only break if an `input` that matches a right answer is given. You want a **while loop** that runs as long as your answer **DOES NOT** match one you have defined.
+Maintenant que tu as défini `choix` à une mauvaise réponse, tu veux créer une **boucle** qui ne s'interrompra que si une `entrée` correspondant à une bonne réponse est donnée. Tu veux une **boucle while** qui s'exécute tant que ta réponse **NE** correspond pas à celle que tu as définie.
 
 --- task ---
 
-You can use a **while loop** to run a piece of code **while** a **condition** is **True**. In this instance, as long as the user **does not** choose `c` or `f`, the loop will continue to run. Enter the code that will set the **conditions** for a **while loop** and prompt the user for input:
+Tu peux utiliser une **boucle while** pour exécuter un morceau de code **pendant** qu'une **condition** est **Vraie**. Dans ce cas, tant que l'utilisateur **ne** choisit pas `c` ou `f`, la boucle continuera à s'exécuter. Saisis le code qui définira les **conditions** d'une **boucle while** et demandera à l'utilisateur d'entrer des données :
 
 --- code ---
 ---
@@ -62,13 +62,13 @@ def menu(): choice = ''  # Start with a wrong answer for choice
 
 --- /task ---
 
-Once the user has given a correct answer, the loop will end. Next create an `if` statement that will run your `atbash` function if the user enters `c`.
+Une fois que l'utilisateur a donné une réponse correcte, la boucle se termine. Crée ensuite une instruction `if` qui exécutera ta fonction `atbash` si l'utilisateur saisit `c`.
 
-You will decide what happens when a user enters `f` in a later step.
+Tu décideras de ce qui se passe lorsqu'un utilisateur saisit `f` dans une étape ultérieure.
 
 --- task ---
 
-Underneath the last line (making sure you still have an indent!), type:
+Sous la dernière ligne (en veillant à ce qu'il y ait toujours une indentation !), tape :
 
 --- code ---
 ---
@@ -92,7 +92,7 @@ def menu(): choice = ''  # Start with a wrong answer for choice
 
 --- task ---
 
-Change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded.
+Remplace la chaîne qui dit `'mon message secret'` par ce que tu veux. Cette chaîne est le message qui sera codé et décodé.
 
 --- code ---
 ---
@@ -116,7 +116,7 @@ def menu(): choice = ''  # Start with a wrong answer for choice.
 
 --- task ---
 
-At the end of your `main()` function, type `menu()` to call the `menu` function when the program runs:
+À la fin de ta fonction `main()`, tape `menu()` pour appeler la fonction `menu` lors de l'exécution du programme :
 
 --- code ---
 ---
@@ -132,20 +132,20 @@ def main(): create_code() # print(atbash('Test')) menu()
 
 --- task ---
 
-**Test:** Run your code. Type `c` and press <kbd>Enter</kbd> to encode your message string!
+**Test :** exécute ton code. Tape `c` et appuie sur <kbd>Entrée</kbd> pour coder ta chaîne de messages !
 
-![The output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
+![La sortie du code créé à cette étape. Une version codée d'un message secret est affichée.](images/encode-a-message.PNG){:width="400px"}
 
-**Debug:** If you see a message about an indentation error:
-- Check that you have indented all of your code correctly
-- Look back at the sample code on this page to help you check
+**Débogage :** si tu vois un message concernant une erreur d'indentation :
+- Vérifie que tu as correctement indenté tout ton code
+- Reporte-toi à l'exemple de code de cette page pour t'aider à vérifier
 
-**Debug:** If you see the error message `c is not defined` when you run your code, check that you have used apostrophes ('') around your c in the condition `choice != 'c'`.
+**Débogage :** si tu vois le message d'erreur `c n'est pas défini` lorsque tu exécutes ton code, vérifie que tu as bien utilisé des apostrophes ('') autour de ton c dans la condition `choix !='c'`.
 
-**Debug:** If nothing happens when you press `c`, check that you have correctly spelled `message`.
+**Débogage :** si rien ne se passe lorsque tu appuies sur `c`, vérifie que tu as correctement orthographié `message`.
 
 --- /task ---
 
-In the next step you will use your `atbash()` function to encode the contents of a text file.
+Dans l'étape suivante, tu utiliseras ta fonction `atbash()` pour coder le contenu d'un fichier texte.
 
 --- save ---
