@@ -1,17 +1,17 @@
-## Quick quiz
+## Snelle quiz
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Beantwoord de drie vragen. Er zijn tips om je naar het juiste antwoord te leiden.
 
-When you have answered each question, click on **Check my answer**.
+Klik na het beantwoorden van elke vraag op **Controleer mijn antwoord**.
 
-Have fun!
+Veel plezier!
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Vraag 1 van 3
 ---
-A **function** called `add()` has been created to perform a calculation on two numbers and **return** the result. What will be displayed as the output on the screen when this code is run?
+Een **functie** met de naam `toevoegen()` is gemaakt om een berekening uit te voeren met twee getallen en het resultaat **terug te geven**. Wat wordt als uitvoer op het scherm weergegeven wanneer deze code wordt uitgevoerd?
 
 ```python
 
@@ -32,17 +32,17 @@ print(add(5, 10))
 
   --- feedback ---
 
-This is the **function call**. This calls the `add()` function and passes the numbers `5` and `10` as arguments. These numbers are then used by the function.
+Dit is de **functie aanroep**. Dit roept de functie `toevoegen()` aan en geeft de getallen `5` en `10` door als argumenten. Deze getallen worden vervolgens door de functie gebruikt.
 
   --- /feedback ---
 
 - ( )
 
-`one + two`
+`één + twee`
 
   --- feedback ---
 
-  Not quite, the function will **return** the result of adding the values held in the variables `one` and `two` together.
+  Niet helemaal, de functie zal het resultaat van het optellen **retourneren** van de waarden in de variabelen `één` en `twee` samen.
 
   --- /feedback ---
 
@@ -52,17 +52,17 @@ This is the **function call**. This calls the `add()` function and passes the nu
 
   --- feedback ---
 
-  Correct! The values `5` and `10` are passed into the function. They are then added together and held in the variable `result`. This is then **returned** and displayed as output using the `print()` function.
+  Juist! De waarden `5` en `10` worden doorgegeven aan de functie. Ze worden vervolgens bij elkaar opgeteld en opgeslagen in de variabele `resultaat`. Dit wordt dan **geretourneerd** en weergegeven als uitvoer met behulp van de functie `print()`.
 
   --- /feedback ---
 
 - ( )
 
-`result`
+`resultaat`
 
   --- feedback ---
 
-  Almost, the output will display the value **held** by the `result` variable.
+  Bijna, de uitvoer zal de waarde weergeven die wordt **vastgehouden** door de `resultaat` variabele.
 
   --- /feedback ---
 
