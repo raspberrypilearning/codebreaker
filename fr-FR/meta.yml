@@ -1,0 +1,44 @@
+---
+title: Déchiffreur de code
+hero_image: images/banner.png
+description:
+  - Analyser un graphique de fréquence pour déchiffrer le code, tout en apprenant les listes
+  - et les fonctions
+meta_title: Projets de codage Python pour enfants et adolescents | Déchiffreur de code
+meta_description: Apprends le langage Python avec les projets de codage de la Raspberry Pi Foundation pour les enfants et les adolescents. Utilise Python pour déchiffrer un code tout en te familiarisant avec les listes et les fonctions.
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-03-26"
+steps:
+  - 
+    title: Ce que tu vas faire
+  - 
+    title: Coder l'alphabet
+  - 
+    title: Coder un message
+    completion:
+      - engaged
+  - 
+    title: Créer un menu
+  - 
+    title: Coder du texte à partir d'un fichier
+  - 
+    title: Créer un analyseur fréquentiel
+  - 
+    title: Analyser la fréquence
+    completion:
+      - internal
+  - 
+    title: Questionnaire rapide
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - 
+    title: Améliorer ton projet
+  - 
+    title: Et ensuite ?
