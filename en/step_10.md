@@ -15,4 +15,4 @@ If you are following the [More Python](https://projects.raspberrypi.org/en/pathw
 
 --- /no-print ---
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python&curriculum%5B%5D=%202).
+If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python&curriculum%5B%5D=%202). 
