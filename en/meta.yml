@@ -7,7 +7,7 @@ description:
 meta_title: Python coding projects for kids and teens | Code breaker
 meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to crack a code whilst learning about lists and functions.
 version: 4
-listed: true
+listed: false
 copyedit: true
 last_tested: "2021-03-26"
 steps:
